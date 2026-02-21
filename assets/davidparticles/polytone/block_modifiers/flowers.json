@@ -1,0 +1,57 @@
+{
+   "targets": [
+              "minecraft:oxeye_daisy",
+              "minecraft:cornflower",
+              "minecraft:lily_of_the_valley",
+              "minecraft:sunflower",
+              "minecraft:dandelion",
+              "minecraft:poppy",
+              "minecraft:blue_orchid",
+              "minecraft:allium",
+              "minecraft:azure_bluet",
+              "minecraft:orange_tulip",
+              "minecraft:white_tulip",
+              "minecraft:pink_tulip",
+              "minecraft:red_tulip",
+              "minecraft:peony",
+              "minecraft:rose_bush",
+              "minecraft:lilac"
+              ],
+   "particle_emitters": [
+     {
+       "particle": "davidparticles:butterfly_blue",
+       "chance": "0.00025 - RAIN*2 - ((DAY_TIME > 13500) * (DAY_TIME < 23500))",
+       "x": "0.075 * sin((0.075 * TIME))*gaussian()", 
+       "z": "0.01 * cos((0.075 * TIME))*gaussian()",
+       "y": "1"
+     },
+     {
+       "particle": "davidparticles:butterfly_red",
+       "chance": "0.00025 - RAIN*2 - ((DAY_TIME > 13500) * (DAY_TIME < 23500))",
+       "x": "0.075 * sin((0.075 * TIME))*gaussian()", 
+       "z": "0.01 * cos((0.075 * TIME))*gaussian()",
+       "y": "1"
+     },
+     {
+       "particle": "davidparticles:butterfly_purple",
+       "chance": "0.00025 - RAIN*2 - ((DAY_TIME > 13500) * (DAY_TIME < 23500))",
+       "x": "0.075 * sin((0.075 * TIME))*gaussian()", 
+       "z": "0.01 * cos((0.075 * TIME))*gaussian()",
+       "y": "1"
+     },
+     {
+       "particle": "davidparticles:butterfly_yellow",
+       "chance": "0.00025 - RAIN*2 - ((DAY_TIME > 13500) * (DAY_TIME < 23500))",
+       "x": "0.075 * sin((0.075 * TIME))*gaussian()", 
+       "z": "0.01 * cos((0.075 * TIME))*gaussian()",
+       "y": "1"
+     },
+     {
+       "particle": "davidparticles:pollen",
+       "chance": "0.005 - RAIN*2 - ((DAY_TIME > 13500) * (DAY_TIME < 23500))",
+       "x": "0.5", 
+       "z": "0.5",
+       "y": "0.5"
+     }
+     ]
+}

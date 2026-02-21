@@ -1,0 +1,24 @@
+{
+        "initializer":{
+          "lifetime": "40",
+          "alpha": "0",
+          "size": "0.55",
+          "red": "1",
+          "green": "0.62",
+          "blue": "0"
+        },
+        "ticker": {
+          "alpha": "((0.3) * sin(((pi/LIFETIME) * AGE)))",
+          "dx": "0",
+          "dy": "0",
+          "dz": "0"
+        },
+        "has_physics": false,
+        "rotation_mode": "look_at_xyz",
+        "lit": true,
+        "light_level": 15,
+        "render_type": "additive_translucent",
+        "model": "davidparticles:block/glow_test",
+        "offset": [0, 0, 0],
+        "exclusion_radius": 0
+      }

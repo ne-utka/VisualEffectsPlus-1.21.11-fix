@@ -1,0 +1,7 @@
+{
+	"targets": [
+		"minecraft:basalt_deltas"
+	],
+	"fog_radius": 1,
+ 	"fog_fade": "1.25"
+}

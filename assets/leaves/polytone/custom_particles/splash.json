@@ -1,0 +1,26 @@
+{
+        "initializer":{
+          "lifetime": "7.5",
+          "alpha": "0.25",
+          "size": "rand()*0.3 + 0.1",
+          "dx": "0",
+          "dy": "0",
+          "dz": "0",
+          "red": "1",
+          "green": "1",
+          "blue": "1"
+        },
+        "ticker": {
+          "alpha": "max(0, ALPHA - 0.03)",
+          "size": "max(0, SIZE*1.05)",
+          "dx": "0",
+          "dy": "0",
+          "dz": "0",
+          "remove_condition": "sqrt(DISTANCE_SQUARED) > 15"
+        },
+        "has_physics": false,
+        "render_type": "additive_translucent",
+        "offset": [0, 0.001, 0],
+        "rotation_mode": "look_up",
+  "colormap": "minecraft:water_color"
+}

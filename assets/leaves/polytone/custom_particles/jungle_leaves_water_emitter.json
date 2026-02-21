@@ -1,0 +1,31 @@
+{
+  "initializer": {
+    "lifetime": "1",
+    "size": "0",
+    "alpha": "0",
+    "custom": "rand()"
+  },
+  "ticker": {
+    "remove_condition": "sqrt(DISTANCE_SQUARED) > 20"
+  },
+  "liquid_affinity": "liquids",
+  "render_type": "opaque",
+  "exclusion_radius": 0,
+  "has_physics": false,
+  "kill_on_contact": false,
+  "kill_when_still": false,
+  "offset": [0, 0, 0],
+  "particle_emitters": [
+    {
+      "particle": "leaves:jungle_leaves_water",
+      "chance": "AGE == 1", 
+      "x": "0.0",
+      "y": "rand()*0.01",
+      "z": "0.0",
+      "state_predicate": {
+        "predicate_type": "block_match",
+        "block": "minecraft:water"
+      }
+    }
+  ]
+}

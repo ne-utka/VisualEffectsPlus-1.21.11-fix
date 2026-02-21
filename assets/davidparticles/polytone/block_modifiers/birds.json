@@ -1,0 +1,26 @@
+{
+   "targets": ["minecraft:air"],
+   "particle_emitters": [
+     {
+       "particle": "davidparticles:bird",
+       "chance": "0.000005*(SKY_LIGHT == 15)*0.5 - RAIN*2",
+       "x": "- 20", 
+       "z": "gaussian()*20",
+       "y": "10"
+     },
+     {
+       "particle": "davidparticles:bird_1",
+       "chance": "0.000005*(SKY_LIGHT == 15)*0.5 - RAIN*2",
+       "x": "-15", 
+       "z": "(rand()-0.5)*10",
+       "y": "10"
+     },
+     {
+       "particle": "davidparticles:bird_flock",
+       "chance": "0.000005*(SKY_LIGHT == 15)*0.5 - RAIN*2",
+       "x": "0", 
+       "z": "-20",
+       "y": "15"
+     }
+     ]
+}

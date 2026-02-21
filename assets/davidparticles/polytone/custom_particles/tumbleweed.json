@@ -1,0 +1,25 @@
+{
+  "initializer": {
+    "lifetime": "(60 + rand() * 10)*1.5",
+    "alpha": "0",
+    "size": "1",
+    "roll": "rand() * 2 * pi",
+    "custom": "rand()"
+  },
+  "ticker": {
+    "dx": "(0.2 + RAIN * 0.5) + 0.05 * sin(AGE * 0.15 + CUSTOM * 5) + gaussian() * 0.01",
+    "dy": "0.1 * sin(AGE * 0.3 + CUSTOM * 3) + gaussian() * 0.015 - 0.01 ",
+    "dz": "0.02 * sin(AGE * 0.2 + CUSTOM * 2)",
+    "roll": "ROLL - (DX * (0.7 + 0.3 * sin(AGE * 0.1 + CUSTOM * 4)))",
+    "size": "1 + (0.07 * sin(AGE * 0.4 + CUSTOM * 5))*0.5",
+    "alpha": "max(0, min(1, ((25/(RAIN + 0.000001)) - sqrt(DISTANCE_SQUARED)) / 10)) * min(max(AGE / 5, 0), 1) * min(max((LIFETIME - AGE) / 5, 0), 1)"
+  },
+  "liquid_affinity": "non_liquids",
+  "render_type": "translucent",
+  "rotation_mode": "none",
+  "model": "minecraft:block/dead_bush",
+  "has_physics": true,
+  "kill_on_contact": false,
+  "kill_when_still": true,
+  "offset": [0, -0.15, 0]
+}

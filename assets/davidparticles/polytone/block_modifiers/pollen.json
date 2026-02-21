@@ -1,0 +1,20 @@
+{
+   "targets": ["minecraft:air"],
+   "particle_emitters": [
+     {
+       "particle": "davidparticles:pollen",
+       "chance": "0.00025 - RAIN*2 - (PLAYER_Y <= 47)",
+       "x": "0.5", 
+       "z": "0.5",
+       "y": "0",
+       "biomes": ["minecraft:birch_forest",
+                  "minecraft:sunflower_plains",
+                  "minecraft:flower_forest",
+                  "minecraft:old_growth_birch_forest",
+                  "minecraft:meadow",
+                  "minecraft:plains",
+                  "minecraft:forest",
+                  "minecraft:cherry_grove"]
+     }
+     ]
+}

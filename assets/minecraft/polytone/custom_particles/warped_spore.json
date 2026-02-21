@@ -1,0 +1,27 @@
+{
+        "initializer":{
+          "lifetime": "40",
+          "alpha": "1",
+          "red": "0.0862",
+          "green": "0.6274",
+          "blue": "0.4431",
+          "size": "0",
+          "custom": "gaussian()",
+          "hitbox_size": 0.25
+        },
+        "ticker": {
+            "dx": "(CUSTOM*0.035) * sin((0.01 * AGE))",
+            "dy": "(CUSTOM*0.0175) * cos((0.075 * AGE))",
+            "dz": "(CUSTOM*0.035) * cos((0.01 * AGE))",
+            "size": "(0.15) * sin((0.075 * AGE))"
+        },
+        "random_sprite": true,
+        "liquid_affinity": "non_liquids",
+        "render_type": "translucent",
+        "has_physics": true,
+        "lit": true,
+        "light_level": 3,
+        "kill_on_contact": false,
+        "exclusion_radius": 0,
+        "kill_when_still": false
+}

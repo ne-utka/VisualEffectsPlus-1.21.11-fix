@@ -1,0 +1,44 @@
+{
+  "initializer":{
+    "lifetime": "239*1.5",
+    "size": "  (20 + abs(sin(TIME / 40 + rand() * 3)) * 20 + sqrt(DISTANCE_SQUARED) * 0.25 + gaussian() * 8)*1",
+    "alpha": "0",
+    "custom": "gaussian()"
+  },
+      "ticker": {
+        "alpha": "(( 0.5 +( 0.025* sin((0.35) * AGE))) * sin(((pi/LIFETIME) * AGE)))*(DAY_TIME > 13500)*(DAY_TIME < 23000) ", 
+        "dz": "0",
+        "dx": "0",
+        "dy": "0",
+        "remove_condition": "(RAIN >= 0.5) + (sqrt(DISTANCE_SQUARED) > RENDER_DISTANCE^2.2) "
+        },
+  "render_type": "additive_translucent",
+  "liquid_affinity": "any",
+  "random_sprite": true,
+  "exclusion_radius": 10,
+  "has_physics": false,
+  "kill_on_contact": false,
+  "force_spawn": true,
+  "kill_when_still": false,
+  "offset": [0, 75, 0],
+  "lit": true,
+  "light_level": 10,
+  "rotation_mode": "look_at_y",
+  "colormap": "davidparticles:auroras/auroras_colormap",
+  "particle_emitters": [
+     {
+       "particle": "davidparticles:aurora",
+       "chance": "(AGE == 1)*0",
+       "x": "0",
+       "z": "gaussian()*10",
+       "y": "0"
+     },
+     {
+       "particle": "davidparticles:aurora_glow",
+       "chance": "(AGE == 1)*0",
+       "x": "0",
+       "z": "0",
+       "y": "0"
+     }
+    ]
+}

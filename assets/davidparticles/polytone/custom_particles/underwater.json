@@ -1,0 +1,30 @@
+{
+        "initializer":{
+          "lifetime": "64 + rand()*24",
+          "alpha": "0.8",
+          "red": "0.25 + rand()*0.75",
+          "green": "0.25 + rand()*0.75",
+          "blue": "0.25 + rand()*0.75",
+          "size": "0",
+          "custom": "rand()"
+
+        },
+        "ticker": {
+            "dx": "0 - ((PLAYER_X - POS_X) / (DISTANCE_SQUARED + 1)) * min(max(2 - sqrt(DISTANCE_SQUARED), 0), 1) * 0.15 + sin(AGE * 0.025 + CUSTOM * 2*pi) * 0.006",
+            "dy": "0.0035*CUSTOM - ((PLAYER_Y - POS_Y) / (DISTANCE_SQUARED + 1)) * min(max(2 - sqrt(DISTANCE_SQUARED), 0), 1) * 0.15 ",
+            "dz": "0 - ((PLAYER_Z - POS_Z) / (DISTANCE_SQUARED + 1)) * min(max(2 - sqrt(DISTANCE_SQUARED), 0), 1) * 0.15 + sin(AGE * 0.025 + CUSTOM * 2*pi) * 0.006",
+            "size": "(CUSTOM*0.1 + 0.05) * sin(( (pi / LIFETIME) * AGE))",
+            "remove_condition": "sqrt(DISTANCE_SQUARED) > 30"
+        },
+        "random_sprite": true,
+        "rotation_mode": "movement_aligned",
+        "liquid_affinity": "liquids",
+        "render_type": "translucent",
+        "has_physics": true,
+        "kill_on_contact": true,
+        "kill_when_still": false,
+        "offset": [0, 0, 0],
+        "lit": true,
+        "light_level": 2,
+        "colormap": "davidparticles:water/colormap_water"
+}

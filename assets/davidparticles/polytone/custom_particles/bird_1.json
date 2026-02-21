@@ -1,0 +1,26 @@
+{
+  "render_type": "translucent",
+  "rotation_mode": "look_up",
+  "offset": [0, 20, 0],
+  "random_sprite": false,
+  "has_physics": false,
+  "kill_on_contact": false,
+  "kill_when_still": false,
+  "liquid_affinity": "non_liquids",
+  "exclusion_radius": 1,
+  "tick_rate": 1,
+  "initializer": {
+    "lifetime": "220 + rand()*80",
+    "size": "0.5 + rand()*0.4",
+    "alpha": "0.0",
+    "custom": "6.28318 * rand()"
+  },
+  "ticker": {
+    "alpha": "max(0, min(1, min(AGE/6, (LIFETIME - AGE)/6)))",
+    "dx": "0.6",
+    "dz": "0.08 * sin(0.03 * AGE + CUSTOM)",
+    "dy": "0.04 * sin(0.12 * AGE + 0.5 * CUSTOM)",
+    "roll": "0.5 * DZ / max(0.0001, sqrt(DX*DX + DZ*DZ)) * smoothstep(AGE, 0, 10) + pi/2 + pi * ( (PLAYER_Y-20) >= POS_Y)"
+  },
+  "force_spawn": true
+}

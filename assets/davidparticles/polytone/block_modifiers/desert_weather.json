@@ -1,0 +1,61 @@
+{
+   "targets": ["minecraft:air"],
+   "particle_emitters": [
+    {
+       "particle": "davidparticles:sand_mote",
+       "x": "0",
+       "chance": "(0.0005)*(SKY_LIGHT == 15)",
+       "biomes": ["minecraft:desert",
+                  "minecraft:badlands",
+                  "minecraft:eroded_badlands",
+                  "minecraft:wooded_badlands",
+                  
+                  "minecraft:savanna",
+                  "minecraft:savanna_plateau",
+                  "minecraft:windswept_savanna"]
+     },
+     {
+       "particle": "davidparticles:sand_mote_emit",
+       "chance": "(RAIN > 0.5)*0.015*(SKY_LIGHT == 15)*(POS_X < PLAYER_X)",
+       "x": "-12.5 + rand()*5", 
+       "z": "rand()*5",
+       "y": "rand()*2",
+       "biomes": ["minecraft:desert",
+                  "minecraft:badlands",
+                  "minecraft:eroded_badlands",
+                  "minecraft:wooded_badlands"]
+     },
+     {
+       "particle": "davidparticles:sand_mote_group",
+       "chance": "0.0001 + RAIN*0.002*(SKY_LIGHT == 15)",
+       "x": "-15",
+       "biomes": ["minecraft:savanna",
+                  "minecraft:savanna_plateau",
+                  "minecraft:windswept_savanna"]
+     },
+
+      {
+       "particle": "davidparticles:sand_mote_group",
+       "chance": "(0.00015 + RAIN*0.0075*(RAIN == 0.5))*(SKY_LIGHT == 15)",
+       "x": "-15",
+       "biomes": ["minecraft:desert",
+                  "minecraft:badlands",
+                  "minecraft:eroded_badlands",
+                  "minecraft:wooded_badlands"]
+     },
+
+     {
+       "particle": "davidparticles:dust",
+       "y": "3",
+       "chance": "RAIN*0.0125*(SKY_LIGHT == 15)*(POS_X < PLAYER_X)",
+       "biomes": ["minecraft:desert",
+                  "minecraft:badlands",
+                  "minecraft:eroded_badlands",
+                  "minecraft:wooded_badlands",
+                
+                 "minecraft:savanna",
+                  "minecraft:savanna_plateau",
+                  "minecraft:windswept_savanna"]
+     }
+    ] 
+}

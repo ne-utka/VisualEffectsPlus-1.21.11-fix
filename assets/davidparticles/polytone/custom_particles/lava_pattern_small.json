@@ -1,0 +1,27 @@
+{
+        "initializer":{
+          "lifetime": "80",
+          "alpha": "0",
+          "size": "5",
+          "hitbox_size": 5
+        },
+        "ticker": {
+            "alpha": "0.4 * sin((0.0375 * AGE))"
+        },
+        "liquid_affinity": "non_liquids",
+        "has_physics": true,
+        "rotation_mode": "look_up",
+        "exclusion_radius": 10,
+        "render_type": "additive_translucent",
+        "offset": [0, -0.1, 0],
+        "particle_emitters": [
+     {
+       "particle": "davidparticles:lava_pattern_small_1",
+       "chance": "AGE == 1",
+       "x": "gaussian()*5", 
+       "z": "gaussian()*5",
+       "y": "0",
+     "biomes": ["minecraft:nether_wastes", "minecraft:basalt_deltas", "minecraft:soul_sand_valley", "minecraft:crimson_forest", "minecraft:warped_forest"] 
+     }
+    ]
+}

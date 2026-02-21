@@ -1,0 +1,22 @@
+{
+        "initializer":{
+          "lifetime": "16 + rand()*8",
+          "alpha": "1",
+          "size": "0.35",
+          "red": "rand()*0.35",
+          "green": "rand()*0.35",
+          "blue": "rand()*0.35",
+          "custom": "rand()"
+        },
+        "ticker": {
+            "dy": "0.025 + 0.035*CUSTOM",
+            "dx": "(0.02*CUSTOM) * cos((0.025 * AGE))",
+            "dz": "(0.02*CUSTOM) * sin((0.025 * AGE))",
+            "size": "max(0, SIZE-0.005)"
+        },
+        "liquid_affinity": "any",
+        "has_physics": true,
+        "render_type": "translucent",
+        "hitbox_size": 0.25,
+        "kill_on_contact": true
+}

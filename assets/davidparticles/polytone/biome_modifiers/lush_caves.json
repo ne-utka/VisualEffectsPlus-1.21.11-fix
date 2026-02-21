@@ -1,0 +1,7 @@
+{
+	"targets": [
+		"minecraft:lush_caves"
+	],
+		"fog_radius": 0.35,
+ 		"fog_fade": "1.25*(7.5 + (RENDER_DISTANCE/64*2.5))"
+  }

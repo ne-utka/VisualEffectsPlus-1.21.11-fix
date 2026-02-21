@@ -1,0 +1,13 @@
+{
+   "targets": ["minecraft:grass_block", "minecraft:water", "minecraft:mud"],
+   "particle_emitters": [
+    {
+       "particle": "davidparticles:swamp_rain",
+       "chance": "1/200 * (RAIN == 0)  ",
+       "x": "rand() - 0.5", 
+       "z": "rand() - 0.5",
+       "y": "19.5",
+       "biomes": ["minecraft:swamp", "minecraft:mangrove_swamp"]
+     }
+     ]
+}

@@ -1,0 +1,18 @@
+{
+        "initializer":{
+          "lifetime": "40",
+          "alpha": "0",
+          "size": "0.75"
+        },
+        "ticker": {
+            "alpha": "min(max(AGE / 5, 0), 1) * min(max((LIFETIME - AGE) / 5, 0), 1)"
+        },
+        "liquid_affinity": "non_liquids",
+        "rotation_mode": "look_at_y",
+        "random_sprite": true,
+        "has_physics": false,
+        "render_type": "additive_translucent",
+        "exclusion_radius": 2,
+        "lit": true,
+        "light_level": 15
+}

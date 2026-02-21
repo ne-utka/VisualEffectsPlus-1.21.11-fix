@@ -1,0 +1,36 @@
+{
+        "initializer":{
+          "lifetime": "32 + rand()*24",
+          "alpha": "1",
+          "size": "0",
+          "custom": "rand()",
+           "red": "0.843",
+    "green": "0.306",
+    "blue": "1.0"
+        },
+        "ticker": {
+            "red": "(1 - min(1, (AGE / LIFETIME) * 2)) * 0.843 + min(1, (AGE / LIFETIME) * 2) * ((1 - max(0, (AGE / LIFETIME - 0.5) * 2)) * 0.557 + max(0, (AGE / LIFETIME - 0.5) * 2) * 0.235)",
+            "green": "(1 - min(1, (AGE / LIFETIME) * 2)) * 0.306 + min(1, (AGE / LIFETIME) * 2) * ((1 - max(0, (AGE / LIFETIME - 0.5) * 2)) * 0.161 + max(0, (AGE / LIFETIME - 0.5) * 2) * 0.051)",
+            "blue": "(1 - min(1, (AGE / LIFETIME) * 2)) * 1.0 + min(1, (AGE / LIFETIME) * 2) * ((1 - max(0, (AGE / LIFETIME - 0.5) * 2)) * 0.961 + max(0, (AGE / LIFETIME - 0.5) * 2) * 0.608)",
+                  
+
+            "dx": "(DX*0.98) + (CUSTOM*0.010 * sin(AGE*0.11 + CUSTOM*1.7) + CUSTOM*0.003 * sin(AGE*0.43 + CUSTOM*3.1))*0.1",
+            "dz": "(DZ*0.98) + (CUSTOM*0.010 * cos(AGE*0.085 + CUSTOM*2.3) + CUSTOM*0.003 * cos(AGE*0.37 + CUSTOM*2.6))*0.1",
+
+            
+            "dy": "(DY*0.98) + (0.01 * sin((0.075 * AGE)))*0",
+
+            "size": "pow(min( ( 0.425 + CUSTOM*0.1 ) , (AGE / LIFETIME) / 0.2), 2.5)",
+            "alpha": "pow(1 - max(0, (AGE / LIFETIME - 0.75) / 0.25), 2)",
+
+            "remove_condition": "sqrt(DISTANCE_SQUARED) > 15"
+        },
+        "liquid_affinity": "non_liquids",
+        "random_sprite": false,
+        "has_physics": false,
+        "render_type": "additive_translucent",
+        "lit": true,
+        "light_level": 15,
+        "offset": [0, 0, 0.125],
+        "exclusion_radius": 1
+}

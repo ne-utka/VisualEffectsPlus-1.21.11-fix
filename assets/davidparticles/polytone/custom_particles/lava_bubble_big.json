@@ -1,0 +1,20 @@
+{
+        "initializer":{
+          "lifetime": "40",
+          "alpha": "1",
+          "size": "1",
+          "red": "0.85",
+          "green": "0.85",
+          "blue": "0.85"
+        },
+        "ticker": {
+        },
+        "liquid_affinity": "non_liquids",
+        "has_physics": false,
+        "rotation_mode": "look_at_y",
+        "lit": true,
+        "light_level": 15,
+        "exclusion_radius": 6,
+        "render_type": "opaque",
+        "offset": [0, 1, 0]
+}

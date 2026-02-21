@@ -1,0 +1,37 @@
+{
+  "initializer": {
+    "lifetime": "20",
+    "alpha": "0",
+    "size": "0"
+  },
+  "ticker": {
+  },
+  "particle_emitters": [
+    {
+      "particle": "davidparticles:nether_portal_glow",
+      "chance": "AGE == 1", 
+      "x": "0.0",
+      "y": "0.0",
+      "z": "0.0"
+    },
+    {
+      "particle": "davidparticles:nether_portal_glow",
+      "chance": "AGE == LIFETIME*0.5", 
+      "x": "0.0",
+      "y": "0.0",
+      "z": "0.0"
+    },
+    {
+      "particle": "davidparticles:portal",
+      "chance": "(AGE == 1)*0", 
+      "x": "gaussian()",
+      "y": "0",
+      "z": "gaussian()"
+    }  
+  ],
+  "tick_rate": 1,
+  "offset": [0, -0.1, 0],
+  "has_physics": false,
+  "liquid_affinity": "any",
+  "exclusion_radius": 1
+}

@@ -1,0 +1,26 @@
+{
+	"format_version": "1.9.0",
+	"credit": "Made with Blockbench",
+	"texture_size": [64, 64],
+	"textures": {
+		"2": "davidparticles:block/glow_test_1",
+		"particle": "davidparticles:block/glow_test"
+	},
+	"elements": [
+		{
+			"from": [1.75, 1.75, 18],
+			"to": [14.25, 14.25, 18],
+			"shade": false,
+			"light_emission": 13,
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, 0, 18]},
+			"faces": {
+				"north": {"uv": [0, 0, 0, 0], "texture": "#2"},
+				"east": {"uv": [0, 0, 0, 4], "texture": "#missing"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#2"},
+				"west": {"uv": [0, 0, 0, 4], "texture": "#missing"},
+				"up": {"uv": [0, 0, 4, 0], "texture": "#missing"},
+				"down": {"uv": [0, 0, 4, 0], "texture": "#missing"}
+			}
+		}
+	]
+}

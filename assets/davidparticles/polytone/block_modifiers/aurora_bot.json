@@ -1,0 +1,26 @@
+{
+  "polytone_ignore": true,
+
+  
+   "targets": ["minecraft:air", "minecraft:short_grass", "minecraft:snow_block", "minecraft:snow"],
+   "particle_emitters": [
+     {
+       "particle": "davidparticles:aurora_bot_1",
+       "chance": "(sqrt(DISTANCE_SQUARED) < 1)*(DAY_TIME > 14000)*(DAY_TIME < 22000)*(SKY_LIGHT == 15)*0 - RAIN*2",
+       "x": "0 - POS_X + PLAYER_X", 
+       "z": "0 - POS_Z + PLAYER_Z",
+       "y": "0 - POS_Y + PLAYER_Y",
+       "biomes": ["minecraft:snowy_plains",
+                  "minecraft:snowy_slopes",
+                  "minecraft:snowy_beach",
+                  "minecraft:snowy_taiga",
+                  "minecraft:frozen_river",
+                  "minecraft:frozen_ocean",
+                  "minecraft:frozen_peaks",
+                  "minecraft:deep_frozen_ocean",
+                  "minecraft:ice_spikes",
+                  "minecraft:jagged_peaks",
+                  "minecraft:grove"]
+     }
+     ]
+}

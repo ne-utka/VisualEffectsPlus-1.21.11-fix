@@ -1,0 +1,30 @@
+{
+  "initializer": {
+    "lifetime": "600",
+    "size": "1",
+    "alpha": "0"
+  },
+  "ticker": {
+    "dx": "-0.1",
+    "dy": "0",
+    "dz": "0.02",
+    "remove_condition": "(DAY_TIME < 13000) + (DAY_TIME > 23000)"
+  },
+  "render_type": "opaque",
+  "has_physics": false,
+  "kill_on_contact": false,
+  "kill_when_still": false,
+  "particle_emitters": [
+    {
+      "particle": "davidparticles:meteor_particle",
+      "chance": "0.2",
+      "x": "(rand() * 160 - 80)*2",
+      "y": "rand() * 40 + 150",
+      "z": "(rand() * 160 - 80)*2",
+      "dx": "-2.5 + rand() * 0.6",
+      "dz": "0.8 + rand() * 0.2",
+      "dy": "rand() * 0.08 - 0.04"
+      
+    }
+  ]
+}

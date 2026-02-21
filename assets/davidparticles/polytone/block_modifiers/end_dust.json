@@ -1,0 +1,17 @@
+{
+   "targets": ["minecraft:air"],
+   "particle_emitters": [
+     {
+       "particle": "davidparticles:end",
+       "chance": "0.001",
+       "x": "rand()", 
+       "z": "rand()",
+       "y": "rand()",
+       "biomes": ["minecraft:end_barrens",
+                  "minecraft:end_midlands",
+                  "minecraft:end_highlands",
+                  "minecraft:small_end_islands",
+                  "minecraft:the_end"]
+     }
+     ]
+}

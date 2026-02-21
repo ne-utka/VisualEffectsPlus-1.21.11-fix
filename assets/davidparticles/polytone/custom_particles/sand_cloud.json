@@ -1,0 +1,23 @@
+{
+  "initializer":{
+    "lifetime": "40",
+    "size": "7.5",
+    "alpha": "0",
+    "custom": "gaussian()"
+  },
+      "ticker": {
+        "alpha": "max(0, min(((1 - ((abs(POS_X - PLAYER_X) + abs(POS_Z - PLAYER_Z)) / 30)^3)), ((1 - ((abs(POS_Y - PLAYER_Y)) / 15)^2))))*(0.35)* sin((0.075 * AGE))",
+        "dx": "0.5",
+        "dy": "0.1 * sin((0.15 * AGE))",
+        "dz": "0.15 * sin((0.2 * AGE))",
+        "remove_condition": "max(0, min(((1 - ((abs(POS_X - PLAYER_X) + abs(POS_Z - PLAYER_Z)) / 35)^1)), ((1 - ((abs(POS_Y - PLAYER_Y)) / 20)^1)))) == 0",
+        "roll": "0.75 * sin((0.05 * AGE))"
+        },
+  "render_type": "additive_translucent",
+  "liquid_affinity": "non_liquids",
+  "lit": true,
+  "light_level": 5,
+  "exclusion_radius": 3,
+  "has_physics": true,
+  "offset": [0, 0, 0]
+}

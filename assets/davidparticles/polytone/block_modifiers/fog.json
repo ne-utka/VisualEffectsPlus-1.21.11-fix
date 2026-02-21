@@ -1,0 +1,70 @@
+{
+   "targets": ["minecraft:grass_block", "minecraft:sand", "minecraft:red_sand", "minecraft:podzol", "minecraft:water",
+                "minecraft:terracotta", "minecraft:red_terracotta", "minecraft:orange_terracotta", "minecraft:white_terracotta", "minecraft:light_gray_terracotta"],
+   "particle_emitters": [
+    {
+       "particle": "davidparticles:forest_fog",
+       "chance": "0.45 * (RAIN == 0)",
+       "x": "0", 
+       "z": "0",
+       "y": "4",
+       "biomes": ["minecraft:forest",
+                  "minecraft:taiga",
+                  "minecraft:snowy_taiga",
+                  "minecraft:old_growth_pine_taiga",
+                  "minecraft:old_growth_spruce_taiga",
+                  "minecraft:flower_forest",
+		            "minecraft:old_growth_birch_forest",
+                  "minecraft:dark_forest",
+                  "minecraft:birch_forest",
+                  "minecraft:flower_forest"],
+      "spawn_location": "lower_corner"
+     },
+     {
+       "particle": "davidparticles:plains_fog",
+       "chance": "0.1 * (RAIN == 0)",
+       "x": "0", 
+       "z": "0",
+       "y": "4",
+       "biomes": ["minecraft:plains", 
+                  "minecraft:sunflower_plains",
+                  "minecraft:mushroom_fields",
+                  "minecraft:meadow",
+                  "minecraft:cherry_grove",
+                  "minecraft:snowy_plains",
+                  "minecraft:snowy_slopes",
+                  "minecraft:beach"],
+      "spawn_location": "lower_corner"
+     },
+     {
+       "particle": "davidparticles:plains_fog",
+       "chance": "0.1 * (RAIN <= 0.5) ",
+       "x": "0", 
+       "z": "0",
+       "y": "4",
+       "biomes": [
+
+                  "minecraft:desert",
+                  "minecraft:badlands",
+                  "minecraft:wooded_badlands",
+                  "minecraft:eroded_badlands",
+                  "minecraft:savanna",
+                  "minecraft:savanna_plateau",
+                  "minecraft:windswept_savanna"],
+      "spawn_location": "lower_corner"
+     },
+     {
+       "particle": "davidparticles:swamp_dust",
+       "chance": "0.015",
+       "x": "rand() - 1", 
+       "z": "rand() - 1",
+       "y": "5",
+       "biomes": ["minecraft:forest",
+                  "minecraft:taiga",
+                  "minecraft:old_growth_pine_taiga",
+                  "minecraft:old_growth_spruce_taiga",
+                  "minecraft:dark_forest"],
+      "spawn_location": "lower_corner"
+     }
+     ]
+}

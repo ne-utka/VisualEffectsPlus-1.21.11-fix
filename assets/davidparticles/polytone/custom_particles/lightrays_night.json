@@ -1,0 +1,29 @@
+{
+  "render_type": "additive_translucent",
+  "rotation_mode": "movement_aligned",
+  "random_sprite": true,
+  "lit": true,
+  "light_level": 8,
+  "initializer": {
+    "custom": "(DAY_TIME / 12000 * pi)",
+    "lifetime": "120 + rand() * 40",
+    "size": "(2.5 + rand() * 1 + 0.5)*2.0",
+    "alpha": "0.0"
+  },
+  "ticker": {
+   "alpha": "( (0.25 + 0.05 * sin(0.2 * AGE)) * (1 - 0.35 * min(RAIN * 2, 1)) ) * sin((pi / LIFETIME) * AGE) * (min(max((sqrt((POS_X - PLAYER_X)^2 + (POS_Z - PLAYER_Z)^2) - 1) / 5, 0), 1) * max(0, min(1, (32 - sqrt((POS_X - PLAYER_X)^2 + (POS_Z - PLAYER_Z)^2)) / 16))) * max(0, min(1, (12 - abs(POS_Y - PLAYER_Y)) / 4))",
+   "dx": "cos(CUSTOM)*(-0.001)",
+    "dy": "sin(CUSTOM)*(-0.0015)",
+    "remove_condition": "(sqrt(DISTANCE_SQUARED) > 32) + step(abs(POS_Y - PLAYER_Y), 12)"
+  },
+  "offset": [
+    0,
+    0.5,
+    0
+  ],
+  "has_physics": false,
+  "kill_on_contact": false,
+  "kill_when_still": false,
+  "exclusion_radius": 1,
+  "colormap": "davidparticles:lightrays/lightrays"
+}

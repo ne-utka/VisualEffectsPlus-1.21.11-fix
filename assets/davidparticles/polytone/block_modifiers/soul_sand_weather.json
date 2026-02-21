@@ -1,0 +1,29 @@
+{
+   "targets": ["minecraft:air"],
+   "particle_emitters": [
+     {
+       "particle": "davidparticles:wind_gust",
+       "chance": "0.000015 + 0.00015",
+        "x": "0.5 + gaussian()*2", 
+       "z": "0.5 + gaussian()*2 ",
+       "y": "1.5 + gaussian()*2",
+       "biomes": ["minecraft:soul_sand_valley"]
+     },
+
+     {
+       "particle": "davidparticles:soul_sand_mote_group",
+       "chance": "1/600",
+       "x": "-15",
+       "biomes": ["minecraft:soul_sand_valley"]
+     },
+
+      {
+       "particle": "davidparticles:sculk",
+       "chance": "0.00025",
+       "x": "rand() - 5", 
+       "z": "rand()",
+       "y": "0",
+       "biomes": ["minecraft:soul_sand_valley"]
+     }
+     ]
+}

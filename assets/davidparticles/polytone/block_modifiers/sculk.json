@@ -1,0 +1,13 @@
+{
+   "targets": ["minecraft:air"],
+   "particle_emitters": [
+     {
+       "particle": "davidparticles:sculk",
+       "chance": "0.001",
+       "x": "rand() - 5", 
+       "z": "rand()",
+       "y": "0",
+       "biomes": ["minecraft:deep_dark"]
+     }
+     ]
+}

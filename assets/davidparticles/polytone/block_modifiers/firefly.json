@@ -1,0 +1,14 @@
+{
+   "targets": ["minecraft:grass_block", "minecraft:water"],
+   "particle_emitters": [
+     {
+       "particle": "davidparticles:fireflies_emitter",
+       "chance": "0.00075",
+       "x": "10 * cos((2 * TIME)) + rand()*0.5", 
+       "z": "10 * sin((2 * TIME)) + rand()*0.5",
+       "y": "2.5",
+       "biomes": ["minecraft:swamp", "minecraft:mangrove_swamp"],
+       "spawn_location": "lower_corner"
+     }
+     ]
+}

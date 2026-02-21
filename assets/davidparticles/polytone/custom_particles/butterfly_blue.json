@@ -1,0 +1,53 @@
+{
+  "initializer": {
+    "lifetime": "(70 + rand() * 20)*1.1",
+    "alpha": "0.95",
+    "size": "0",
+    "custom": "min(max(gaussian() * 0.5 + 0.5, 0), 1)*0.75"
+  },
+  "ticker": {
+    "dx": "(0.2 + 0.8 * pow(sin(AGE * 0.05 + (CUSTOM - 0.5)), 4)) * ((CUSTOM - 0.5) * 0.6) * sin(0.125 * AGE + (CUSTOM - 0.5) * 2.4) + pow(sin(AGE * 0.05 + (CUSTOM - 0.5)), 4) * gaussian() * 0.0025 + gaussian() * 0.0005",
+    "dy": "pow(abs(sin(AGE * 0.12 + (CUSTOM - 0.5))), 8) * (0.016 + rand() * 0.012) + 0.035 + gaussian() * 0.0005",
+    "dz": "(0.2 + 0.8 * pow(sin(AGE * 0.05 + (CUSTOM - 0.5)), 4)) * ((CUSTOM - 0.5) * 0.6) * cos(0.125 * AGE + (CUSTOM - 0.5) * 2.4) + pow(sin(AGE * 0.05 + (CUSTOM - 0.5)), 4) * gaussian() * 0.0025 + gaussian() * 0.0005",
+    "size": "(0.9 + CUSTOM * 0.2) * 0.2 * min(max(AGE / 5, 0), 1) * (1 - min(max((AGE - LIFETIME + 5) / 5, 0), 1))",
+    "alpha": "0.95 + 0.05 * sin(AGE * 0.1 + CUSTOM * 6.28)"
+  },
+  "render_type": "translucent",
+  "liquid_affinity": "non_liquids",
+  "exclusion_radius": 1,
+  "rotation_mode": "movement_aligned",
+  "has_physics": true,
+  "kill_on_contact": false,
+  "kill_when_still": false,
+  "hitbox_size": 0.35,
+  "particle_emitters": [
+  {
+    "chance": "rand() * 0.15 * (AGE == 1)",
+    "particle": "davidparticles:butterfly_blue",
+    "x": "gaussian() * 2.0",
+    "y": "abs(gaussian()) * 1.0 + 0.5",
+    "z": "gaussian() * 2.0"
+  },
+  {
+    "chance": "rand() * 0.15 * (AGE == 1)",
+    "particle": "davidparticles:butterfly_purple",
+    "x": "gaussian() * 2.0",
+    "y": "abs(gaussian()) * 1.0 + 0.5",
+    "z": "gaussian() * 2.0"
+  },
+  {
+    "chance": "rand() * 0.15 * (AGE == 1)",
+    "particle": "davidparticles:butterfly_red",
+    "x": "gaussian() * 2.0",
+    "y": "abs(gaussian()) * 1.0 + 0.5",
+    "z": "gaussian() * 2.0"
+  },
+  {
+    "chance": "rand() * 0.15 * (AGE == 1)",
+    "particle": "davidparticles:butterfly_yellow",
+    "x": "gaussian() * 2.0",
+    "y": "abs(gaussian()) * 1.0 + 0.5",
+    "z": "gaussian() * 2.0"
+  }
+]
+}

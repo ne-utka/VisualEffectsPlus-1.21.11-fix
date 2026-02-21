@@ -1,0 +1,12 @@
+{
+   "targets": ["minecraft:water"],
+   "particle_emitters": [
+     {
+       "particle": "water_splash:foam_check",
+       "chance": "(sqrt(DISTANCE_SQUARED) < 2)*(PLAYER_SPEED_SQUARED > 0.005)",
+       "x": "- 0.5 - POS_X + PLAYER_X", 
+       "z": "- 0.5 - POS_Z + PLAYER_Z", 
+       "y": "PLAYER_Y - POS_Y - 0.5"
+     }
+     ]
+}

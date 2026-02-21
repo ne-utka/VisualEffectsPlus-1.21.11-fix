@@ -1,0 +1,14 @@
+{
+   "targets": ["minecraft:air"],
+   "particle_emitters": [
+    {
+       "particle": "davidparticles:creaking_orange_glow",
+       "chance": "0.001",
+       "x": "25 * cos((10 * TIME))", 
+       "z": "25 * cos((10 * TIME))",
+       "y": "0",
+       "dy": "0.001 + rand()*0.001",
+       "biomes": ["minecraft:pale_garden"]
+     }    
+     ]
+}

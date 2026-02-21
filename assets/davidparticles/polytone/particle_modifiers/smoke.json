@@ -1,0 +1,6 @@
+{
+   "targets": ["minecraft:smoke"],
+    "red": "RED + 0.1",
+    "green": "GREEN + 0.1",
+    "blue": "BLUE + 0.1"
+}

@@ -1,0 +1,4 @@
+{
+   "targets": ["minecraft:poof"],
+    "size": "SIZE + 1"
+}

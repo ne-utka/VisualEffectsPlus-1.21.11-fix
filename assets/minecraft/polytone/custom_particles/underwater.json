@@ -1,0 +1,29 @@
+{
+        "initializer":{
+          "lifetime": "20",
+          "alpha": "0",
+          "size": "0"
+        },
+        "ticker": {
+        },
+        "has_physics": false,
+        "random_sprite": true,
+        "render_type": "invisible",
+        "offset": [0, 0, 0],
+        "particle_emitters": [
+     {
+       "particle": "davidparticles:underwater",
+       "chance": "(AGE == 1)*0.75*(sqrt(DISTANCE_SQUARED) > 3)",
+       "x": "0", 
+       "z": "0",
+       "y": "0"
+     },
+     {
+       "particle": "davidparticles:bubble",
+       "chance": "(AGE == 5)*0.02",
+       "x": "0", 
+       "z": "0",
+       "y": "-5"
+     }
+     ]
+}

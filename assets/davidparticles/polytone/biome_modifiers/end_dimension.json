@@ -1,0 +1,10 @@
+{
+	"targets": [
+		"minecraft:end_barrens",
+		"minecraft:end_midlands",
+		"minecraft:end_highlands",
+		"minecraft:small_end_islands"
+	],
+	"fog_radius": "1",
+ 	"fog_fade": "1.25*(7.5 + (RENDER_DISTANCE/64*2.5))"
+}

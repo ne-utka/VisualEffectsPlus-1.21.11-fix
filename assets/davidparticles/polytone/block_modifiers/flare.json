@@ -1,0 +1,12 @@
+{
+   "targets": ["minecraft:air"],
+   "particle_emitters": [
+     {
+       "particle": "davidparticles:aurora_bot",
+       "chance": "(sqrt(DISTANCE_SQUARED) < 1)*0",
+       "x": "0 - POS_X + PLAYER_X", 
+       "z": "0 - POS_Z + PLAYER_Z",
+       "y": "0 - POS_Y + PLAYER_Y"
+     }
+     ]
+}

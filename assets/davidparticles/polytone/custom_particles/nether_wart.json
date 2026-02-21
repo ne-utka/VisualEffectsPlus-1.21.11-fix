@@ -1,0 +1,22 @@
+{
+        "initializer":{
+          "lifetime": "160+rand()*10",
+          "alpha": "1",
+          "size": "0.1",
+          "red": "1",
+          "green": "1",
+          "blue": "1",
+          "dy": "(rand()*0.5)-10",
+          "has_physics": true,
+          "roll": "0.15"
+        },
+        "ticker": {
+            "dx": "(rand()/75 + (DX * 0.15))*0.1 + 0.001",
+            "dy": "0.01",
+            "dz": "(rand()/75 + (DZ * 0.15))*0.1 + 0.001",
+            "size": "0.1",
+            "roll": "ROLL*1.01"
+        },
+        "render_type": "translucent",
+        "liquid_affinity": "any"
+}

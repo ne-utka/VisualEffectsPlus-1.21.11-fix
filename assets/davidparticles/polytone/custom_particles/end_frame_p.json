@@ -1,0 +1,21 @@
+{
+        "initializer":{
+          "lifetime": "35",
+          "alpha": "1",
+          "size": "0.2 + rand()*0.05",
+          "custom": "rand()"
+        },
+        "ticker": {
+            "dx": "0",
+            "dy": "CUSTOM*0.025 * cos(0.5 * AGE) + CUSTOM*0.125",
+            "dz": "0",
+            "size": "max(0, SIZE-0.005)",
+            "alpha": "max(0, ALPHA-0.005)"
+        },
+        "liquid_affinity": "non_liquids",
+        "random_sprite": true,
+        "has_physics": false,
+        "render_type": "additive_translucent",
+        "exclusion_radius": 1,
+        "rotation_mode": "look_at_y"
+}

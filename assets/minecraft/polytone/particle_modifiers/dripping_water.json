@@ -1,0 +1,5 @@
+{
+   "targets": ["minecraft:dripping_dripstone_water", "minecraft:falling_dripstone_water", "minecraft:dripping_water", "minecraft:falling_water", "minecraft:splash"
+],
+    "colormap": "davidparticles:rain/rain_colormap"
+}

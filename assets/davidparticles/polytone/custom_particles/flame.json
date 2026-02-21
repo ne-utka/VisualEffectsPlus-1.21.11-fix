@@ -1,0 +1,27 @@
+{
+  "initializer": {
+    "lifetime": "40 + rand() * 20",
+    "alpha": "1",
+    "size": "0.035 + rand()*0.05",
+    "custom": "rand() * 6.28",
+    "red": "1",
+    "green": "0.894",
+    "blue": "0.298"
+  },
+  "ticker": {
+    "red": "(1 - min(1, (AGE / LIFETIME) * 2)) * 1.0 + min(1, (AGE / LIFETIME) * 2) *((1 - max(0, (AGE / LIFETIME - 0.5) * 2)) * 1.0 + max(0, (AGE / LIFETIME - 0.5) * 2) * 0.498)",
+    "green": "(1 - min(1, (AGE / LIFETIME) * 2)) * 0.894 + min(1, (AGE / LIFETIME) * 2) *((1 - max(0, (AGE / LIFETIME - 0.5) * 2)) * 0.498 + max(0, (AGE / LIFETIME - 0.5) * 2) * 0.0)",
+    "blue": "(1 - min(1, (AGE / LIFETIME) * 2)) * 0.298 + min(1, (AGE / LIFETIME) * 2) *((1 - max(0, (AGE / LIFETIME - 0.5) * 2)) * 0.090 + max(0, (AGE / LIFETIME - 0.5) * 2) * 0.0)",
+
+    "alpha": "pow(1 - max(0, (AGE / LIFETIME - 0.75) / 0.25), 2)",
+    "dx": "0.0005 * sin(AGE * 0.3 + CUSTOM * 4)",
+    "dy": "(0.01 + 0.0025 * sin(AGE * 0.2 + CUSTOM * 2)) + 0.02 * exp(-AGE * 0.35)",
+    "dz": "0.0005 * cos(AGE * 0.3 + CUSTOM * 4)"
+  },
+  "rotation_mode": "movement_aligned",
+  "liquid_affinity": "non_liquids",
+  "render_type": "translucent",
+  "has_physics": false,
+  "lit": true,
+  "light_level": 15
+}

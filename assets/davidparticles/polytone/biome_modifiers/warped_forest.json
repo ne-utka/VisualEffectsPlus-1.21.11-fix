@@ -1,0 +1,7 @@
+{
+	"targets": [
+		"minecraft:warped_forest"
+	],
+	"fog_radius": 1,
+ 	"fog_fade": "1"
+}

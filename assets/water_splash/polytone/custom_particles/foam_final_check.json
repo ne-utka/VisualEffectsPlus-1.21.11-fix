@@ -1,0 +1,38 @@
+{
+        "initializer":{
+          "lifetime": "12",
+          "alpha": "0",
+          "size": "0.4",
+          "custom": "rand()",
+          "hitbox_size": 0.25
+        },
+        "ticker": {
+          "dx": "0",
+          "dz": "0",
+          "dy": "0"
+        },
+        "liquid_affinity": "liquids",
+        "render_type": "translucent",
+        "has_physics": false,
+        "kill_on_contact": false,
+        "rotation_mode": "look_up",
+        "exclusion_radius": 0,
+        "kill_when_still": false,
+        "offset": [0, 0.6, 0],
+        "particle_emitters": [
+    {
+      "particle": "water_splash:bubbles",
+      "chance": "(PLAYER_SPEED_SQUARED > 0.015)*(AGE == 1)*0.2", 
+      "x": "gaussian()*0.25",
+      "z": "gaussian()*0.25",
+      "y": "gaussian()*0.25"
+    },
+    {
+      "particle": "water_splash:check_foam",
+      "chance": "(PLAYER_SPEED_SQUARED > 0.005)*(AGE == 1)*0", 
+      "x": "0",
+      "z": "0",
+      "y": "0"
+    }
+  ]
+}

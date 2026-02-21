@@ -1,0 +1,13 @@
+{
+   "targets": ["#minecraft:sculk_replaceable_world_gen"],
+   "particle_emitters": [
+     {
+       "particle": "davidparticles:water_bottom_check",
+       "chance": "0",
+       "x": "0.5", 
+       "z": "0.5",
+       "y": "1",
+  "spawn_location": "lower_corner"
+     }
+    ]
+}

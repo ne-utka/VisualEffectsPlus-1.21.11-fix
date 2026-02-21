@@ -1,0 +1,55 @@
+{
+        "initializer":{
+          "lifetime": "10",
+          "alpha": "0",
+          "size": "0",
+          "custom": "gaussian()"
+        },
+        "ticker": {
+        },
+        "random_sprite": true,
+        "liquid_affinity": "non_liquids",
+        "render_type": "translucent",
+        "has_physics": false,
+        "kill_on_contact": false,
+        "kill_when_still": false,
+        "offset": [0, 0, 0],
+        "exclusion_radius": 5,
+        "particle_emitters": [
+     {
+       "particle": "davidparticles:bird_2",
+       "chance": "AGE == 1",
+       "x": "0", 
+       "z": "1.5",
+       "y": "rand()*0.1"
+     },
+     {
+       "particle": "davidparticles:bird_2",
+       "chance": "AGE == 2",
+       "x": "1 + rand()*0.1", 
+       "z": "0",
+       "y": "rand()*0.1"
+     },
+     {
+       "particle": "davidparticles:bird_2",
+       "chance": "AGE == 1",
+       "x": "-1 - rand()*0.1", 
+       "z": "rand()*0.1 - 0.25",
+       "y": "rand()*0.1"
+     },
+     {
+       "particle": "davidparticles:bird_2",
+       "chance": "AGE == 3",
+       "x": "1.5 + rand()*0.1", 
+       "z": "-2 + rand()*0.1",
+       "y": "rand()*0.1"
+     },
+     {
+       "particle": "davidparticles:bird_2",
+       "chance": "AGE == 2",
+       "x": "-1.5 - rand()*0.1", 
+       "z": "-2 - rand()*0.1",
+       "y": "rand()*0.1"
+     }
+    ]
+}

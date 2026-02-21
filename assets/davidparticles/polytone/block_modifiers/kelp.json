@@ -1,0 +1,37 @@
+{
+   "targets": ["minecraft:seagrass",
+               "minecraft:tall_seagrass"
+              ],
+   "particle_emitters": [
+     {
+       "particle": "davidparticles:kelp",
+       "chance": "0.1",
+       "x": "gaussian()*0.5", 
+       "z": "gaussian()*0.5",
+       "y": "1",
+       "state_predicate": {
+       "predicate_type": "blockstate_match",
+       "block_state": 
+         {
+           "Name": "minecraft:tall_seagrass",
+           "Properties": {
+           "half": "upper"
+           }
+         }
+     },
+     "spawn_location": "lower_corner"
+     },
+     {
+       "particle": "davidparticles:kelp",
+       "chance": "0.1",
+       "x": "gaussian()*0.5", 
+       "z": "gaussian()*0.5",
+       "y": "1",
+       "state_predicate": {
+        "predicate_type": "block_match",
+        "block": "minecraft:seagrass"
+      },
+      "spawn_location": "lower_corner"
+     }
+     ]
+}

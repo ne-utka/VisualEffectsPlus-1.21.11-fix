@@ -1,0 +1,12 @@
+{
+    "default_color": "4848d3",
+    "x_axis": "biome_id",
+    "y_axis": "0",
+
+"biome_id_mapper": {
+		"minecraft:lush_caves": 1,
+		"minecraft:deep_dark": 2,
+		"minecraft:dripstone_caves": 3,
+		"texture_size": 4
+	}
+}

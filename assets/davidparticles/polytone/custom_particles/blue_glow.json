@@ -1,0 +1,19 @@
+{
+        "initializer":{
+          "lifetime": "40+rand()*15",
+          "alpha": "0.25",
+          "size": "0.55 + rand()*0.25",
+          "exclusion_radius": "2",
+          "red": "0.0078",
+          "green": "0.9254",
+          "blue": "1"
+        },
+        "ticker": {
+            "dy": "-0.001",
+            "alpha": "max(0, ALPHA-0.005)",
+            "size": "max(0, SIZE-0.0025)"
+        },
+        "liquid_affinity": "non_liquids",
+        "has_physics": false,
+        "render_type": "additive_translucent"
+}

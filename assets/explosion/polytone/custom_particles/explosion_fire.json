@@ -1,0 +1,21 @@
+{
+  "initializer":{
+    "lifetime": "15+rand()*10",
+    "alpha": "1",
+    "size": "0.45",
+    "roll": "rand()*20"
+  },
+  "ticker": {
+            "alpha": "max(0, ALPHA-0.0275)",
+            "dx": "0",
+            "dy": "0.05",
+            "dz": "0",
+            "size": "max(0,SIZE-0.002)",
+            "roll": "max(0, ROLL+0.01)"
+        },
+        "light_level": 15,
+        "lit": true,
+        "liquid_affinity": "any",
+        "exclusion_radius": 1,
+        "has_physics": false
+}

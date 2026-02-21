@@ -1,0 +1,4 @@
+{
+"x_axis": "(DAY_TIME / 24000) % 1",
+"y_axis": "RAIN"
+}

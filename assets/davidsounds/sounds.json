@@ -1,0 +1,11 @@
+{
+  "sound.wind.ambient": {
+    "sounds": [
+      {
+        "name": "davidsounds:wind_sound",
+        "stream": true
+      }
+    ],
+    "subtitle": "subtitles.davidsounds.wind.ambient"
+  }
+}

@@ -1,0 +1,27 @@
+{
+        "initializer":{
+          "lifetime": "14",
+          "alpha": "0.5",
+          "size": "0.15 + rand()*0.15",
+          "custom": "rand()",
+          "hitbox_size": 0.25,
+
+          "roll": "rand() * 2 * pi",
+
+          "red": "0.8470",
+          "green": "0.7843",
+          "blue": "0.6392"
+        },
+        "ticker": {
+          "dx": "DX*0.82",
+          "dz": "DZ*0.82",
+          "dy": "DY*0.52",
+          "roll": "CUSTOM*2*pi"
+        },
+        "liquid_affinity": "non_liquids",
+        "render_type": "translucent",
+        "has_physics": true,
+        "kill_on_contact": false,
+        "exclusion_radius": 0,
+        "kill_when_still": false
+}

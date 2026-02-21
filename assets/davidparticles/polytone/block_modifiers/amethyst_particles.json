@@ -1,0 +1,27 @@
+{
+   "targets": ["minecraft:small_amethyst_bud", "minecraft:medium_amethyst_bud", "minecraft:large_amethyst_bud", "minecraft:amethyst_cluster"],
+    "particle_emitters": [
+    { "particle": "davidparticles:amethyst_glow", "chance": "0.005", "x": "min(max(0.5 + (rand()-0.5)*0.03, 0.05), 0.95)", "y": "min(max(0.5 + (rand()-0.5)*0.03, 0.05), 0.95)", "z": "0.10" },
+    { "particle": "davidparticles:amethyst_glow", "chance": "0.005", "x": "min(max(0.5 + (rand()-0.5)*0.03, 0.05), 0.95)", "y": "min(max(0.5 + (rand()-0.5)*0.03, 0.05), 0.95)", "z": "0.90" },
+    { "particle": "davidparticles:amethyst_glow", "chance": "0.005", "x": "0.10", "y": "min(max(0.5 + (rand()-0.5)*0.03, 0.05), 0.95)", "z": "min(max(0.5 + (rand()-0.5)*0.03, 0.05), 0.95)" },
+    { "particle": "davidparticles:amethyst_glow", "chance": "0.005", "x": "0.90", "y": "min(max(0.5 + (rand()-0.5)*0.03, 0.05), 0.95)", "z": "min(max(0.5 + (rand()-0.5)*0.03, 0.05), 0.95)" },
+
+    { "particle": "davidparticles:amethyst_glow", "chance": "0.006", "x": "min(max(0.5 + (rand()-0.5)*0.035, 0.06), 0.94)", "y": "0.10", "z": "min(max(0.5 + (rand()-0.5)*0.035, 0.06), 0.94)" },
+    { "particle": "davidparticles:amethyst_glow", "chance": "0.006", "x": "min(max(0.5 + (rand()-0.5)*0.035, 0.06), 0.94)", "y": "0.90", "z": "min(max(0.5 + (rand()-0.5)*0.035, 0.06), 0.94)" },
+
+    { "particle": "davidparticles:amethyst_glow", "chance": "0.003", "x": "0.10", "y": "0.10", "z": "min(max(0.5 + (rand()-0.5)*0.02, 0.07), 0.93)" },
+    { "particle": "davidparticles:amethyst_glow", "chance": "0.003", "x": "0.90", "y": "0.10", "z": "min(max(0.5 + (rand()-0.5)*0.02, 0.07), 0.93)" },
+    { "particle": "davidparticles:amethyst_glow", "chance": "0.003", "x": "0.10", "y": "0.90", "z": "min(max(0.5 + (rand()-0.5)*0.02, 0.07), 0.93)" },
+    { "particle": "davidparticles:amethyst_glow", "chance": "0.003", "x": "0.90", "y": "0.90", "z": "min(max(0.5 + (rand()-0.5)*0.02, 0.07), 0.93)" },
+
+    { "particle": "davidparticles:amethyst_glow", "chance": "0.003", "x": "min(max(0.5 + (rand()-0.5)*0.02, 0.07), 0.93)", "y": "0.10", "z": "0.10" },
+    { "particle": "davidparticles:amethyst_glow", "chance": "0.003", "x": "min(max(0.5 + (rand()-0.5)*0.02, 0.07), 0.93)", "y": "0.10", "z": "0.90" },
+    { "particle": "davidparticles:amethyst_glow", "chance": "0.003", "x": "min(max(0.5 + (rand()-0.5)*0.02, 0.07), 0.93)", "y": "0.90", "z": "0.10" },
+    { "particle": "davidparticles:amethyst_glow", "chance": "0.003", "x": "min(max(0.5 + (rand()-0.5)*0.02, 0.07), 0.93)", "y": "0.90", "z": "0.90" },
+
+    { "particle": "davidparticles:amethyst_glow", "chance": "0.002", "x": "0.10", "y": "min(max(0.5 + (rand()-0.5)*0.02, 0.07), 0.93)", "z": "0.10" },
+    { "particle": "davidparticles:amethyst_glow", "chance": "0.002", "x": "0.90", "y": "min(max(0.5 + (rand()-0.5)*0.02, 0.07), 0.93)", "z": "0.10" },
+    { "particle": "davidparticles:amethyst_glow", "chance": "0.002", "x": "0.10", "y": "min(max(0.5 + (rand()-0.5)*0.02, 0.07), 0.93)", "z": "0.90" },
+    { "particle": "davidparticles:amethyst_glow", "chance": "0.002", "x": "0.90", "y": "min(max(0.5 + (rand()-0.5)*0.02, 0.07), 0.93)", "z": "0.90" }
+  ]
+}

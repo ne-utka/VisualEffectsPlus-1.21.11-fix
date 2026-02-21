@@ -1,0 +1,22 @@
+{
+        "initializer":{
+          "lifetime": "40",
+          "alpha": "1",
+          "size": "0.5",
+          "red": "1",
+          "green": "1",
+          "blue": "1"
+        },
+        "ticker": {
+            "dy": "0.015 * cos((0.25 * AGE)) + 0.05",
+            "dx": "(0.01 + RAIN*0.025) * sin((0.1 * AGE)) + RAIN*0.025 + RAIN*0.0075*(RAIN > 0.5)",
+            "dz": "(0.01 + RAIN*0.025) * cos((0.1 * AGE))",
+            "size": "max(0, SIZE-0.005)",
+            "red": "max(0, RED - 0.015)",
+            "green": "max(0, GREEN - 0.015)",
+            "blue": "max(0, BLUE - 0.015)"
+        },
+        "liquid_affinity": "any",
+        "has_physics": true,
+        "render_type": "translucent"
+}

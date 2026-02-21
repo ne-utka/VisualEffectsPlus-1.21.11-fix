@@ -1,0 +1,20 @@
+{
+	"targets": [
+		"minecraft:windswept_hills",
+		"minecraft:windswept_forest",
+		"minecraft:windswept_gravelly_hills",
+		"minecraft:stony_shore",
+		"minecraft:river",
+		"minecraft:beach",
+		"minecraft:birch_forest",
+		"minecraft:sunflower_plains",
+		"minecraft:flower_forest",
+		"minecraft:old_growth_birch_forest",
+		"minecraft:meadow",
+		"minecraft:plains",
+		"minecraft:forest",
+		"minecraft:stony_peaks"
+	],
+	"fog_radius": "1 - RAIN*0.5",
+ 	"fog_fade": "(1 + (RENDER_DISTANCE/64)*0.5 + RAIN*0.4)*(7.5 + (RENDER_DISTANCE/64*2.5))"
+}

@@ -1,0 +1,16 @@
+{
+        "initializer":{
+          "lifetime": "40+rand()*15",
+          "alpha": "1",
+          "size": "0.15 + rand()*0.05"
+        },
+        "ticker": {
+            "dy": "0.01",
+            "size": "max(0, SIZE-0.0025)"
+        },
+        "random_sprite": true,
+        "liquid_affinity": "non_liquids",
+        "has_physics": false,
+        "lit": true,
+        "light_level": 15
+}

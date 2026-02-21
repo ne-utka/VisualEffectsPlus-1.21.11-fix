@@ -1,0 +1,21 @@
+{
+   "targets": ["minecraft:lantern", "minecraft:soul_lantern"],
+   "particle_emitters": [
+     {
+       "particle": "davidparticles:flame_emitter",
+       "chance": "1",
+       "x": "0.5", 
+       "z": "0.5",
+       "y": "0.5",
+       "spawn_location": "lower_corner"
+     },
+     {
+       "particle": "davidparticles:block_glow_emitter",
+        "chance": "1",
+       "x": "0.5", 
+       "z": "0.5",
+       "y": "0.25",
+       "spawn_location": "lower_corner"
+     }
+     ]
+}

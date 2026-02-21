@@ -1,0 +1,28 @@
+{
+  "initializer": {
+    "lifetime": "24 + rand() * 4",
+    "size": "0.65 + rand()*0.1",
+    "alpha": "0",
+    "dx": "DX",
+    "dy": "DY",
+    "dz": "DZ",
+    "custom": "rand()"
+  },
+  "ticker": {
+    "alpha": "1 * sin(( (pi/LIFETIME) * AGE))",
+    "size": "(0.65 + CUSTOM*0.1) - (AGE / LIFETIME) * 0.25",
+    "dx": "DX",
+    "dy": "DY",
+    "dz": "DZ"
+  },
+  "render_type": "additive_translucent",
+  "rotation_mode": "movement_aligned",
+  "exclusion_radius": 1,
+  "random_sprite": false,
+  "has_physics": false,
+  "kill_on_contact": false,
+  "offset": [0, 0, 0],
+  "force_spawn": true,
+  "lit": true,
+  "light_level": 15
+}

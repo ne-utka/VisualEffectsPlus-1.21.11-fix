@@ -1,0 +1,17 @@
+{
+   "targets": ["minecraft:open_eyeblossom"],
+   "particle_emitters": [
+     {
+       "particle": "davidparticles:creaking_eyes",
+       "chance": "0.01",
+       "x": "rand()", 
+       "z": "rand()",
+       "y": "rand()*0.5 + 2.5",
+       "dx": "0",
+       "dy": "0.001 + rand()*0.001",
+       "dz": "0",
+       "biomes": ["minecraft:pale_garden"],
+       "spawn_location": "lower_corner"
+     }
+     ]
+}

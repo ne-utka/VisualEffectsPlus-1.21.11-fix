@@ -1,0 +1,31 @@
+{
+        "initializer":{
+          "lifetime": "12",
+          "alpha": "0",
+          "size": "0.4",
+          "custom": "rand()",
+          "hitbox_size": 0.25
+        },
+        "ticker": {
+          "dx": "0",
+          "dz": "0",
+          "dy": "0"
+        },
+        "liquid_affinity": "liquids",
+        "render_type": "translucent",
+        "has_physics": false,
+        "kill_on_contact": false,
+        "rotation_mode": "look_up",
+        "exclusion_radius": 0,
+        "kill_when_still": false,
+        "offset": [0, 0.5, 0],
+        "particle_emitters": [
+    {
+      "particle": "water_splash:foam_final_check",
+      "chance": "(AGE == 1)", 
+      "x": "0", 
+      "z": "0", 
+      "y": "rand()*0.005 + 0.5"
+    }
+  ]
+}

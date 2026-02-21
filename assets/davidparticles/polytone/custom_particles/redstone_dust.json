@@ -1,0 +1,22 @@
+{
+  "render_type": "opaque",
+  "rotation_mode": "look_at_xyz",
+  "has_physics": false,
+  "lit": true,
+  "light_level": 10,
+  "random_sprite": false,
+  "initializer": {
+    "lifetime": "20 + rand()*40",
+    "size": "0.08",
+    "red": "0.5 + rand()*0.5",
+    "green": "0",
+    "blue": "0",
+    "alpha": "1",
+    "custom": "rand()"
+  },
+  "ticker": {
+    "dx": "DX * 0.99",
+    "dy": "DY * 0.99",
+    "dz": "DZ * 0.99"
+  }
+}

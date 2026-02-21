@@ -1,0 +1,5 @@
+{
+   "targets": ["minecraft:crimson_spore"
+],
+    "size": "SIZE*2 + 2"
+}

@@ -1,0 +1,23 @@
+{
+        "initializer":{
+          "lifetime": "20",
+          "alpha": "0",
+          "size": "rand()*1 + 1",
+          "dx": "0",
+          "dy": "0",
+          "dz": "0",
+          "red": "1",
+          "green": "0.6235",
+          "blue": "0.0078"
+        },
+        "ticker": {
+          "alpha": "0.15 * sin((0.15 * AGE))",
+          "dx": "0",
+          "dy": "0",
+          "dz": "0"
+        },
+        "has_physics": false,
+        "render_type": "additive_translucent",
+        "offset": [0, 0.01, 0],
+        "rotation_mode": "look_up"
+}

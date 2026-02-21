@@ -1,0 +1,4 @@
+{
+    "x_axis":  "(DAY_TIME / 24000) % 1",
+    "y_axis":  "0.68 + RAIN*0.32 - min(max(1 - (SKY_LIGHT / 15), 0), 1)*0.35"
+}

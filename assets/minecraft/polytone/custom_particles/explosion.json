@@ -1,0 +1,36 @@
+{
+        "initializer":{
+          "alpha": "0",
+          "lifetime": "2",
+          "size": "0"
+        },
+        "ticker": {
+        },
+        "liquid_affinity": "any",
+        "has_physics": false,
+        "offset": [0, 0, 0],
+        "particle_emitters": [
+     {
+       "particle": "explosion:explosion",
+       "chance": "AGE == 1",
+       "x": "0", 
+       "z": "0",
+       "y": "0",
+       "state_predicate": {
+        "predicate_type": "block_match",
+        "block": "minecraft:air"
+      }
+     },
+     {
+       "particle": "explosion:underwater_explosion",
+       "chance": "AGE == 1",
+       "x": "0", 
+       "z": "0",
+       "y": "0",
+       "state_predicate": {
+        "predicate_type": "block_match",
+        "block": "minecraft:water"
+      }
+     }
+  ]
+}

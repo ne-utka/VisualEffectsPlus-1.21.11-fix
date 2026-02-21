@@ -1,0 +1,29 @@
+{
+        "initializer":{
+          "lifetime": "45",
+          "alpha": "1",
+          "size": "0.09",
+          "red": "1",
+          "green": "1",
+          "blue": "1"
+        },
+        "ticker": {
+            "size": "SIZE"
+        },
+        "liquid_affinity": "non_liquids",
+        "has_physics": false,
+        "lit": true,
+        "light_level": 15,
+        "render_type": "translucent",
+        "offset": [0.0, 0.05, 0],
+        "exclusion_radius": 1,
+        "particle_emitters": [
+     {
+       "particle": "davidparticles:flame",
+       "chance": "0.05",
+       "x": "gaussian()*0.1", 
+       "z": "gaussian()*0.1",
+       "y": "0"
+     }
+  ]
+}

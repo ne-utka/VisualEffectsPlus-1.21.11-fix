@@ -1,0 +1,44 @@
+{
+        "initializer":{
+          "lifetime": "7",
+          "alpha": "0",
+          "size": "0",
+          "custom": "gaussian()"
+        },
+        "ticker": {
+        },
+        "liquid_affinity": "non_liquids",
+        "render_type": "opaque",
+        "has_physics": false,
+        "kill_on_contact": false,
+        "kill_when_still": false,
+        "exclusion_radius": 1,
+        "offset": [0, 0, 0],
+        "particle_emitters": [
+    {
+      "particle": "davidparticles:flame",
+      "chance": "0.1", 
+      "x": "sin(AGE)*0.3",
+      "z": "cos(AGE)*0.3",
+      "y": "gaussian()*0.05 - 0.35",
+      "state_predicate": {
+        "predicate_type": "block_match",
+        "block": "minecraft:lantern"
+      }
+    },
+
+
+
+    {
+      "particle": "davidparticles:soul_flame",
+      "chance": "0.1", 
+      "x": "sin(AGE)*0.3",
+      "z": "cos(AGE)*0.3",
+      "y": "gaussian()*0.05 - 0.35",
+      "state_predicate": {
+        "predicate_type": "block_match",
+        "block": "minecraft:soul_lantern"
+      }
+    }
+  ]
+}

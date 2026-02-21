@@ -1,0 +1,9 @@
+{
+   "targets": ["minecraft:large_smoke"
+],
+    "red": "0.35",
+    "green": "0.35",
+    "blue": "0.35",
+    "life": "LIFETIME*0.5",
+    "size": "SIZE + rand()+0.25"
+}

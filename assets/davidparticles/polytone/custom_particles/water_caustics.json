@@ -1,0 +1,23 @@
+{
+        "initializer":{
+          "lifetime": "240",
+          "alpha": "0",
+          "size": "5",
+          "hitbox_size": 20,
+          "roll": "rand() * 2 * pi"
+        },
+        "ticker": {
+          "roll": "ROLL",
+          "alpha": "min(max((sqrt(DISTANCE_SQUARED) - 5) / 10, 0), 1) * max(0, min(1, (35 - sqrt(DISTANCE_SQUARED)) / 5)) * (0.15 + 0.015 * sin(0.2 * AGE)) * sin((pi / LIFETIME) * AGE)",
+          "remove_condition": "sqrt(DISTANCE_SQUARED) > 35"
+        },
+        "liquid_affinity": "liquids",
+        "has_physics": true,
+        "rotation_mode": "look_up",
+        "exclusion_radius": 10,
+        "lit": true,
+        "light_level": 5,
+        "render_type": "additive_translucent",
+        "offset": [0, 0, 0],
+        "colormap": "davidparticles:water/colormap_water"
+}

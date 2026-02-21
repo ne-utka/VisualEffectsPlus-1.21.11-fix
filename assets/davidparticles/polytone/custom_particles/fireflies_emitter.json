@@ -1,0 +1,62 @@
+{
+        "initializer":{
+          "lifetime": "20",
+          "alpha": "0",
+          "size": "0",
+          "custom": "gaussian()"
+        },
+        "ticker": {
+        },
+        "random_sprite": true,
+        "liquid_affinity": "non_liquids",
+        "render_type": "translucent",
+        "has_physics": false,
+        "kill_on_contact": false,
+        "kill_when_still": false,
+        "offset": [0, 0, 0],
+        "exclusion_radius": 10,
+        "particle_emitters": [
+     {
+       "particle": "davidparticles:firefly",
+       "chance": "AGE == 2",
+       "x": "CUSTOM*0.25 - rand()", 
+       "z": "CUSTOM*0.25 + rand()",
+       "y": "CUSTOM*0.25 - rand()"
+     },
+     {
+       "particle": "davidparticles:firefly",
+       "chance": "AGE == 6",
+       "x": "CUSTOM*0.5 + rand()", 
+       "z": "CUSTOM*0.5 - rand()",
+       "y": "CUSTOM*0.5 + rand()"
+     },
+     {
+       "particle": "davidparticles:firefly",
+       "chance": "AGE == 12",
+       "x": "CUSTOM*0.75 + rand()", 
+       "z": "CUSTOM*0.75 + rand()",
+       "y": "CUSTOM*0.75 - rand()"
+     },
+     {
+       "particle": "davidparticles:firefly",
+       "chance": "AGE == 16",
+       "x": "CUSTOM*0", 
+       "z": "CUSTOM*0",
+       "y": "CUSTOM*0"
+     },
+     {
+       "particle": "davidparticles:firefly",
+       "chance": "AGE == LIFETIME",
+       "x": "CUSTOM*1 - rand()", 
+       "z": "CUSTOM*1 + rand()",
+       "y": "CUSTOM*1 + rand()"
+     },
+     {
+       "particle": "davidparticles:firefly_glow",
+       "chance": "AGE == 1",
+       "x": "0", 
+       "z": "0",
+       "y": "0"
+     }
+    ]
+}

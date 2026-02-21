@@ -1,0 +1,24 @@
+{
+   "targets": ["minecraft:grass_block"],
+   "particle_emitters": [
+     {
+       "particle": "davidparticles:fireflies_emitter",
+       "chance": "(DAY_TIME > 13000) * (DAY_TIME < 23500)*0.00025 - RAIN*2 - (PLAYER_Y < 47)",
+       "x": "120 * cos((25 * TIME))", 
+       "z": "120 * cos((25 * TIME))",
+       "y": "3",
+       "biomes": ["minecraft:forest",
+                  "minecraft:flower_forest",
+                  "minecraft:birch_forest",
+                  "minecraft:old_growth_birch_forest",
+                  "minecraft:cherry_grove",
+                  "minecraft:dark_forest",
+                  "minecraft:jungle",
+                  "minecraft:sparse_jungle",
+                  "minecraft:bamboo_jungle",
+                  "minecraft:plains"
+                  ],
+       "spawn_location": "lower_corner"
+     }
+     ]
+}

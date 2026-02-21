@@ -1,0 +1,5 @@
+{
+   "targets": ["leaves:oak_leaves", "leaves:oak_leaves_water", "break_particles:oak_leaves"
+],
+    "colormap": "davidparticles:grass_and_foliage/colormap_foliage_oak"
+}

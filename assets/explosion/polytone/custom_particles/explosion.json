@@ -1,0 +1,62 @@
+{
+        "initializer":{
+          "alpha": "1",
+          "lifetime": "8",
+          "size": "3",
+          "dy": "5"
+        },
+        "ticker": {
+            "dx": "0",
+            "dy": "0.001",
+            "dz": "0",
+            "size": "max(0, SIZE+0.1)"
+        },
+        "liquid_affinity": "any",
+        "has_physics": false,
+        "light_level": 15,
+        "lit": true,
+        "offset": [0, 0, 0],
+        "exclusion_radius": 100,
+        "particle_emitters": [
+     {
+       "particle": "explosion:explosion_glow",
+       "chance": "0.5",
+       "x": "0", 
+       "z": "0",
+       "y": "0.25",
+       "dx": "0",
+       "dy": "0.001 + rand()*0.001",
+       "dz": "0"
+     },
+     {
+       "particle": "explosion:explosion_smoke",
+       "chance": "1",
+       "x": "rand()*1", 
+       "z": "rand()*1",
+       "y": "rand()*2-0.5",
+       "dx": "0",
+       "dy": "0.001 + rand()*0.005",
+       "dz": "0"
+     },
+     {
+       "particle": "explosion:explosion_fire",
+       "chance": "1",
+       "x": "gaussian()*0.25", 
+       "z": "gaussian()*0.25",
+       "y": "rand()",
+       "dx": "0",
+       "dy": "0.001 + rand()*0.005",
+       "dz": "0"
+     },
+     {
+       "particle": "minecraft:large_smoke",
+       "chance": "1",
+       "x": "gaussian()*0.1", 
+       "z": "gaussian()*0.1",
+       "y": "rand()",
+       "dx": "0",
+       "dy": "0.001 + rand()*0.005",
+       "dz": "0"
+     }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+   "targets": ["minecraft:air"],
+   "particle_emitters": [
+    {
+       "particle": "davidparticles:snowflake",
+	   "x": "rand() - 0.5", 
+       "z": "rand() - 0.5",
+       "y": "rand() - 0.5",
+       "chance": "( (SKY_LIGHT == 15)*0.0005 + (RAIN > 0.25)*(1/5)*(SKY_LIGHT == 15) + (RAIN > 0.5)*(0.05)*(SKY_LIGHT == 15) )*(sqrt(DISTANCE_SQUARED)>4) * ( POS_Y > (PLAYER_Y+1))",
+       "biomes": ["minecraft:snowy_plains",
+		              "minecraft:snowy_slopes",
+		              "minecraft:snowy_beach",
+	              	"minecraft:snowy_taiga",
+		              "minecraft:frozen_river",
+		              "minecraft:frozen_ocean",
+	              	"minecraft:frozen_peaks",
+	              	"minecraft:deep_frozen_ocean",
+	              	"minecraft:ice_spikes",
+		              "minecraft:jagged_peaks",
+		              "minecraft:grove"]
+     },
+     {
+       "particle": "davidparticles:drizzle",
+       "chance": "(SKY_LIGHT == 15)*(RAIN == 0.5)*1/20 + (SKY_LIGHT == 15)*(RAIN > 0.5)*(POS_X < PLAYER_X)*1/20",
+       "x": "0", 
+       "z": "0",
+       "y": "1 + (RAIN == 0.5)*3",
+       "dy": "0.001 + rand()*0.001",
+       "biomes": ["minecraft:snowy_plains",
+		              "minecraft:snowy_slopes",
+		              "minecraft:snowy_beach",
+	              	"minecraft:snowy_taiga",
+		              "minecraft:frozen_river",
+		              "minecraft:frozen_ocean",
+	              	"minecraft:frozen_peaks",
+	              	"minecraft:deep_frozen_ocean",
+	              	"minecraft:ice_spikes",
+		              "minecraft:jagged_peaks",
+		              "minecraft:grove"
+  ]
+     }
+    ] 
+}

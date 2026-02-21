@@ -1,0 +1,4 @@
+{
+   "targets": ["minecraft:water", "minecraft:flowing_water"],
+   "colormap": "davidparticles:water/colormap_water"
+}

@@ -1,0 +1,22 @@
+{
+  "initializer": {
+    "lifetime": "25 + rand()*20",
+    "size": "0.1375 + rand() * 0.0375",
+    "alpha": "1",
+    "custom": "rand()", 
+    "hitbox_size": 0.08
+  },
+  "ticker": {
+    "alpha": "1 * min(max((LIFETIME-AGE)/4,0),1)",
+    "dx": "DX * 0.88",
+    "dz": "DZ * 0.88",
+    "dy": "DY * 0.92 - 0.01",
+    "roll": "ROLL + (0.15 + 3*sqrt(DX*DX + DY*DY + DZ*DZ)) * min(max((LIFETIME - 8 - AGE) / (LIFETIME - 8), 0), 1)"
+  },
+  "has_physics": true,
+  "kill_on_contact": false,
+  "kill_when_still": false,
+  "random_sprite": true,
+  "render_type": "translucent",
+  "colormap": "davidparticles:colormap_foliage_acacia"
+}

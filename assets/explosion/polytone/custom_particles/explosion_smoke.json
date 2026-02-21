@@ -1,0 +1,20 @@
+{
+  "initializer":{
+    "lifetime": "15+rand()*10",
+    "alpha": "1",
+    "size": "0.45",
+    "roll": "gaussian()*rand()"
+  },
+  "ticker": {
+            "alpha": "max(0, ALPHA-0.02)",
+            "dx": "0",
+            "dy": "0.01 + rand()*0.001",
+            "dz": "0",
+            "size": "max(0,SIZE-0.002)",
+            "roll": "max(0, ROLL+0.01)"
+        },
+        "render_type": "translucent",
+        "liquid_affinity": "any",
+        "exclusion_radius": 0.9,
+        "has_physics": false
+}

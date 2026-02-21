@@ -1,0 +1,139 @@
+{
+        "initializer":{
+          "lifetime": "10",
+          "alpha": "1",
+          "size": "0.5",
+          "hitbox_size": 0.25
+        },
+        "ticker": {
+        },
+        "liquid_affinity": "non_liquids",
+        "render_type": "invisible",
+        "rotation_mode": "look_up",
+        "has_physics": true,
+        "kill_on_contact": false,
+        "exclusion_radius": 2,
+        "kill_when_still": false,
+         "particle_emitters": [
+   {
+      "particle": "davidparticles:dust_check2_2",
+      "chance": "(AGE == 1)*0.35",
+      "x": "0.25 * cos(2*pi*0.000000)",
+      "y": "0",
+      "z": "0.25 * sin(2*pi*0.000000)",
+      "dx": "(0.08 + 0.04*abs(sin(12.9898))) * cos(2*pi*0.000000)",
+      "dy": "0.12",
+      "dz": "(0.08 + 0.04*abs(sin(78.233))) * sin(2*pi*0.000000)"
+    },
+    {
+      "particle": "davidparticles:dust_check2_2",
+      "chance": "(AGE == 1)*0.1",
+      "x": "0.25 * cos(2*pi*0.083333)",
+      "y": "0",
+      "z": "0.25 * sin(2*pi*0.083333)",
+      "dx": "(0.08 + 0.04*abs(sin(19.873))) * cos(2*pi*0.083333)",
+      "dy": "0.12",
+      "dz": "(0.08 + 0.04*abs(sin(11.37))) * sin(2*pi*0.083333)"
+    },
+    {
+      "particle": "davidparticles:dust_check2_2",
+      "chance": "(AGE == 1)*0.35",
+      "x": "0.25 * cos(2*pi*0.166667)",
+      "y": "0",
+      "z": "0.25 * sin(2*pi*0.166667)",
+      "dx": "(0.08 + 0.04*abs(sin(23.71))) * cos(2*pi*0.166667)",
+      "dy": "0.12",
+      "dz": "(0.08 + 0.04*abs(sin(8.31))) * sin(2*pi*0.166667)"
+    },
+    {
+      "particle": "davidparticles:dust_check2_2",
+      "chance": "(AGE == 1)*0.1",
+      "x": "0.25 * cos(2*pi*0.250000)",
+      "y": "0",
+      "z": "0.25 * sin(2*pi*0.250000)",
+      "dx": "(0.08 + 0.04*abs(sin(7.123))) * cos(2*pi*0.250000)",
+      "dy": "0.12",
+      "dz": "(0.08 + 0.04*abs(sin(3.14))) * sin(2*pi*0.250000)"
+    },
+    {
+      "particle": "davidparticles:dust_check2_2",
+      "chance": "(AGE == 1)*0.35",
+      "x": "0.25 * cos(2*pi*0.333333)",
+      "y": "0",
+      "z": "0.25 * sin(2*pi*0.333333)",
+      "dx": "(0.08 + 0.04*abs(sin(11.11))) * cos(2*pi*0.333333)",
+      "dy": "0.12",
+      "dz": "(0.08 + 0.04*abs(sin(7.77))) * sin(2*pi*0.333333)"
+    },
+    {
+      "particle": "davidparticles:dust_check2_2",
+      "chance": "(AGE == 1)*0.1",
+      "x": "0.25 * cos(2*pi*0.416667)",
+      "y": "0",
+      "z": "0.25 * sin(2*pi*0.416667)",
+      "dx": "(0.08 + 0.04*abs(sin(17.77))) * cos(2*pi*0.416667)",
+      "dy": "0.12",
+      "dz": "(0.08 + 0.04*abs(sin(22.22))) * sin(2*pi*0.416667)"
+    },
+    {
+      "particle": "davidparticles:dust_check2_2",
+      "chance": "(AGE == 1)*0.35",
+      "x": "0.25 * cos(2*pi*0.500000)",
+      "y": "0",
+      "z": "0.25 * sin(2*pi*0.500000)",
+      "dx": "(0.08 + 0.04*abs(sin(27.27))) * cos(2*pi*0.500000)",
+      "dy": "0.12",
+      "dz": "(0.08 + 0.04*abs(sin(66.66))) * sin(2*pi*0.500000)"
+    },
+    {
+      "particle": "davidparticles:dust_check2_2",
+      "chance": "(AGE == 1)*0.1",
+      "x": "0.25 * cos(2*pi*0.583333)",
+      "y": "0",
+      "z": "0.25 * sin(2*pi*0.583333)",
+      "dx": "(0.08 + 0.04*abs(sin(33.33))) * cos(2*pi*0.583333)",
+      "dy": "0.12",
+      "dz": "(0.08 + 0.04*abs(sin(55.55))) * sin(2*pi*0.583333)"
+    },
+    {
+      "particle": "davidparticles:dust_check2_2",
+      "chance": "(AGE == 1)*0.35",
+      "x": "0.25 * cos(2*pi*0.666667)",
+      "y": "0",
+      "z": "0.25 * sin(2*pi*0.666667)",
+      "dx": "(0.08 + 0.04*abs(sin(91.91))) * cos(2*pi*0.666667)",
+      "dy": "0.12",
+      "dz": "(0.08 + 0.04*abs(sin(77.77))) * sin(2*pi*0.666667)"
+    },
+    {
+      "particle": "davidparticles:dust_check2_2",
+      "chance": "(AGE == 1)*0.1",
+      "x": "0.25 * cos(2*pi*0.750000)",
+      "y": "0",
+      "z": "0.25 * sin(2*pi*0.750000)",
+      "dx": "(0.08 + 0.04*abs(sin(61.61))) * cos(2*pi*0.750000)",
+      "dy": "0.12",
+      "dz": "(0.08 + 0.04*abs(sin(33.33))) * sin(2*pi*0.750000)"
+    },
+    {
+      "particle": "davidparticles:dust_check2_2",
+      "chance": "(AGE == 1)*0.35",
+      "x": "0.25 * cos(2*pi*0.833333)",
+      "y": "0",
+      "z": "0.25 * sin(2*pi*0.833333)",
+      "dx": "(0.08 + 0.04*abs(sin(13.13))) * cos(2*pi*0.833333)",
+      "dy": "0.12",
+      "dz": "(0.08 + 0.04*abs(sin(77.77))) * sin(2*pi*0.833333)"
+    },
+    {
+      "particle": "davidparticles:dust_check2_2",
+      "chance": "(AGE == 1)*0.1",
+      "x": "0.25 * cos(2*pi*0.916667)",
+      "y": "0",
+      "z": "0.25 * sin(2*pi*0.916667)",
+      "dx": "(0.08 + 0.04*abs(sin(73.73))) * cos(2*pi*0.916667)",
+      "dy": "0.12",
+      "dz": "(0.08 + 0.04*abs(sin(24.24))) * sin(2*pi*0.916667)"
+    }
+  ]
+}

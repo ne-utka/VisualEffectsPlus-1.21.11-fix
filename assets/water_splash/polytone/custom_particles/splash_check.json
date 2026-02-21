@@ -1,0 +1,33 @@
+{
+        "initializer":{
+          "lifetime": "12",
+          "alpha": "0",
+          "size": "0.4",
+          "custom": "rand()",
+          "hitbox_size": 0.25
+        },
+        "ticker": {
+          "dx": "0",
+          "dz": "0",
+          "dy": "0"
+        },
+        "liquid_affinity": "liquids",
+        "render_type": "translucent",
+        "has_physics": false,
+        "kill_on_contact": false,
+        "exclusion_radius": 5,
+        "kill_when_still": false,
+        "particle_emitters": [
+    {
+      "particle": "water_splash:water_splash",
+      "chance": "(sqrt(DISTANCE_SQUARED) < 1.25)*(AGE == 1)", 
+      "x": "0",
+      "z": "0",
+      "y": "1",
+      "state_predicate": {
+        "predicate_type": "block_match",
+        "block": "minecraft:water"
+      }
+    }
+  ]
+}

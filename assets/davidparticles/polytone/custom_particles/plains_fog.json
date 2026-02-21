@@ -1,0 +1,109 @@
+{
+  "initializer":{
+    "lifetime": "100 + rand()*80",
+    "size": "4",
+    "alpha": "0",
+    "roll": "rand() * 2 * pi",
+    "custom": "rand()"
+  },
+      "ticker": {
+        "alpha": "(0.35 + RAIN) * sin((pi / LIFETIME) * AGE) * min(max((sqrt(DISTANCE_SQUARED) - 5) / 10, 0), 1) * max(0, min(1, (30 - sqrt(DISTANCE_SQUARED)) / 5))",
+        "roll": "(CUSTOM*2*pi) + sin(AGE*0.025 + CUSTOM*2*pi) * 0.25",
+        "dx": "0",
+        "dy": "sin(AGE*0.04 + CUSTOM*2*pi) * 0.01",
+        "dz": "0",
+        "remove_condition": "sqrt(DISTANCE_SQUARED) > 30"
+        },
+  "render_type": "additive_translucent",
+  "liquid_affinity": "non_liquids",
+  "exclusion_radius": 3,
+  "has_physics": true,
+  "kill_when_still": false,
+  "lit": true,
+  "light_level": 1,
+  "offset": [0, 0, 0],
+   "colormap": {
+
+        "biomes": {
+            "minecraft:ocean": "davidparticles:biomes/blue_fog",
+            "minecraft:deep_ocean": "davidparticles:biomes/blue_fog",
+
+            "minecraft:warm_ocean": "davidparticles:biomes/blue_fog",
+            "minecraft:lukewarm_ocean": "davidparticles:biomes/blue_fog",
+            "minecraft:deep_lukewarm_ocean": "davidparticles:biomes/blue_fog",
+
+            "minecraft:cold_ocean": "davidparticles:biomes/blue_fog",
+            "minecraft:deep_cold_ocean": "davidparticles:biomes/blue_fog",
+            "minecraft:frozen_ocean": "davidparticles:biomes/snowy_fog",
+            "minecraft:deep_frozen_ocean": "davidparticles:biomes/snowy_fog",
+            
+            "minecraft:mushroom_fields": "davidparticles:biomes/blue_fog",
+
+            "minecraft:jagged_peaks": "davidparticles:biomes/snowy_fog",
+            "minecraft:frozen_peaks": "davidparticles:biomes/snowy_fog",
+
+            "minecraft:stony_peaks": "davidparticles:biomes/blue_fog",
+            "minecraft:meadow": "davidparticles:biomes/blue_fog",
+
+            "minecraft:cherry_grove": "davidparticles:biomes/cherry_fog",
+
+            "minecraft:grove": "davidparticles:biomes/snowy_fog",
+            "minecraft:snowy_slopes": "davidparticles:biomes/snowy_fog",
+
+            "minecraft:windswept_hills": "davidparticles:biomes/blue_fog",
+            "minecraft:windswept_gravelly_hills": "davidparticles:biomes/blue_fog",
+            "minecraft:windswept_forest": "davidparticles:biomes/blue_fog",
+
+            "minecraft:forest": "davidparticles:biomes/blue_fog",
+            "minecraft:flower_forest": "davidparticles:biomes/blue_fog",
+            "minecraft:birch_forest": "davidparticles:biomes/blue_fog",
+            "minecraft:old_growth_birch_forest": "davidparticles:biomes/blue_fog",
+
+            "minecraft:dark_forest": "davidparticles:biomes/blue_fog",
+
+            "minecraft:taiga": "davidparticles:biomes/taiga_fog",
+            "minecraft:old_growth_pine_taiga": "davidparticles:biomes/taiga_fog",
+            "minecraft:old_growth_spruce_taiga": "davidparticles:biomes/taiga_fog",
+
+            "minecraft:snowy_taiga": "davidparticles:biomes/snowy_fog",
+
+            "minecraft:pale_garden": "davidparticles:biomes/pale_garden_fog",
+
+            "minecraft:jungle": "davidparticles:biomes/jungle_fog",
+            "minecraft:sparse_jungle": "davidparticles:biomes/jungle_fog",
+            "minecraft:bamboo_jungle": "davidparticles:biomes/jungle_fog",
+
+            "minecraft:river": "davidparticles:biomes/blue_fog",
+            "minecraft:frozen_river": "davidparticles:biomes/snowy_fog",
+            "minecraft:beach": "davidparticles:biomes/blue_fog",
+            "minecraft:snowy_beach": "davidparticles:biomes/snowy_fog",
+            "minecraft:stony_shore": "davidparticles:biomes/blue_fog",
+
+            "minecraft:swamp": "davidparticles:biomes/swamp_fog",
+            "minecraft:mangrove_swamp": "davidparticles:biomes/swamp_fog",
+
+            "minecraft:plains": "davidparticles:biomes/blue_fog",
+            "minecraft:sunflower_plains": "davidparticles:biomes/blue_fog",
+
+            "minecraft:snowy_plains": "davidparticles:biomes/snowy_fog",
+            "minecraft:ice_spikes": "davidparticles:biomes/snowy_fog",
+
+            "minecraft:desert": "davidparticles:biomes/desert_fog",
+            "minecraft:savanna": "davidparticles:biomes/savanna_fog",
+            "minecraft:savanna_plateau": "davidparticles:biomes/savanna_fog",
+            "minecraft:windswept_savanna": "davidparticles:biomes/savanna_fog",
+            "minecraft:badlands": "davidparticles:biomes/badlands_fog",
+            "minecraft:wooded_badlands": "davidparticles:biomes/badlands_fog",
+            "minecraft:eroded_badlands": "davidparticles:biomes/badlands_fog",
+
+            "minecraft:deep_dark": "davidparticles:biomes/cave_particle_fog",
+            "minecraft:dripstone_caves": "davidparticles:biomes/cave_particle_fog",
+            "minecraft:lush_caves": "davidparticles:biomes/cave_particle_fog"
+
+            
+
+        },
+        "default": "davidparticles:biomes/blue_fog"
+
+    }
+}

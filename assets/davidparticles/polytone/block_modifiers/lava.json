@@ -1,0 +1,89 @@
+{
+   "targets": ["minecraft:lava"],
+   "particle_emitters": [
+     {
+       "particle": "davidparticles:lava_pattern",
+       "chance": "0.45",
+       "x": "0", 
+       "z": "0",
+       "y": "1",
+       "state_predicate": {
+       "predicate_type": "blockstate_match",
+       "block_state": 
+         {
+           "Name": "minecraft:lava",
+           "Properties": {
+           "falling": "false"
+           }
+         }
+     },
+     "biomes": ["minecraft:nether_wastes", "minecraft:soul_sand_valley", "minecraft:crimson_forest", "minecraft:warped_forest"],
+     "spawn_location": "lower_corner"
+     },
+     {
+       "particle": "davidparticles:lava_pattern_small",
+       "chance": "0.05",
+       "x": "0", 
+       "z": "0",
+       "y": "1",
+       "state_predicate": {
+       "predicate_type": "blockstate_match",
+       "block_state": 
+         {
+           "Name": "minecraft:lava",
+           "Properties": {
+           "falling": "false"
+           }
+         }
+     },
+     "biomes": ["minecraft:nether_wastes", "minecraft:soul_sand_valley", "minecraft:crimson_forest", "minecraft:warped_forest"],
+     "spawn_location": "lower_corner"
+     },
+     {
+       "particle": "davidparticles:lava_fog",
+       "chance": "0.15",
+       "x": "0", 
+       "z": "0",
+       "y": "2",
+       "state_predicate": {
+       "predicate_type": "blockstate_match",
+       "block_state": 
+         {
+           "Name": "minecraft:lava",
+           "Properties": {
+           "falling": "false"
+           }
+         }
+     },
+     "biomes": ["minecraft:nether_wastes", "minecraft:basalt_deltas", "minecraft:soul_sand_valley", "minecraft:crimson_forest", "minecraft:warped_forest"],
+     "spawn_location": "lower_corner"
+     },
+     {
+       "particle": "davidparticles:lava_flames",
+       "chance": "0.1",
+       "x": "0", 
+       "z": "0",
+       "y": "1",
+       "state_predicate": {
+       "predicate_type": "blockstate_match",
+       "block_state": 
+         {
+           "Name": "minecraft:lava",
+           "Properties": {
+           "falling": "false"
+           }
+         }
+     },
+     "biomes": ["minecraft:nether_wastes", "minecraft:basalt_deltas", "minecraft:soul_sand_valley", "minecraft:crimson_forest", "minecraft:warped_forest"],
+     "spawn_location": "lower_corner"
+     },
+     {
+       "particle": "davidparticles:lava_bubble_big",
+       "chance": "0.0001 - 1",
+       "x": "rand() + cos(TIME)+0.5", 
+       "z": "rand() + cos(TIME)+0.5",
+       "y": "1",
+       "spawn_location": "lower_corner"
+     }
+     ]
+}

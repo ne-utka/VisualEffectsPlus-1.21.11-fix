@@ -1,0 +1,7 @@
+{
+	"targets": [
+		"minecraft:dripstone_caves"
+	],
+	"fog_radius": 0.35,
+ 	"fog_fade": "1.25*7.5"
+}

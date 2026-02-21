@@ -1,0 +1,7 @@
+{
+	"targets": [
+		"minecraft:mushroom_fields"
+	],
+	"fog_radius": "1 - RAIN*0.75",
+ 	"fog_fade": "(1.1 + (RENDER_DISTANCE/64)*0.5 + RAIN*0.25)*(7.5 + (RENDER_DISTANCE/64*2.5))"
+}

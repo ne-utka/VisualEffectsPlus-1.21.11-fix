@@ -1,0 +1,24 @@
+{
+        "initializer":{
+          "lifetime": "52 + rand()*32",
+          "alpha": "0.25 + rand()*0.75",
+          "size": "0",
+          "custom": "rand()"
+        },
+        "ticker": {
+            "dx": "(CUSTOM*0.15) * sin((0.01 * AGE)) + (CUSTOM*0.2 + 0.3) + RAIN*0.3",
+            "dy": "(CUSTOM*0.05) * sin(((0.2 + CUSTOM*0.15) * AGE))",
+            "dz": "((CUSTOM*0.1) * cos((0.01 * AGE)))*0.1",
+            "size": "(CUSTOM*0.1 + 0.1) * min(max(AGE / 5, 0), 1) * min(max((LIFETIME - AGE) / 5, 0), 1)",
+            "roll": "(CUSTOM*0.1) * cos((0.1 * AGE))",
+            "remove_condition": "(SKY_LIGHT < 15)"
+        },
+        "random_sprite": true,
+        "render_type": "translucent",
+        "liquid_affinity": "non_liquids",
+        "has_physics": true,
+        "kill_on_contact": true,
+        "kill_when_still": false,
+        "offset": [0, 0, 0],
+        "colormap": "davidparticles:colormap_sandstorm"
+}

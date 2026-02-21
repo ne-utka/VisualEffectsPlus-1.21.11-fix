@@ -1,0 +1,51 @@
+{
+        "initializer":{
+          "lifetime": "40",
+          "alpha": "1",
+          "size": "0",
+          "roll": "0",
+          "custom": "gaussian()"
+        },
+        "ticker": {
+
+            "alpha": "1 - smoothstep(AGE/LIFETIME, 0.55, 1.0)",
+            "dx": "(CUSTOM*0.1) * sin((0.01 * AGE))",
+            "dy": "0.3 * sin((0.16 * AGE)) - 0.035",
+            "dz": "(CUSTOM*0.1) * cos((0.01 * AGE))",
+            "roll": "CUSTOM * sin((0.1 * AGE))",
+            "size": "0.5 * sin((0.1 * AGE))"
+        },
+        "liquid_affinity": "non_liquids",
+        "lit": true,
+        "light_level": 15,
+        "random_sprite": true,
+        "has_physics": true,
+        "kill_on_contact": true,
+        "exclusion_radius": 7,
+        "rotation_mode": "look_at_y",
+        "render_type": "additive_translucent",
+        "offset": [0, -0.25, 0],
+        "particle_emitters": [
+      {
+       "particle": "davidparticles:lava_sparks_emit",
+       "chance": "AGE < 6",
+       "x": "gaussian()*0.1", 
+       "z": "gaussian()*0.1",
+       "y": "0.1"
+     },
+     {
+       "particle": "minecraft:smoke",
+       "chance": "0.5*(AGE < 30)",
+       "x": "0", 
+       "z": "0",
+       "y": "0"
+     },
+     {
+       "particle": "davidparticles:lava_flame_glow",
+       "chance": "AGE == 1",
+       "x": "0", 
+       "z": "0",
+       "y": "0"
+     }
+  ]
+}

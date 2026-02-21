@@ -1,0 +1,13 @@
+{
+   "targets": ["minecraft:birch_leaves"],
+   "particle_emitters": [
+     {
+       "particle": "leaves:birch_leaves",
+       "chance": "0.015 + RAIN*0.015",
+       "x": "0.5", 
+       "z": "0.5",
+       "y": "-0.25",
+       "spawn_location": "lower_corner"
+     }
+     ]
+}

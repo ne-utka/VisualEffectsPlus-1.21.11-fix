@@ -1,0 +1,19 @@
+{
+	"default_color": 7316556,
+    "x_axis": "biome_id",
+    "y_axis": "0",
+	
+	"biome_id_mapper": {
+		"minecraft:basalt_deltas": 1,
+		"minecraft:crimson_forest": 2,
+		"minecraft:the_end": 3,
+		"minecraft:end_barrens": 3,
+		"minecraft:end_midlands": 3,
+		"minecraft:end_highlands": 3,
+		"minecraft:small_end_islands": 3,
+		"minecraft:nether_wastes": 4,
+		"minecraft:soul_sand_valley": 5,
+		"minecraft:warped_forest": 6,
+		"texture_size": 7
+	}
+}

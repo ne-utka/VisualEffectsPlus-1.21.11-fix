@@ -1,0 +1,32 @@
+{
+  "initializer": {
+    "lifetime": "70 + rand() * 20 +( 500 * (RAIN == 0))",
+    "alpha": "1",
+    "size": "0",
+    "hitbox_size": 1,
+    "custom": "rand()"
+  },
+  "ticker": {
+    "alpha": "max(0, min(1, (15 - sqrt(DISTANCE_SQUARED)) / 2))",
+    "red":   "max(0.86, 1 - smoothstep(sqrt(DISTANCE_SQUARED), 12.5, 15))",
+    "green": "max(0.86, 1 - smoothstep(sqrt(DISTANCE_SQUARED), 12.5, 15))",
+    "blue":  "max(0.92, 1 - smoothstep(sqrt(DISTANCE_SQUARED), 12.5, 15))",
+    "dx": "(CUSTOM * 0.01 + RAIN * 0.035) * sin(0.1 * AGE) + min(max((RAIN - 0.5) / 0.5, 0), 1) * ( (CUSTOM * 0.15) * sin(0.1 * AGE) + 1.0*(0.05 + CUSTOM * 0.075) + (0.1 + CUSTOM * 0.05)* sin(0.05 * AGE) ) + (CUSTOM * 0.025) * sin(0.01 * AGE) * (RAIN > 0)",
+    "dy": "-0.05 - RAIN * 0.05 + (RAIN > 0.5) * RAIN * 0.025 + (RAIN > 0.5) * (RAIN * 0.05 * sin(0.05 * TIME))",
+    "dz": "(CUSTOM * 0.01 + RAIN * 0.01) * cos(0.1 * AGE)  + min(max((RAIN - 0.5) / 0.5, 0), 1) * ( (CUSTOM * 0.2) * cos(0.1 * AGE) )",
+    "size": "(CUSTOM * 0.05 + 0.15) * min(max(AGE / 5, 0), 1) * min(max((LIFETIME - AGE) / 5, 0), 1)",
+    "roll": "(((RAIN)*(CUSTOM)*0.9 * 5) * sin(0.025 * AGE))*0.5",
+    "remove_condition": "(sqrt(DISTANCE_SQUARED) > 15) + (SKY_LIGHT < 15)"
+  },
+  "random_sprite": true,
+  "liquid_affinity": "non_liquids",
+  "render_type": "translucent",
+  "rotation_mode": "movement_aligned",
+  "has_physics": true,
+  "lit": true,
+  "light_level": 0,
+  "exclusion_radius": 1,
+  "kill_on_contact": true,
+  "kill_when_still": false,
+  "offset": [0, 0, 0]
+}

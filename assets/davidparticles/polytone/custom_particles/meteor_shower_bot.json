@@ -1,0 +1,31 @@
+{
+  "initializer":{
+    "lifetime": "40",
+    "size": "1",
+    "alpha": "0"
+  },
+      "ticker": {
+        "alpha": "0",
+        "dx": "(PLAYER_X - POS_X)*(sqrt(PLAYER_SPEED_SQUARED))*(sqrt(PLAYER_SPEED_SQUARED) > 0)",
+        "dy": "(PLAYER_Y - POS_Y)*(sqrt(PLAYER_SPEED_SQUARED))*(sqrt(PLAYER_SPEED_SQUARED) > 0)",
+        "dz": "(PLAYER_Z - POS_Z)*(sqrt(PLAYER_SPEED_SQUARED))*(sqrt(PLAYER_SPEED_SQUARED) > 0)",
+        "remove_condition": "sqrt(DISTANCE_SQUARED) > 20"
+        },
+  "render_type": "opaque",
+  "liquid_affinity": "any",
+  "random_sprite": false,
+  "exclusion_radius": 10,
+  "has_physics": false,
+  "kill_on_contact": false,
+  "kill_when_still": false,
+  "offset": [0, 0, 0],
+  "particle_emitters": [
+    {
+      "particle": "davidparticles:meteor_emitter",
+      "chance": "(AGE == 1)*0.01",
+      "x": "-POS_X + PLAYER_X ",
+      "z": "-POS_Z + PLAYER_Z ",
+      "y": "-POS_Y + PLAYER_Y "
+    }
+  ]
+}

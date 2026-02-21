@@ -1,0 +1,12 @@
+{
+    "require_mods": [
+     "subtle_effects"
+   ],
+   "targets": ["subtle_effects:large_dust_cloud", "subtle_effects:small_dust_cloud"
+],
+    "size": "SIZE * 0.6",
+    "red": "0.65",
+    "green": "0.65",
+    "blue": "0.65",
+    "alpha": "ALPHA * 0.6"
+}

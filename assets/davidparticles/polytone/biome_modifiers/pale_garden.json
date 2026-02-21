@@ -1,0 +1,13 @@
+{
+	"targets": [
+		"minecraft:pale_garden"
+	],
+	"fog_radius": "0.5 - RAIN*0.4",
+ 	"fog_fade": "(1.1 + (RENDER_DISTANCE/64)*0.5 + RAIN*0.4)*(7.5 + (RENDER_DISTANCE/64*2.5))",
+	"particle": {
+    "options": {
+     "type": "minecraft:white_ash"
+    },
+    "probability": 0.005
+    }
+}

@@ -1,0 +1,24 @@
+{
+  "initializer":{
+    "lifetime": "25+rand()*25",
+    "alpha": "1",
+    "size": "0.25 + rand()*0.1",
+    "custom": "rand()",
+    "red": "0.05 + rand()*0.35",
+    "green": "0.05 + rand()*0.35",
+    "blue": "0.05 + rand()*0.35"
+  },
+  "ticker": {
+            "dx": "DX*0.88",
+            "dy": "0.001 + DY*0.88",
+            "dz": "DZ*0.88 ",
+            "size": "max(0,SIZE-0.002)"
+        },
+        "render_type": "opaque",
+        "liquid_affinity": "any",
+        "lit": true,
+        "light_level": 4,
+        "rotation_mode": "look_at_xyz",
+        "has_physics": false,
+        "random_sprite": false
+}

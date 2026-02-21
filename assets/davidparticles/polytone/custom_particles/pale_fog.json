@@ -1,0 +1,23 @@
+{
+  "initializer":{
+    "lifetime": "120",
+    "size": "5",
+    "alpha": "0",
+    "roll": "rand() * 2 * pi"
+  },
+      "ticker": {
+        "alpha": "0.65 * sin((pi / LIFETIME) * AGE) * min(max((sqrt(DISTANCE_SQUARED) - 5) / 10, 0), 1) * max(0, min(1, (25 - sqrt(DISTANCE_SQUARED)) / 5))",
+        "roll": "ROLL",
+        "dx": "0",
+        "dy": "0.001",
+        "dz": "0",
+        "remove_condition": "sqrt(DISTANCE_SQUARED) > 25"
+        },
+  "render_type": "additive_translucent",
+  "liquid_affinity": "non_liquids",
+  "exclusion_radius": 2,
+  "has_physics": false,
+  "offset": [0, 0, 0],
+  "lit": true,
+  "light_level": 1
+}

@@ -1,0 +1,6 @@
+{"targets": [
+		"minecraft:deep_dark"
+	],
+	"fog_radius": 0.25,
+ 	"fog_fade": "1.25*7.5"
+}

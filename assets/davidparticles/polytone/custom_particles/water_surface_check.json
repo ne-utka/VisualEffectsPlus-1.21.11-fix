@@ -1,0 +1,21 @@
+{
+        "initializer":{
+          "lifetime": "10"
+        },
+        "ticker": {
+        },
+        "liquid_affinity": "non_liquids",
+        "has_physics": true,
+        "exclusion_radius": 0,
+        "render_type": "invisible",
+        "offset": [0, 0, 0],
+        "particle_emitters": [
+          {
+       "particle": "davidparticles:water_under_check",
+       "chance": "AGE == 1",
+       "x": "0", 
+       "z": "0",
+       "y": "-1"
+     }
+     ]
+}

@@ -1,0 +1,30 @@
+{
+   "targets": ["minecraft:grass_block", "minecraft:water", "minecraft:mud"],
+   "particle_emitters": [
+    {
+       "particle": "davidparticles:swamp_fog",
+       "chance": "0.45 * (RAIN == 0)",
+       "x": "0", 
+       "z": "0",
+       "y": "4.5",
+       "dy": "0.001 + rand()*0.001",
+       "biomes": ["minecraft:swamp", "minecraft:mangrove_swamp",
+      
+                  "minecraft:jungle",
+		              "minecraft:sparse_jungle",
+		              "minecraft:bamboo_jungle"]
+     },
+     {
+       "particle": "davidparticles:swamp_dust",
+       "chance": "0.015",
+       "x": "5 * cos((5 * TIME))", 
+       "z": "5 * cos((5 * TIME))",
+       "y": "5 * cos((5 * TIME))+rand()*2.5+1",
+       "biomes": ["minecraft:swamp", "minecraft:mangrove_swamp",
+      
+                  "minecraft:jungle",
+		              "minecraft:sparse_jungle",
+		              "minecraft:bamboo_jungle"]
+     }
+     ]
+}

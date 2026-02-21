@@ -1,0 +1,389 @@
+{
+        "initializer":{
+          "lifetime": "10",
+          "alpha": "0",
+          "size": "0",
+          "custom": "gaussian()"
+        },
+        "ticker": {
+        },
+        "random_sprite": true,
+        "liquid_affinity": "non_liquids",
+        "render_type": "translucent",
+        "has_physics": true,
+        "kill_on_contact": true,
+        "kill_when_still": false,
+        "offset": [0, 0, 0],
+        "exclusion_radius": 2,
+        "particle_emitters": [
+     {
+       "particle": "leaves:cherry_leaves_g",
+       "chance": "AGE == 1",
+       "x": "1", 
+       "z": "CUSTOM*0.25",
+       "y": "0.375"
+     },
+     {
+       "particle": "leaves:cherry_leaves_g",
+       "chance": "AGE == 1",
+       "x": "1.75", 
+       "z": "0",
+       "y": "0"
+     },
+     {
+       "particle": "leaves:cherry_leaves_g",
+       "chance": "AGE == 1",
+       "x": "0", 
+       "z": "-CUSTOM*0.25",
+       "y": "0.5"
+     },
+     {
+       "particle": "leaves:cherry_leaves_g",
+       "chance": "AGE == 1",
+       "x": "-0.5", 
+       "z": "-CUSTOM*0.5",
+       "y": "0.375"
+     },
+     {
+       "particle": "leaves:cherry_leaves_g",
+       "chance": "AGE == 1",
+       "x": "-0.75", 
+       "z": "-CUSTOM*0.25",
+       "y": "0.15"
+     },
+     {
+       "particle": "leaves:cherry_leaves_g",
+       "chance": "AGE == 1",
+       "x": "0.5", 
+       "z": "CUSTOM*0",
+       "y": "0"
+     },
+     {
+       "particle": "leaves:cherry_leaves_g",
+       "chance": "AGE == 1",
+       "x": "-1.5", 
+       "z": "CUSTOM*0.05",
+       "y": "0.25"
+     },
+     
+     {
+       "particle": "leaves:cherry_leaves_g",
+       "chance": "AGE == 5",
+       "x": "1.5", 
+       "z": "CUSTOM*0.25",
+       "y": "0.375"
+     },
+     {
+       "particle": "leaves:cherry_leaves_g",
+       "chance": "AGE == 5",
+       "x": "2.25", 
+       "z": "0",
+       "y": "0"
+     },
+     {
+       "particle": "leaves:cherry_leaves_g",
+       "chance": "AGE == 5",
+       "x": "0.5", 
+       "z": "-CUSTOM*0.25",
+       "y": "0.5"
+     },
+     {
+       "particle": "leaves:cherry_leaves_g",
+       "chance": "AGE == 5",
+       "x": "0", 
+       "z": "-CUSTOM*0.5",
+       "y": "0.375"
+     },
+     {
+       "particle": "leaves:cherry_leaves_g",
+       "chance": "AGE == 5",
+       "x": "-0.25", 
+       "z": "-CUSTOM*0.25",
+       "y": "0.15"
+     },
+     {
+       "particle": "leaves:cherry_leaves_g",
+       "chance": "AGE == 5",
+       "x": "1", 
+       "z": "CUSTOM*0",
+       "y": "0"
+     },
+     {
+       "particle": "leaves:cherry_leaves_g",
+       "chance": "AGE == 5",
+       "x": "-1", 
+       "z": "CUSTOM*0.05",
+       "y": "0.25"
+     },
+
+     {
+       "particle": "leaves:cherry_leaves_g",
+       "chance": "AGE == 1",
+       "x": "rand()", 
+       "z": "rand()",
+       "y": "rand()"
+     },
+     {
+       "particle": "leaves:cherry_leaves_g",
+       "chance": "AGE == 1",
+       "x": "rand()", 
+       "z": "rand()",
+       "y": "rand()"
+     },
+     {
+       "particle": "leaves:cherry_leaves_g",
+       "chance": "AGE == 1",
+       "x": "rand()", 
+       "z": "rand()",
+       "y": "rand()"
+     },
+     {
+       "particle": "leaves:cherry_leaves_g",
+       "chance": "AGE == 1",
+       "x": "rand()", 
+       "z": "rand()",
+       "y": "rand()"
+     },
+     {
+       "particle": "leaves:cherry_leaves_g",
+       "chance": "AGE == 1",
+       "x": "rand()", 
+       "z": "rand()",
+       "y": "rand()"
+     },
+     
+     {
+       "particle": "leaves:cherry_leaves_g",
+       "chance": "AGE == 1",
+       "x": "gaussian()*rand()", 
+       "z": "gaussian()*rand()",
+       "y": "gaussian()*rand()"
+     },
+     {
+       "particle": "leaves:cherry_leaves_g",
+       "chance": "AGE == 1",
+       "x": "gaussian()*rand()", 
+       "z": "gaussian()*rand()",
+       "y": "gaussian()*rand()"
+     },
+     {
+       "particle": "leaves:cherry_leaves_g",
+       "chance": "AGE == 1",
+       "x": "gaussian()*rand()", 
+       "z": "gaussian()*rand()",
+       "y": "gaussian()*rand()"
+     },
+     {
+       "particle": "leaves:cherry_leaves_g",
+       "chance": "AGE == 1",
+       "x": "gaussian()*rand()", 
+       "z": "gaussian()*rand()",
+       "y": "gaussian()*rand()"
+     },
+     {
+       "particle": "leaves:cherry_leaves_g",
+       "chance": "AGE == 1",
+       "x": "gaussian()*rand()", 
+       "z": "gaussian()*rand()",
+       "y": "gaussian()*rand()"
+     },
+
+
+
+
+
+
+     {
+       "particle": "leaves:cherry_leaves_g",
+       "chance": "AGE == 1",
+       "x": "1 - 2.5", 
+       "z": "CUSTOM*0.25",
+       "y": "0.375"
+     },
+     {
+       "particle": "leaves:cherry_leaves_g",
+       "chance": "AGE == 1",
+       "x": "1.75 - 2.5", 
+       "z": "0",
+       "y": "0"
+     },
+     {
+       "particle": "leaves:cherry_leaves_g",
+       "chance": "AGE == 1",
+       "x": "0 - 2.5", 
+       "z": "-CUSTOM*0.25",
+       "y": "0.5"
+     },
+     {
+       "particle": "leaves:cherry_leaves_g",
+       "chance": "AGE == 1",
+       "x": "-0.5 - 2.5", 
+       "z": "-CUSTOM*0.5",
+       "y": "0.375"
+     },
+     {
+       "particle": "leaves:cherry_leaves_g",
+       "chance": "AGE == 1",
+       "x": "-0.75 - 2.5", 
+       "z": "-CUSTOM*0.25",
+       "y": "0.15"
+     },
+     {
+       "particle": "leaves:cherry_leaves_g",
+       "chance": "AGE == 1",
+       "x": "0.5 - 2.5", 
+       "z": "CUSTOM*0",
+       "y": "0"
+     },
+     {
+       "particle": "leaves:cherry_leaves_g",
+       "chance": "AGE == 1",
+       "x": "-1.5 - 2.5", 
+       "z": "CUSTOM*0.05",
+       "y": "0.25"
+     },
+     
+     {
+       "particle": "leaves:cherry_leaves_g",
+       "chance": "AGE == 5",
+       "x": "1.5 - 2.5", 
+       "z": "CUSTOM*0.25",
+       "y": "0.375"
+     },
+     {
+       "particle": "leaves:cherry_leaves_g",
+       "chance": "AGE == 5",
+       "x": "2.25 - 2.5", 
+       "z": "0",
+       "y": "0"
+     },
+     {
+       "particle": "leaves:cherry_leaves_g",
+       "chance": "AGE == 5",
+       "x": "0.5 - 2.5", 
+       "z": "-CUSTOM*0.25",
+       "y": "0.5"
+     },
+     {
+       "particle": "leaves:cherry_leaves_g",
+       "chance": "AGE == 5",
+       "x": "0 - 2.5", 
+       "z": "-CUSTOM*0.5",
+       "y": "0.375"
+     },
+     {
+       "particle": "leaves:cherry_leaves_g",
+       "chance": "AGE == 5",
+       "x": "-0.25 - 2.5", 
+       "z": "-CUSTOM*0.25",
+       "y": "0.15"
+     },
+     {
+       "particle": "leaves:cherry_leaves_g",
+       "chance": "AGE == 5",
+       "x": "1 - 2.5", 
+       "z": "CUSTOM*0",
+       "y": "0"
+     },
+     {
+       "particle": "leaves:cherry_leaves_g",
+       "chance": "AGE == 5",
+       "x": "-1 - 2.5", 
+       "z": "CUSTOM*0.05",
+       "y": "0.25"
+     },
+
+     {
+       "particle": "leaves:cherry_leaves_g",
+       "chance": "AGE == 1",
+       "x": "rand() - 2.5", 
+       "z": "rand()",
+       "y": "rand()"
+     },
+     {
+       "particle": "leaves:cherry_leaves_g",
+       "chance": "AGE == 1",
+       "x": "rand() - 2.5", 
+       "z": "rand()",
+       "y": "rand()"
+     },
+     {
+       "particle": "leaves:cherry_leaves_g",
+       "chance": "AGE == 1",
+       "x": "rand() - 2.5", 
+       "z": "rand()",
+       "y": "rand()"
+     },
+     {
+       "particle": "leaves:cherry_leaves_g",
+       "chance": "AGE == 1",
+       "x": "rand() - 2.5", 
+       "z": "rand()",
+       "y": "rand()"
+     },
+     {
+       "particle": "leaves:cherry_leaves_g",
+       "chance": "AGE == 1",
+       "x": "rand() - 2.5", 
+       "z": "rand()",
+       "y": "rand()"
+     },
+     
+     {
+       "particle": "leaves:cherry_leaves_g",
+       "chance": "AGE == 1",
+       "x": "gaussian()*rand() - 2.5", 
+       "z": "gaussian()*rand()",
+       "y": "gaussian()*rand()"
+     },
+     {
+       "particle": "leaves:cherry_leaves_g",
+       "chance": "AGE == 1",
+       "x": "gaussian()*rand() - 2.5", 
+       "z": "gaussian()*rand()",
+       "y": "gaussian()*rand()"
+     },
+     {
+       "particle": "leaves:cherry_leaves_g",
+       "chance": "AGE == 1",
+       "x": "gaussian()*rand() - 2.5", 
+       "z": "gaussian()*rand()",
+       "y": "gaussian()*rand()"
+     },
+     {
+       "particle": "leaves:cherry_leaves_g",
+       "chance": "AGE == 1",
+       "x": "gaussian()*rand() - 2.5", 
+       "z": "gaussian()*rand()",
+       "y": "gaussian()*rand()"
+     },
+     {
+       "particle": "leaves:cherry_leaves_g",
+       "chance": "AGE == 1",
+       "x": "gaussian()*rand() - 2.5", 
+       "z": "gaussian()*rand()",
+       "y": "gaussian()*rand()"
+     },
+
+
+
+
+     {
+       "particle": "davidparticles:wind",
+       "chance": "(AGE == 1)*0.5",
+       "x": "gaussian()*rand()", 
+       "z": "gaussian()*rand()",
+       "y": "gaussian()*rand()"
+     },
+     {
+       "particle": "davidparticles:wind",
+       "chance": "(AGE == 1)*0.25",
+       "x": "gaussian()*rand() - 5", 
+       "z": "gaussian()*rand()",
+       "y": "gaussian()*rand()"
+     }
+
+     
+
+    ]
+}

@@ -1,0 +1,55 @@
+{
+        "initializer":{
+          "lifetime": "10",
+          "alpha": "0",
+          "size": "0",
+          "custom": "gaussian()"
+        },
+        "ticker": {
+        },
+        "random_sprite": true,
+        "liquid_affinity": "non_liquids",
+        "render_type": "translucent",
+        "has_physics": true,
+        "kill_on_contact": true,
+        "kill_when_still": false,
+        "offset": [0, 0, 0],
+        "exclusion_radius": 7,
+        "particle_emitters": [
+     {
+       "particle": "davidparticles:sand_mote_g",
+       "chance": "AGE == 1",
+       "x": "gaussian()*2", 
+       "z": "gaussian()*0.25",
+       "y": "gaussian()*1.5"
+     },
+     {
+       "particle": "davidparticles:sand_mote_g",
+       "chance": "AGE == 1",
+       "x": "gaussian()*1", 
+       "z": "-gaussian()*0.25",
+       "y": "gaussian()*2.5"
+     },
+     {
+       "particle": "davidparticles:sand_mote_g",
+       "chance": "AGE == 1",
+       "x": "gaussian()*0.5", 
+       "z": "-gaussian()*0.5",
+       "y": "gaussian()*1"
+     },
+     {
+       "particle": "davidparticles:sand_mote_g",
+       "chance": "AGE == 1",
+       "x": "gaussian()*2", 
+       "z": "gaussian()*0",
+       "y": "-gaussian()*1.5"
+     },
+     {
+       "particle": "davidparticles:sand_mote_g",
+       "chance": "AGE == 1",
+       "x": "-gaussian()*0.5", 
+       "z": "gaussian()*0.05",
+       "y": "gaussian()"
+     }
+    ]
+}

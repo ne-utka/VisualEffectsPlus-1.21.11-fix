@@ -1,0 +1,21 @@
+{
+   "targets": ["minecraft:wildflowers"],
+   "particle_emitters": [
+     {
+       "particle": "petals:wildflowers",
+       "chance": "(sqrt(DISTANCE_SQUARED) < 1.5)*(PLAYER_SPEED_SQUARED > 0.01)",
+       "x": "0 - POS_X + PLAYER_X - gaussian()*0.25 + rand()*0.75", 
+       "z": "0 - POS_Z + PLAYER_Z - gaussian()*0.25 + rand()*0.75",
+       "y": "0.25",
+       "count": "1",
+       "spawn_location": "lower_corner"
+     },
+     {
+       "particle": "petals:wildflowers",
+       "chance": "RAIN*0.05",
+       "x": "0", 
+       "z": "0",
+       "y": "-0.25"
+     }
+     ]
+}

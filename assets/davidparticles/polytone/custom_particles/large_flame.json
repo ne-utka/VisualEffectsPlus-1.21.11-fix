@@ -1,0 +1,42 @@
+{
+        "initializer":{
+          "lifetime": "rand()*10 + 15",
+          "alpha": "1",
+          "size": "0.2",
+          "red": "0",
+            "green": "0",
+            "blue": "0",
+          "custom": "gaussian()"
+        },
+        "ticker": {
+            "red": "(AGE/LIFETIME)*0.25",
+            "green": "(AGE/LIFETIME)*0.25",
+            "blue": "(AGE/LIFETIME)*0.25",
+            "dy": "0.05",
+            "dx": "0",
+            "dz": "0"
+        },
+        "liquid_affinity": "non_liquids",
+        "has_physics": true,
+        "render_type": "translucent",
+        "hitbox_size": 0.25,
+        "lit": true,
+        "light_level": 1,
+        "kill_on_contact": true,
+        "particle_emitters": [
+    {
+      "particle": "davidparticles:orange_glow_1",
+      "chance": "(AGE == 1)*0.25", 
+      "x": "0.0",
+      "y": "0.25",
+      "z": "0.0"
+    },
+    {
+      "particle": "davidparticles:lava_sparks_emit",
+      "chance": "(AGE == 1)*0.05", 
+      "x": "0.0",
+      "y": "-0.5",
+      "z": "0.0"
+    }
+  ]
+}

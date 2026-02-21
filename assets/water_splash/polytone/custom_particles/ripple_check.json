@@ -1,0 +1,29 @@
+{
+  "initializer": {
+    "lifetime": "1",
+    "size": "0",
+    "alpha": "0",
+    "hitbox_size": 10,
+    "custom": "rand()"
+  },
+  "ticker": {
+},
+  "random_sprite": true,
+  "liquid_affinity": "non_liquids",
+  "render_type": "translucent",
+  "rotation_mode": "look_up",
+  "exclusion_radius": 1,
+  "has_physics": true,
+  "kill_on_contact": false,
+  "kill_when_still": false,
+  "offset": [0, 0, 0],
+  "particle_emitters": [
+    {
+      "particle": "leaves:splash",
+      "chance": "(AGE == 1)", 
+      "x": "0.0",
+      "y": "-0.045",
+      "z": "0.0"
+    }
+  ]
+}

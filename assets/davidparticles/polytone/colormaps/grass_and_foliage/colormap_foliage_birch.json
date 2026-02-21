@@ -1,0 +1,16 @@
+{
+	"default_color": "FFFFFF",
+    "x_axis": "biome_id",
+	"y_axis": "(0.5*((( (floor(min(max(0.5+0.5*(0.7*noise(POS_X/72,POS_Z/72)+0.3*noise(POS_X/36,POS_Z/36)),0),0.9999)*3))*(1-((0.5+0.5*noise(POS_X/64,POS_Z/64))>0.85)) + 3*((0.5+0.5*noise(POS_X/64,POS_Z/64))>0.85) ) + 0.5)/4) + 0.5*min(max(((0.5+0.5*noise(POS_X/800,POS_Z/800))-0.64)/0.03,0),1))",
+	"biome_blend": true,
+	
+	"biome_id_mapper": {
+		"minecraft:forest": 0,
+
+		"minecraft:birch_forest": 1,
+
+		"minecraft:old_growth_birch_forest": 1,
+
+		"texture_size": 2
+	}
+}

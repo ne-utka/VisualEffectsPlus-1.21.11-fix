@@ -1,0 +1,33 @@
+{
+  "initializer": {
+    "lifetime": "110 + rand()*70",
+    "alpha": "0",
+    "size": "0",
+    "custom": "rand()"
+  },
+  "ticker": {
+    "alpha": "(0.7 + 0.3*sin(AGE*0.18 + CUSTOM*1000*13)) * smoothstep(AGE/LIFETIME,0.0,0.15) * (1 - smoothstep(AGE/LIFETIME,0.8,1.0))",
+    "size": "(0.45 + CUSTOM*0.15 ) * smoothstep(AGE/LIFETIME,0.0,0.12) * (1 - smoothstep(AGE/LIFETIME,0.82,1.0))",
+    "dx": "((0.014 + 0.008*sin(AGE*0.04 + CUSTOM*1000*3)) * sin(CUSTOM*1000*200 + AGE*(0.035 + 0.015*sin(AGE*0.015 + CUSTOM*1000*7))) + (0.008 + 0.004*sin(AGE*0.02 + CUSTOM*1000*11)) * sin(2*(CUSTOM*1000*200 + AGE*(0.035 + 0.015*sin(AGE*0.015 + CUSTOM*1000*7))) + CUSTOM*1000*3.1) + 0.012*(0.5 + 0.5*sin(AGE*0.12 + CUSTOM*1000*5)) * sin(CUSTOM*1000*90 + AGE*(0.01 + 0.005*sin(AGE*0.02 + CUSTOM*1000*13)))) * 1.35",
+    "dz": "((0.014 + 0.008*sin(AGE*0.04 + CUSTOM*1000*3)) * cos(CUSTOM*1000*200 + AGE*(0.035 + 0.015*sin(AGE*0.015 + CUSTOM*1000*7))) + (0.008 + 0.004*sin(AGE*0.02 + CUSTOM*1000*11)) * cos(2*(CUSTOM*1000*200 + AGE*(0.035 + 0.015*sin(AGE*0.015 + CUSTOM*1000*7))) + CUSTOM*1000*3.1) + 0.012*(0.5 + 0.5*sin(AGE*0.12 + CUSTOM*1000*5)) * cos(CUSTOM*1000*90 + AGE*(0.01 + 0.005*sin(AGE*0.02 + CUSTOM*1000*13)))) * 1.35",
+    "dy": "(0.005*sin(AGE*0.20 + CUSTOM*1000*9) + 0.004*sin(AGE*0.03 + CUSTOM*1000*27)) * 1.2"
+  },
+  "liquid_affinity": "non_liquids",
+  "lit": true,
+  "light_level": 10,
+  "render_type": "additive_translucent",
+  "random_sprite": false,
+  "has_physics": false,
+  "kill_on_contact": false,
+  "kill_when_still": false,
+  "offset": [0, 0, 0],
+  "exclusion_radius": 0.35,
+  "hitbox_size": 0.12,
+  "sound_emitters": [
+    {
+      "sound": "minecraft:block.firefly_bush.idle",
+      "chance": "0.00025",
+      "pitch": "0.9 + gaussian()*0.05"
+    }
+  ]
+}

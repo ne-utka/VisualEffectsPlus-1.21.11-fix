@@ -1,0 +1,93 @@
+{
+  "initializer": {
+    "lifetime": "20",
+    "alpha": "0",
+    "size": "0"
+  },
+  "ticker": {
+  },
+  "particle_emitters": [
+    {
+      "particle": "davidparticles:orange_glow_2",
+      "chance": "(AGE == 1) + (AGE == LIFETIME)", 
+      "x": "0.0",
+      "y": "0.0",
+      "z": "0.0",
+      "state_predicate": {
+        "predicate_type": "block_match",
+        "block": "minecraft:torch"
+      }
+    },
+     {
+      "particle": "davidparticles:orange_glow_2",
+      "chance": "(AGE == 1) + (AGE == LIFETIME)", 
+      "x": "0.0",
+      "y": "0.0",
+      "z": "0.0",
+      "state_predicate": {
+        "predicate_type": "block_match",
+        "block": "minecraft:wall_torch"
+      }
+    },
+    {
+      "particle": "davidparticles:red_glow",
+      "chance": "(AGE == 1) + (AGE == LIFETIME)", 
+      "x": "0.0",
+      "y": "0.0",
+      "z": "0.0",
+      "state_predicate": {
+        "predicate_type": "block_match",
+        "block": "minecraft:redstone_wall_torch"
+      }
+    },
+    {
+      "particle": "davidparticles:red_glow",
+      "chance": "(AGE == 1) + (AGE == LIFETIME)", 
+      "x": "0.0",
+      "y": "0.0",
+      "z": "0.0",
+      "state_predicate": {
+        "predicate_type": "block_match",
+        "block": "minecraft:redstone_torch"
+      }
+    },
+    {
+      "particle": "davidparticles:blue_glow_2",
+      "chance": "(AGE == 1) + (AGE == LIFETIME)", 
+      "x": "0.0",
+      "y": "0.0",
+      "z": "0.0",
+      "state_predicate": {
+        "predicate_type": "block_match",
+        "block": "minecraft:soul_wall_torch"
+      }
+    },
+    {
+      "particle": "davidparticles:blue_glow_2",
+      "chance": "(AGE == 1) + (AGE == LIFETIME)", 
+      "x": "0.0",
+      "y": "0.0",
+      "z": "0.0",
+      "state_predicate": {
+        "predicate_type": "block_match",
+        "block": "minecraft:soul_torch"
+      }
+    },
+    {
+      "particle": "davidparticles:orange_glow_3",
+      "chance": "(AGE == 1) + (AGE == LIFETIME)", 
+      "x": "0.0",
+      "y": "0.0",
+      "z": "0.0",
+      "state_predicate": {
+        "predicate_type": "block_match",
+        "block": "minecraft:open_eyeblossom"
+      }
+    }
+  ],
+  "tick_rate": 1,
+  "has_physics": false,
+  "offset": [0, -0.1, 0],
+  "liquid_affinity": "non_liquids",
+  "exclusion_radius": 1
+}

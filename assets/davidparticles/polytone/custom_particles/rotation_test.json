@@ -1,0 +1,18 @@
+{
+  "initializer": {
+    "lifetime": "720",
+    "alpha": "1",
+    "size": "5"
+  },
+  "ticker": {
+    "dx": "(DAY_TIME >= 0)*(DAY_TIME < 13250)*cos((DAY_TIME / 12000 * pi))*0.001 + (DAY_TIME >= 13250)*(DAY_TIME < 24000)*cos((180 + (DAY_TIME - 12000) / 12000 * pi))*0.001",
+    "dy": "(DAY_TIME >= 0)*(DAY_TIME < 13250)*sin((DAY_TIME / 12000 * pi))*0.0025 + (DAY_TIME >= 13250)*(DAY_TIME < 24000)*sin((180 + (DAY_TIME - 12000) / 12000 * pi))*0.0025"
+  },
+  "tick_rate": 1,
+  "has_physics": false,
+  "rotation_mode": "movement_aligned",
+  "hitbox_size": 0.1,
+  "offset": [0, 0, 0],
+  "liquid_affinity": "non_liquids",
+  "exclusion_radius": 1
+}

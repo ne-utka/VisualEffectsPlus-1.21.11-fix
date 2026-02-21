@@ -1,0 +1,216 @@
+{
+  "targets": ["minecraft:redstone_lamp"],
+  "particle_emitters": [
+    {
+      "particle": "davidparticles:block_glow_emitter",
+      "chance": "1",
+      "x": "0.5",
+      "y": "0.5",
+      "z": "0.5",
+      "spawn_location": "lower_corner"
+    },
+
+
+    {
+      "particle": "davidparticles:redstone_dust",
+      "chance": "0.00",
+      "spawn_location": "lower_corner",
+      "x": "0.5 + (-0.6 + 0.1*rand())",
+      "y": "0.5 + (rand()-0.5)",
+      "z": "0.5 + (rand()-0.5)",
+      "dx": "(rand()-0.5)*0.010",
+      "dy": "(rand()-0.5)*0.008",
+      "dz": "(rand()-0.5)*0.010"
+    },
+    {
+      "particle": "davidparticles:redstone_dust",
+      "chance": "0.00",
+      "spawn_location": "lower_corner",
+      "x": "0.5 + (0.5 + 0.1*rand())",
+      "y": "0.5 + (rand()-0.5)",
+      "z": "0.5 + (rand()-0.5)",
+      "dx": "(rand()-0.5)*0.010",
+      "dy": "(rand()-0.5)*0.008",
+      "dz": "(rand()-0.5)*0.010"
+    },
+    {
+      "particle": "davidparticles:redstone_dust",
+      "chance": "0.00",
+      "spawn_location": "lower_corner",
+      "x": "0.5 + (rand()-0.5)",
+      "y": "0.5 + (-0.6 + 0.1*rand())",
+      "z": "0.5 + (rand()-0.5)",
+      "dx": "(rand()-0.5)*0.010",
+      "dy": "(rand()-0.5)*0.008",
+      "dz": "(rand()-0.5)*0.010"
+    },
+    {
+      "particle": "davidparticles:redstone_dust",
+      "chance": "0.00",
+      "spawn_location": "lower_corner",
+      "x": "0.5 + (rand()-0.5)",
+      "y": "0.5 + (0.5 + 0.1*rand())",
+      "z": "0.5 + (rand()-0.5)",
+      "dx": "(rand()-0.5)*0.010",
+      "dy": "(rand()-0.5)*0.008",
+      "dz": "(rand()-0.5)*0.010"
+    },
+    {
+      "particle": "davidparticles:redstone_dust",
+      "chance": "0.00",
+      "spawn_location": "lower_corner",
+      "x": "0.5 + (rand()-0.5)",
+      "y": "0.5 + (rand()-0.5)",
+      "z": "0.5 + (-0.6 + 0.1*rand())",
+      "dx": "(rand()-0.5)*0.010",
+      "dy": "(rand()-0.5)*0.008",
+      "dz": "(rand()-0.5)*0.010"
+    },
+    {
+      "particle": "davidparticles:redstone_dust",
+      "chance": "0.00",
+      "spawn_location": "lower_corner",
+      "x": "0.5 + (rand()-0.5)",
+      "y": "0.5 + (rand()-0.5)",
+      "z": "0.5 + (0.5 + 0.1*rand())",
+      "dx": "(rand()-0.5)*0.010",
+      "dy": "(rand()-0.5)*0.008",
+      "dz": "(rand()-0.5)*0.010"
+    },
+
+    {
+      "particle": "davidparticles:redstone_dust",
+      "chance": "0.00",
+      "spawn_location": "lower_corner",
+      "x": "0.5 + (-0.6 + 0.1*rand())",
+      "y": "0.5 + (-0.6 + 0.1*rand())",
+      "z": "0.5 + (rand()-0.5)",
+      "dx": "(rand()-0.5)*0.011",
+      "dy": "(rand()-0.5)*0.007",
+      "dz": "(rand()-0.5)*0.009"
+    },
+    {
+      "particle": "davidparticles:redstone_dust",
+      "chance": "0.00",
+      "spawn_location": "lower_corner",
+      "x": "0.5 + (-0.6 + 0.1*rand())",
+      "y": "0.5 + (0.5 + 0.1*rand())",
+      "z": "0.5 + (rand()-0.5)",
+      "dx": "(rand()-0.5)*0.010",
+      "dy": "(rand()-0.5)*0.009",
+      "dz": "(rand()-0.5)*0.010"
+    },
+    {
+      "particle": "davidparticles:redstone_dust",
+      "chance": "0.00",
+      "spawn_location": "lower_corner",
+      "x": "0.5 + (0.5 + 0.1*rand())",
+      "y": "0.5 + (-0.6 + 0.1*rand())",
+      "z": "0.5 + (rand()-0.5)",
+      "dx": "(rand()-0.5)*0.010",
+      "dy": "(rand()-0.5)*0.008",
+      "dz": "(rand()-0.5)*0.011"
+    },
+    {
+      "particle": "davidparticles:redstone_dust",
+      "chance": "0.00",
+      "spawn_location": "lower_corner",
+      "x": "0.5 + (0.5 + 0.1*rand())",
+      "y": "0.5 + (0.5 + 0.1*rand())",
+      "z": "0.5 + (rand()-0.5)",
+      "dx": "(rand()-0.5)*0.009",
+      "dy": "(rand()-0.5)*0.008",
+      "dz": "(rand()-0.5)*0.012"
+    },
+
+    {
+      "particle": "davidparticles:redstone_dust",
+      "chance": "0.00",
+      "spawn_location": "lower_corner",
+      "x": "0.5 + (-0.6 + 0.1*rand())",
+      "y": "0.5 + (rand()-0.5)",
+      "z": "0.5 + (-0.6 + 0.1*rand())",
+      "dx": "(rand()-0.5)*0.010",
+      "dy": "(rand()-0.5)*0.009",
+      "dz": "(rand()-0.5)*0.010"
+    },
+    {
+      "particle": "davidparticles:redstone_dust",
+      "chance": "0.00",
+      "spawn_location": "lower_corner",
+      "x": "0.5 + (-0.6 + 0.1*rand())",
+      "y": "0.5 + (rand()-0.5)",
+      "z": "0.5 + (0.5 + 0.1*rand())",
+      "dx": "(rand()-0.5)*0.010",
+      "dy": "(rand()-0.5)*0.008",
+      "dz": "(rand()-0.5)*0.011"
+    },
+    {
+      "particle": "davidparticles:redstone_dust",
+      "chance": "0.00",
+      "spawn_location": "lower_corner",
+      "x": "0.5 + (0.5 + 0.1*rand())",
+      "y": "0.5 + (rand()-0.5)",
+      "z": "0.5 + (-0.6 + 0.1*rand())",
+      "dx": "(rand()-0.5)*0.012",
+      "dy": "(rand()-0.5)*0.007",
+      "dz": "(rand()-0.5)*0.010"
+    },
+    {
+      "particle": "davidparticles:redstone_dust",
+      "chance": "0.00",
+      "spawn_location": "lower_corner",
+      "x": "0.5 + (0.5 + 0.1*rand())",
+      "y": "0.5 + (rand()-0.5)",
+      "z": "0.5 + (0.5 + 0.1*rand())",
+      "dx": "(rand()-0.5)*0.009",
+      "dy": "(rand()-0.5)*0.008",
+      "dz": "(rand()-0.5)*0.009"
+    },
+
+    {
+      "particle": "davidparticles:redstone_dust",
+      "chance": "0.00",
+      "spawn_location": "lower_corner",
+      "x": "0.5 + (rand()-0.5)",
+      "y": "0.5 + (-0.6 + 0.1*rand())",
+      "z": "0.5 + (-0.6 + 0.1*rand())",
+      "dx": "(rand()-0.5)*0.011",
+      "dy": "(rand()-0.5)*0.006",
+      "dz": "(rand()-0.5)*0.010"
+    },
+    {
+      "particle": "davidparticles:redstone_dust",
+      "chance": "0.00",
+      "spawn_location": "lower_corner",
+      "x": "0.5 + (rand()-0.5)",
+      "y": "0.5 + (-0.6 + 0.1*rand())",
+      "z": "0.5 + (0.5 + 0.1*rand())",
+      "dx": "(rand()-0.5)*0.010",
+      "dy": "(rand()-0.5)*0.008",
+      "dz": "(rand()-0.5)*0.010"
+    },
+    {
+      "particle": "davidparticles:redstone_dust",
+      "chance": "0.00",
+      "spawn_location": "lower_corner",
+      "x": "0.5 + (rand()-0.5)",
+      "y": "0.5 + (0.5 + 0.1*rand())",
+      "z": "0.5 + (-0.6 + 0.1*rand())",
+      "dx": "(rand()-0.5)*0.010",
+      "dy": "(rand()-0.5)*0.009",
+      "dz": "(rand()-0.5)*0.010"
+    },
+    {
+      "particle": "davidparticles:redstone_dust",
+      "chance": "0.00",
+      "spawn_location": "lower_corner",
+      "x": "0.5 + (rand()-0.5)",
+      "y": "0.5 + (0.5 + 0.1*rand())",
+      "z": "0.5 + (0.5 + 0.1*rand())",
+      "dx": "(rand()-0.5)*0.010",
+      "dy": "(rand()-0.5)*0.008",
+      "dz": "(rand()-0.5)*0.012"
+    }
+  ]
+}

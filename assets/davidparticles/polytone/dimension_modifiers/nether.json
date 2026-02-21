@@ -1,0 +1,7 @@
+{
+    "targets": ["minecraft:the_nether"
+],
+    "no_weather_fog_darken": true,
+    "no_weather_sky_darken": true,
+    "fog_colormap": "davidparticles:colormap_nether_n_end_fog"
+}

@@ -1,0 +1,18 @@
+{
+	"default_color": 16768158,
+    "x_axis": "biome_id",
+    "y_axis": "0.5",
+	
+	"biome_id_mapper": {
+		"minecraft:badlands": 1,
+		"minecraft:eroded_badlands": 1,
+		"minecraft:wooded_badlands": 1,
+
+		"minecraft:savanna": 1,
+        "minecraft:savanna_plateau": 1,
+        "minecraft:windswept_savanna": 1,
+
+		"minecraft:soul_sand_valley": 2,
+		"texture_size": 256
+	}
+}

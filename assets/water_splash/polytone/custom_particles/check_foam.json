@@ -1,0 +1,31 @@
+{
+  "initializer": {
+    "lifetime": "1",
+    "alpha": "0",
+    "size": "0",
+    "custom": "rand()",
+    "hitbox_size": 0.25,
+    "red": "1",
+    "green": "1",
+    "blue": "1"
+  },
+  "ticker": {
+  },
+  "liquid_affinity": "liquids",
+  "rotation_mode": "look_up",
+  "render_type": "translucent",
+  "has_physics": false,
+  "lit": false,
+  "kill_on_contact": false,
+  "exclusion_radius": 0,
+  "kill_when_still": false,
+  "particle_emitters": [
+    {
+      "particle": "water_splash:foam",
+      "chance": "1", 
+      "x": "rand()*0.5 - 0.25",
+      "z": "rand()*0.5 - 0.25",
+      "y": "PLAYER_Y - POS_Y"
+    }
+  ]
+}

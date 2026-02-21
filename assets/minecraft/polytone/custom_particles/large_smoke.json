@@ -1,0 +1,64 @@
+{
+        "initializer": {
+    "lifetime": "20",
+    "alpha": "0",
+    "size": "0"
+  },
+  "ticker": {
+  },
+  "has_physics": false,
+  "particle_emitters": [
+    {
+      "particle": "davidparticles:large_smoke",
+      "chance": "(AGE == 1)*0.125", 
+      "x": "gaussian()*0.1",
+      "y": "gaussian()*0.1",
+      "z": "0.0"
+    },
+    {
+      "particle": "davidparticles:large_smoke_1",
+      "chance": "(AGE == 1)*0.5", 
+      "x": "-gaussian()*0.1",
+      "y": "-gaussian()*0.1",
+      "z": "0.0"
+    },
+    {
+      "particle": "davidparticles:large_flame",
+      "chance": "(AGE == 1)*0.125", 
+      "x": "0.0",
+      "y": "0.0",
+      "z": "0.0",
+      "state_predicate": {
+        "predicate_type": "block_match",
+        "block": "minecraft:air"
+      },
+      "biomes": ["minecraft:nether_wastes",
+      "minecraft:crimson_forest",
+      "minecraft:warped_forest",
+      "minecraft:basalt_deltas"
+     ]
+    },
+    {
+      "particle": "davidparticles:flame",
+      "chance": "(AGE == 1)*0.25", 
+      "x": "gaussian()*0.1",
+      "y": "gaussian()*0.1",
+      "z": "gaussian()*0.1",
+      "state_predicate": {
+        "predicate_type": "block_match",
+        "block": "minecraft:fire"
+      }
+    },
+    {
+      "particle": "davidparticles:soul_flame",
+      "chance": "(AGE == 1)*0.25", 
+      "x": "gaussian()*0.1",
+      "y": "gaussian()*0.1",
+      "z": "gaussian()*0.1",
+      "state_predicate": {
+        "predicate_type": "block_match",
+        "block": "minecraft:soul_fire"
+      }
+    }
+  ]    
+}

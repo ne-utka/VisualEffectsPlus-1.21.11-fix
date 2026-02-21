@@ -1,0 +1,5 @@
+{"priority": 1,
+   "targets": ["leaves:birch_leaves", "leaves:birch_leaves_water", "break_particles:birch_leaves"
+],
+    "colormap": "davidparticles:grass_and_foliage/colormap_foliage_birch"
+}

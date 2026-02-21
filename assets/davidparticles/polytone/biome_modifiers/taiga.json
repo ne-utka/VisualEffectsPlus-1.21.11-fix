@@ -1,0 +1,9 @@
+{
+	"targets": [
+		"minecraft:taiga",
+		"minecraft:old_growth_pine_taiga",
+		"minecraft:old_growth_spruce_taiga"
+	],
+	"fog_radius": "1 - RAIN*0.5",
+ 	"fog_fade": "(1 + (RENDER_DISTANCE/64)*0.5 + RAIN*0.4)*(7.5 + (RENDER_DISTANCE/64*2.5))"
+}

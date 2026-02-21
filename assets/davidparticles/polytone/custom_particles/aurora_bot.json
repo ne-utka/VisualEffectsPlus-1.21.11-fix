@@ -1,0 +1,53 @@
+{
+  "initializer":{
+    "lifetime": "1200",
+    "size": "1",
+    "alpha": "1"
+  },
+      "ticker": {
+        "alpha": "1",
+        "dx": "(PLAYER_X - POS_X)*(sqrt(PLAYER_SPEED_SQUARED))*(sqrt(PLAYER_SPEED_SQUARED) > 0)",
+        "dy": "(PLAYER_Y - POS_Y)*(sqrt(PLAYER_SPEED_SQUARED))*(sqrt(PLAYER_SPEED_SQUARED) > 0)",
+        "dz": "(PLAYER_Z - POS_Z)*(sqrt(PLAYER_SPEED_SQUARED))*(sqrt(PLAYER_SPEED_SQUARED) > 0)",
+        "remove_condition": "sqrt(DISTANCE_SQUARED) > 20"
+        },
+  "render_type": "opaque",
+  "liquid_affinity": "any",
+  "random_sprite": false,
+  "exclusion_radius": 10,
+  "has_physics": false,
+  "kill_on_contact": false,
+  "kill_when_still": false,
+  "offset": [0, 0, 0],
+  "particle_emitters": [
+     {
+       "particle": "davidparticles:aurora",
+       "chance": "0*0.5*(DAY_TIME > 13500)*(DAY_TIME < 22000) - (POS_Y < PLAYER_Y) - (RAIN > 0) * 0.5*((sqrt(DISTANCE_SQUARED) > (RENDER_DISTANCE^2)))",
+       "x": "-POS_X + PLAYER_X + 250*4 * sin((DAY_TIME % 1200) / 1200 * 2 * pi) + sin((DAY_TIME + 1000) / 10) * 10 + 20",
+       "z": "-POS_Z + PLAYER_Z + 10*10 * cos((DAY_TIME % 1200) / 1200 * 2 * pi) + cos((DAY_TIME + 2000) / 15) * 25 + 150*2",
+       "y": "-POS_Y + PLAYER_Y + gaussian() * 5 + sin((DAY_TIME + 3000) / 100) * 5"
+     },
+      
+     {
+       "particle": "davidparticles:aurora",
+       "chance": "0*0.5*(DAY_TIME > 13500)*(DAY_TIME < 22000) - (POS_Y < PLAYER_Y) - (RAIN > 0) * 0.5*((sqrt(DISTANCE_SQUARED) > (RENDER_DISTANCE^2)))",
+       "x": "- POS_X + PLAYER_X + 250*4 * sin((DAY_TIME % 1200) / 1200 * 2 * pi) + cos((DAY_TIME + 1000) / 10) * 10 - 30", 
+       "z": "- POS_Z + PLAYER_Z + 15*10 * cos((DAY_TIME % 1200) / 1200 * 2 * pi) + sin((DAY_TIME + 2000) / 15) * 25 + 80",
+       "y": "- POS_Y + PLAYER_Y + gaussian()*5 + sin((DAY_TIME + 3000) / 100) * 5"
+     },
+     {
+       "particle": "davidparticles:aurora",
+       "chance": "0*0.5*(DAY_TIME > 13500)*(DAY_TIME < 22000) - (POS_Y < PLAYER_Y) - (RAIN > 0) * 0.5*((sqrt(DISTANCE_SQUARED) > (RENDER_DISTANCE^2)))",
+       "x": "- POS_X + PLAYER_X + 175*4 * sin((DAY_TIME % 1200) / 1200 * 2 * pi) + sin((DAY_TIME + 1000) / 10) * 10 - 45", 
+       "z": "- POS_Z + PLAYER_Z + 12.5*10 * cos((DAY_TIME % 1200) / 1200 * 2 * pi) + cos((DAY_TIME + 2000) / 15) * 25 - 35*2",
+       "y": "- POS_Y + PLAYER_Y + gaussian()*5 + sin((DAY_TIME + 3000) / 100) * 5"
+     },
+     {
+       "particle": "davidparticles:aurora",
+       "chance": "0*0.5*(DAY_TIME > 13500)*(DAY_TIME < 22000) - (POS_Y < PLAYER_Y) - (RAIN > 0) * 0.5*((sqrt(DISTANCE_SQUARED) > (RENDER_DISTANCE^2)))",
+       "x": "- POS_X + PLAYER_X + 175*4 * sin((DAY_TIME % 1200) / 1200 * 2 * pi) + sin((DAY_TIME + 1000) / 10) * 10 + 45", 
+       "z": "- POS_Z + PLAYER_Z + 12.5*10 * cos((DAY_TIME % 1200) / 1200 * 2 * pi) + cos((DAY_TIME + 2000) / 15) * 25 - 160*2",
+       "y": "- POS_Y + PLAYER_Y + gaussian()*5 + sin((DAY_TIME + 3000) / 100) * 5"
+     }
+  ]
+}

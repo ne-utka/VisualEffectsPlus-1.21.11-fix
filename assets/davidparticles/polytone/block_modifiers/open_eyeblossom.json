@@ -1,0 +1,23 @@
+{
+   "targets": ["minecraft:open_eyeblossom"],
+   "particle_emitters": [
+     {
+       "particle": "davidparticles:creaking_orange_glow",
+       "chance": "1",
+       "x": "0.5", 
+       "z": "0.5",
+       "y": "0.75",
+       "biomes": "minecraft:pale_garden",
+       "spawn_location": "lower_corner"
+     },
+     {
+       "particle": "davidparticles:orange_glow_1",
+       "chance": "0",
+       "x": "0.5", 
+       "z": "0.5",
+       "y": "0.75",
+       "biomes": "minecraft:pale_garden",
+       "spawn_location": "lower_corner"
+     }
+     ]
+}

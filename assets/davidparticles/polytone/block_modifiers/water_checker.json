@@ -1,0 +1,43 @@
+{
+   "targets": ["minecraft:water"],
+   "particle_emitters": [
+     {
+       "particle": "davidparticles:water_surface_check",
+       "chance": "1",
+       "x": "0.5", 
+       "z": "0.5",
+       "y": "1",
+       "state_predicate": {
+       "predicate_type": "blockstate_match",
+       "block_state": 
+         {
+           "Name": "minecraft:water",
+           "Properties": {
+           "falling": "false"
+           }
+         }
+     },
+  "spawn_location": "lower_corner"
+     },
+     
+     {
+       "particle": "davidparticles:water_cascade_check",
+       "chance": "1",
+       "x": "0.5", 
+       "z": "0.5",
+       "y": "-1",
+       "state_predicate": {
+       "predicate_type": "blockstate_match",
+       "block_state": 
+         {
+           "Name": "minecraft:water",
+           "Properties": {
+            "falling": "true",
+           "level": "8"
+           }
+         }
+     },
+  "spawn_location": "lower_corner"
+     }
+    ]
+}

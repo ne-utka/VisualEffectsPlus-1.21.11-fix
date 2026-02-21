@@ -1,0 +1,17 @@
+{
+	"targets": [
+		"minecraft:snowy_plains",
+		"minecraft:snowy_slopes",
+		"minecraft:snowy_beach",
+		"minecraft:snowy_taiga",
+		"minecraft:frozen_river",
+		"minecraft:frozen_ocean",
+		"minecraft:frozen_peaks",
+		"minecraft:deep_frozen_ocean",
+		"minecraft:ice_spikes",
+		"minecraft:jagged_peaks",
+		"minecraft:grove"
+	],
+	"fog_radius": "1 - RAIN*0.75",
+ 	"fog_fade": "(1.1 + (RENDER_DISTANCE/64)*0.5 + RAIN*0.25)*(7.5 + (RENDER_DISTANCE/64*2.5))"
+}

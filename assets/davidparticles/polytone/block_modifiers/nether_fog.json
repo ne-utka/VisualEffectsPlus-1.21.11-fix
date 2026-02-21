@@ -1,0 +1,29 @@
+{
+   "targets": ["minecraft:air"],
+   "particle_emitters": [
+      {
+       "particle": "davidparticles:nether_lightray",
+       "chance": "0.01",
+       "x": "rand() + cos(TIME)+0.5", 
+       "z": "rand() + cos(TIME)+0.5",
+       "y": "2 + rand()",
+       "biomes": ["minecraft:nether_wastes", "minecraft:crimson_forest", "minecraft:basalt_deltas", "minecraft:warped_forest"]
+     },
+     {
+       "particle": "davidparticles:lava_vapor",
+       "chance": "0.001",
+       "x": "rand()", 
+       "z": "rand()",
+       "y": "rand()",
+       "biomes": ["minecraft:nether_wastes", "minecraft:crimson_forest", "minecraft:basalt_deltas"]
+     },
+     {
+       "particle": "davidparticles:warped_spore",
+       "chance": "0.001",
+       "x": "rand()", 
+       "z": "rand()",
+       "y": "rand()",
+       "biomes": ["minecraft:warped_forest"]
+     }
+     ]
+}

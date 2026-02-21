@@ -1,0 +1,24 @@
+{
+  "render_type": "opaque",
+  "rotation_mode": "look_at_xyz",
+  "has_physics": true,
+  "exclusion_radius": 1,
+  "lit": true,
+  "light_level": 15,
+  "initializer": {
+    "red": "1",
+    "green": "0.99",
+    "blue": "0.9052",
+    "lifetime": "12 + rand()*10",
+    "size": "0.04 + rand()*0.04",
+    "alpha": "1",
+    "friction": "0.98",
+    "custom": "gaussian()"
+  },
+  "ticker": {
+    "size": "SIZE + 0.0025",
+    "dx": "cos(CUSTOM*2*pi)*0.01*(1 - AGE/LIFETIME)",
+    "dy": "0.004*(1 - AGE/LIFETIME)",
+    "dz": "sin(CUSTOM*2*pi)*0.01*(1 - AGE/LIFETIME)"
+  }
+}

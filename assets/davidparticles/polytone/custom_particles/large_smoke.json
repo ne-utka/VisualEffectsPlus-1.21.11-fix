@@ -1,0 +1,25 @@
+{
+        "initializer":{
+          "lifetime": "28 + rand()*18",
+          "alpha": "1",
+          "size": "0.25",
+          "red": "0.1 + rand()*0.15",
+          "green": "0.1 + rand()*0.15",
+          "blue": "0.1 + rand()*0.15",
+          "custom": "rand()"
+        },
+        "ticker": {
+            "dy": "0.025 + 0.075*CUSTOM ",
+            "dx": "(0.01) * sin((0.025 * AGE))",
+            "dz": "(0.01) * cos((0.025 * AGE))",
+            "size": "max(0, SIZE-0.005)",
+            "red": "0.25 - (AGE/LIFETIME)*0.25",
+            "green": "0.25 - (AGE/LIFETIME)*0.25",
+            "blue": "0.25 - (AGE/LIFETIME)*0.25",
+            "alpha": "1"
+        },
+        "liquid_affinity": "any",
+        "has_physics": true,
+        "random_sprite": false,
+        "render_type": "translucent"
+}

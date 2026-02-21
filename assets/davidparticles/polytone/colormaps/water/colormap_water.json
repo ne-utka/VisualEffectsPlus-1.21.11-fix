@@ -1,0 +1,70 @@
+{
+	"default_color": "44aff5",
+    "x_axis": "biome_id",
+    "y_axis": "0",
+	
+	"biome_id_mapper": {
+		"minecraft:windswept_forest": 0,
+		"minecraft:windswept_gravelly_hills": 0,
+		"minecraft:warm_ocean": 1,
+		"minecraft:the_end": 2,
+		"minecraft:taiga": 3,
+		"minecraft:swamp": 4,
+		"minecraft:sunflower_plains": 5,
+		"minecraft:plains": 5,
+		"minecraft:stony_shore": 6,
+		"minecraft:sparse_jungle": 7,
+		"minecraft:snowy_taiga": 8,
+		"minecraft:snowy_plains": 9,
+		"minecraft:ice_spikes": 9,
+		"minecraft:snowy_beach": 10,
+		"minecraft:savanna_plateau": 11,
+		"minecraft:windspept_savanna": 11,
+		"minecraft:savanna": 12,
+		"minecraft:river": 13,
+		"minecraft:old_growth_pine_taiga": 14,
+		"minecraft:old_growth_spruce_taiga": 14,
+		"minecraft:ocean": 15,
+		"minecraft:nether_wastes": 16,
+		"minecraft:warped_forest": 16,
+		"minecraft:crimson_forest": 16,
+		"minecraft:soul_sand_valley": 16,
+		"minecraft:mushroom_fields": 17,
+		"minecraft:meadow": 18,
+
+		
+
+		"minecraft:grove": 18,
+		"minecraft:snowy_slopes": 18,
+		"minecraft:jagged_peaks": 18,
+		"minecraft:frozen_peaks": 18,
+		"minecraft:stony_peaks": 18,
+		"minecraft:mangrove_swamp": 19,
+
+		"minecraft:lukewarm_ocean": 20,
+		"minecraft:deep_lukewarm_ocean": 20,
+		
+		"minecraft:jungle": 21,
+
+		"minecraft:frozen_river": 22,
+		"minecraft:frozen_ocean": 23,
+		"minecraft:deep_frozen_ocean": 23,
+		"minecraft:forest": 24,
+		"minecraft:flower_forest": 25,
+		"minecraft:eroded_badlands": 26,
+		"minecraft:wooded_badlands": 26,
+		"minecraft:desert": 27,
+		"minecraft:deep_ocean": 28,
+		"minecraft:dark_dorest": 29,
+		"minecraft:cold_ocean": 30,
+		"minecraft:deep_cold_ocean": 30,
+		"minecraft:birch_forest": 31,
+		"minecraft:beach": 32,
+		"minecraft:basalt_deltas": 33,
+		"minecraft:bamboo_jungle": 34,
+		"minecraft:badlands": 35,
+		"minecraft:cherry_grove": 36,
+
+		"texture_size": 256
+	}
+}

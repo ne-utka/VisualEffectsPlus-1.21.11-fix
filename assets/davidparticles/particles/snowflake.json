@@ -1,0 +1,12 @@
+  {
+    "textures": [
+      "davidparticles:weather/snowflake_0",
+      "davidparticles:weather/snowflake_1",
+      "davidparticles:weather/snowflake_2",
+      "davidparticles:weather/snowflake_3",
+
+      "davidparticles:weather/snowflake_1",
+      "davidparticles:weather/snowflake_2",
+      "davidparticles:weather/snowflake_3"
+    ]
+  }

@@ -1,0 +1,36 @@
+{
+  "initializer": {
+    "lifetime": "500",
+    "size": "0.2 + rand() * 0.05",
+    "alpha": "1",
+    "hitbox_size": 10,
+    "custom": "rand()"
+  },
+  "ticker": {
+  "alpha": "ALPHA * min(max((LIFETIME - AGE) / 18, 0), 1)",
+  "dx": "(0.005 + RAIN*0.01) * sin(AGE * 0.05 + CUSTOM * 3) + 0.005 * CUSTOM - ((PLAYER_X - POS_X) / (DISTANCE_SQUARED + 1)) * min(max(2 - sqrt(DISTANCE_SQUARED), 0), 1) * 0.15 + RAIN*0.025",
+  "dy": "0",
+  "dz": "(0.005 + RAIN*0.01) * cos(AGE * 0.05 + CUSTOM * 3) + 0.005 * CUSTOM - ((PLAYER_Z - POS_Z) / (DISTANCE_SQUARED + 1)) * min(max(2 - sqrt(DISTANCE_SQUARED), 0), 1) * 0.15",
+  "roll": "(0.25 + RAIN * 0.75) * sin(0.1 * AGE + CUSTOM * 5)",
+  "remove_condition": "sqrt(DISTANCE_SQUARED) > 20"
+},
+  "random_sprite": true,
+  "liquid_affinity": "any",
+  "render_type": "translucent",
+  "rotation_mode": "look_up",
+  "exclusion_radius": 0,
+  "has_physics": true,
+  "kill_on_contact": false,
+  "kill_when_still": false,
+  "offset": [0, -0.05, 0],
+   "colormap": "minecraft:foliage_color",
+   "particle_emitters": [
+    {
+      "particle": "leaves:splash",
+      "chance": "AGE == 1", 
+      "x": "0.0",
+      "y": "-0.005",
+      "z": "0.0"
+    }
+  ]
+}

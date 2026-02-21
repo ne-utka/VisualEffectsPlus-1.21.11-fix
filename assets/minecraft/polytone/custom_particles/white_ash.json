@@ -1,0 +1,25 @@
+{
+        "initializer":{
+          "lifetime": "40",
+          "alpha": "1",
+          "size": "0",
+          "custom": "gaussian()",
+          "hitbox_size": 0.25
+        },
+        "ticker": {
+            "dx": "(CUSTOM*0.05 + 0.01) * sin((0.05 * AGE))*abs(sin(0.01 * AGE)) + CUSTOM*0.01",
+            "dy": "(CUSTOM*0.05) * sin((0.1 * AGE)) * abs(sin(0.01 * AGE))",
+            "dz": "(CUSTOM*0.05 - 0.01) * sin((0.05 * AGE))*abs(sin(0.01 * AGE)) - CUSTOM*0.01",
+            "size": "(0.15) * sin((0.075 * AGE))",
+            "remove_condition": "max(0, min(((1 - ((abs(POS_X - PLAYER_X) + abs(POS_Z - PLAYER_Z)) / 15)^2)), ((1 - ((abs(POS_Y - PLAYER_Y)) / 15)^2)))) == 0"
+        },
+        "random_sprite": true,
+        "liquid_affinity": "non_liquids",
+        "render_type": "opaque",
+        "has_physics": true,
+        "lit": true,
+        "light_level": 1,
+        "kill_on_contact": true,
+        "exclusion_radius": 1,
+        "kill_when_still": false
+}

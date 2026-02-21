@@ -1,0 +1,29 @@
+{
+   "targets": ["minecraft:soul_soil", "minecraft:soul_sand"],
+   "particle_emitters": [
+      {
+       "particle": "davidparticles:soul_big",
+       "chance": "0.0005*0.5",
+       "x": "(rand() + cos(TIME)+0.5)-10", 
+       "z": "rand() + cos(TIME)+0.5",
+       "y": "0.25",
+       "biomes": ["minecraft:soul_sand_valley"]
+     },
+     {
+       "particle": "davidparticles:soul_medium",
+       "chance": "0.0015*0.5",
+       "x": "(rand() + cos(TIME)+0.5)-10", 
+       "z": "rand() + cos(TIME)+0.5",
+       "y": "0.25",
+       "biomes": ["minecraft:soul_sand_valley"]
+     },
+     {
+       "particle": "davidparticles:soul_small",
+       "chance": "0.001*0.5",
+       "x": "(rand() + cos(TIME)+0.5)-10", 
+       "z": "rand() + cos(TIME)+0.5",
+       "y": "0.25",
+       "biomes": ["minecraft:soul_sand_valley"]
+     }
+     ]
+}

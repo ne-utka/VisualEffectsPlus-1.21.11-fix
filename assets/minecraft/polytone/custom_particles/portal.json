@@ -1,0 +1,49 @@
+{
+        "initializer":{
+          "lifetime": "1",
+          "alpha": "1",
+          "size": "0.5",
+          "custom": "rand() * 2 * pi",
+          "dx": "0",
+          "dz": "0"
+        },
+        "ticker": {
+          "alpha": "0",
+  "dx": "0",
+    "dz": "0",
+
+  "dy": "0.01 * sin(AGE * 0.075)"
+        },
+        "liquid_affinity": "non_liquids",
+        "random_sprite": false,
+        "has_physics": true,
+        "kill_on_contact": false,
+        "kill_when_still": true,
+        "render_type": "invisible",
+        "offset": [0, 0, 0],
+        "particle_emitters": [
+          {
+      "particle": "davidparticles:portal",
+      "chance": "AGE == 1", 
+      "x": "0.0",
+      "y": "0.0",
+      "z": "0.0",
+      "state_predicate": {
+        "predicate_type": "block_match",
+        "block": "minecraft:nether_portal"
+      }
+    },
+
+    {
+      "particle": "davidparticles:portal",
+      "chance": "(AGE == 1)*0.1", 
+      "x": "0.0",
+      "y": "0.0",
+      "z": "0.0",
+      "state_predicate": {
+        "predicate_type": "block_match",
+        "block": "minecraft:air"
+      }
+    }
+        ]
+}

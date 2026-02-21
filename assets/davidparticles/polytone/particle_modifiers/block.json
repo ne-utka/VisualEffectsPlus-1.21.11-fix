@@ -1,0 +1,10 @@
+{
+   "targets": ["minecraft:block"
+],
+"filter": {
+      "block": "minecraft:stone"
+    },
+    "red": "0.9",
+    "green": "0.9",
+    "blue": "0.9"
+}

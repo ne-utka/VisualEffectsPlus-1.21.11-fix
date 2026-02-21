@@ -1,0 +1,26 @@
+{
+  "initializer":{
+    "lifetime": "480",
+    "size": "200",
+    "alpha": "0",
+    "custom": "gaussian()"
+  },
+      "ticker": {
+        "alpha": "((0.05+(0.05* sin((0.05) * AGE))) * sin(((pi/LIFETIME) * AGE)))*(DAY_TIME > 13500)*(DAY_TIME < 23000)*max(0, min(1, 1 - sqrt(DISTANCE_SQUARED) / 768))",
+        "dz": "0",
+        "dx": "0",
+        "dy": "0",
+        "remove_condition": "(RAIN >= 0.5)"
+        },
+  "render_type": "additive_translucent",
+  "liquid_affinity": "any",
+  "random_sprite": true,
+  "exclusion_radius": 2,
+  "has_physics": false,
+  "kill_on_contact": false,
+  "force_spawn": true,
+  "kill_when_still": false,
+  "offset": [0, 350, 0],
+  "lit": true,
+  "light_level": 15
+}

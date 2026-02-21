@@ -1,0 +1,34 @@
+{
+  "initializer": {
+    "lifetime": "500",
+    "size": "0.15 + rand() * 0.05",
+    "alpha": "0",
+    "roll": "rand() * 2 * pi",
+    "custom": "rand()"
+  },
+  "ticker": {
+    "alpha": "1 * min(max(AGE / 12, 0), 1) * min(max((LIFETIME - AGE) / 12, 0), 1)",
+    "dx": "(AGE/LIFETIME)*0.035 + (0.035 + 0.020*CUSTOM) * sin( ( 0.05 + RAIN*0.075) * AGE + CUSTOM * 2 * pi) + RAIN * ( 0.075 + ( (0.075 + 0.06*CUSTOM) * pow(max(sin(0.05*AGE + CUSTOM*2*pi),0),2) ) )",
+    "dy": "-0.035 + 0.01 * cos(0.08 * AGE + CUSTOM) + RAIN * ( - 0.05 + ( (0.075 + 0.06*CUSTOM) * pow(max(sin(0.05*AGE + CUSTOM*2*pi),0),2) ) )",
+    "dz": "(AGE/LIFETIME)*0.015 + (0.035 + 0.020*CUSTOM) * cos( (0.05 + RAIN*0.035) * AGE + CUSTOM * 2 * pi) ",
+    "roll": "CUSTOM*2*pi + (0.25 + 0.75*RAIN + 2*sqrt(DX*DX + DY*DY + DZ*DZ)) * sin(0.10*AGE + CUSTOM*2*pi)",
+    "remove_condition": "sqrt(DISTANCE_SQUARED) > 20"
+  },
+  "random_sprite": true,
+  "liquid_affinity": "non_liquids",
+  "render_type": "translucent",
+  "rotation_mode": "movement_aligned",
+  "exclusion_radius": 1,
+  "has_physics": true,
+  "kill_on_contact": false,
+  "kill_when_still": true,
+  "particle_emitters": [
+    {
+      "particle": "leaves:cherry_leaves_water_emitter",
+      "chance": "1", 
+      "x": "0.0",
+      "y": "-0.05",
+      "z": "0.0"
+    }
+  ]
+}

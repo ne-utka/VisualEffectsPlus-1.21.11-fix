@@ -1,0 +1,92 @@
+{
+        "initializer":{
+          "lifetime": "32 + rand()*24",
+          "alpha": "1",
+          "size": "0.035 + rand()*0.05",
+          "custom": "gaussian()",
+          "red": "1.0",
+          "green": "0.510",
+          "blue": "0.996"
+        },
+        "ticker": {
+            "red": "(1 - min(1, (AGE / LIFETIME) * 2)) * 1.0 + min(1, (AGE / LIFETIME) * 2) * ((1 - max(0, (AGE / LIFETIME - 0.5) * 2)) * 0.992 + max(0, (AGE / LIFETIME - 0.5) * 2) * 0.408)",
+            "green": "(1 - min(1, (AGE / LIFETIME) * 2)) * 0.510 + min(1, (AGE / LIFETIME) * 2) * ((1 - max(0, (AGE / LIFETIME - 0.5) * 2)) * 0.227 + max(0, (AGE / LIFETIME - 0.5) * 2) * 0.141)",
+            "blue": "(1 - min(1, (AGE / LIFETIME) * 2)) * 0.996 + min(1, (AGE / LIFETIME) * 2) * ((1 - max(0, (AGE / LIFETIME - 0.5) * 2)) * 1.0 + max(0, (AGE / LIFETIME - 0.5) * 2) * 0.737)",
+            
+
+            "dx": "CUSTOM*0.010 * sin(AGE*0.11 + CUSTOM*1.7) + CUSTOM*0.003 * sin(AGE*0.43 + CUSTOM*3.1)",
+            "dz": "CUSTOM*0.010 * cos(AGE*0.085 + CUSTOM*2.3) + CUSTOM*0.003 * cos(AGE*0.37 + CUSTOM*2.6)",
+
+            
+            "dy": "0.01 * sin((0.075 * AGE))",
+            "alpha": "pow(1 - max(0, (AGE / LIFETIME - 0.75) / 0.25), 2)",
+            "remove_condition": "sqrt(DISTANCE_SQUARED) > 15"
+        },
+        "liquid_affinity": "non_liquids",
+        "random_sprite": false,
+        "has_physics": false,
+        "render_type": "translucent",
+        "lit": true,
+        "light_level": 15,
+        "offset": [0, 0, 0],
+        "exclusion_radius": 0,
+        "particle_emitters": [
+
+    {
+    "particle": "davidparticles:portal_1",
+    "chance": "(AGE == 1) * 0.5",
+    "x": "-1.60", "y": "0.90", "z": "1.30",
+    "dx": "0.05", "dy": "-0.028125", "dz": "-0.040625"
+  },
+  {
+    "particle": "davidparticles:portal_1",
+    "chance": "(AGE == 1) * 0.5",
+    "x": "1.80", "y": "0.40", "z": "-1.00",
+    "dx": "-0.05625", "dy": "-0.0125", "dz": "0.03125"
+  },
+  {
+    "particle": "davidparticles:portal_1",
+    "chance": "(AGE == 1) * 0.5",
+    "x": "-0.60", "y": "1.70", "z": "-1.90",
+    "dx": "0.01875", "dy": "-0.053125", "dz": "0.059375"
+  },
+
+  {
+    "particle": "davidparticles:portal_1",
+    "chance": "(AGE == 1) * 0.5",
+    "x": "1.20", "y": "1.40", "z": "0.20",
+    "dx": "-0.0375", "dy": "-0.04375", "dz": "-0.00625"
+  },
+  {
+    "particle": "davidparticles:portal_1",
+    "chance": "(AGE == 1) * 0.5",
+    "x": "-0.20", "y": "0.60", "z": "1.90",
+    "dx": "0.00625", "dy": "-0.01875", "dz": "-0.059375"
+  },
+  {
+    "particle": "davidparticles:portal_1",
+    "chance": "(AGE == 1) * 0.5",
+    "x": "0.50", "y": "1.90", "z": "1.10",
+    "dx": "-0.015625", "dy": "-0.059375", "dz": "-0.034375"
+  },
+
+  {
+    "particle": "davidparticles:portal_1",
+    "chance": "(AGE == 1) * 0.5",
+    "x": "-1.90", "y": "0.30", "z": "-0.30",
+    "dx": "0.059375", "dy": "-0.009375", "dz": "0.009375"
+  },
+  {
+    "particle": "davidparticles:portal_1",
+    "chance": "(AGE == 1) * 0.5",
+    "x": "0.10", "y": "1.60", "z": "-0.70",
+    "dx": "-0.003125", "dy": "-0.05", "dz": "0.021875"
+  },
+  {
+    "particle": "davidparticles:portal_1",
+    "chance": "(AGE == 1) * 0.5",
+    "x": "1.50", "y": "1.10", "z": "-1.90",
+    "dx": "-0.046875", "dy": "-0.034375", "dz": "0.059375"
+  }
+        ]
+}

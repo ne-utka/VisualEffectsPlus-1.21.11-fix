@@ -1,0 +1,17 @@
+{
+        "initializer":{
+          "lifetime": "1",
+          "alpha": "0"
+        },
+        "ticker": {
+        },
+"particle_emitters": [
+     {
+       "particle": "davidparticles:firefly",
+       "chance": "1 - RAIN*0.5",
+       "x": "0", 
+       "z": "0",
+       "y": "0"
+     }
+     ]
+}

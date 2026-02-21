@@ -1,0 +1,24 @@
+{
+        "initializer":{
+          "lifetime": "80",
+          "alpha": "1",
+          "size": "0",
+          "custom": "gaussian()"
+        },
+        "ticker": {
+            "dx": "(0.1) * sin((0.15 * AGE)) + 0.25 + CUSTOM*0.05 + RAIN*0.2",
+            "dy": "(0.035) * sin((0.35 * AGE))",
+            "dz": "(0.05) * cos((0.15 * AGE))",
+            "size": "0.25 * min(max(AGE / 8, 0), 1) * min(max((LIFETIME - AGE) / 8, 0), 1)",
+            "roll": "ROLL + ( (DX * 0.5 + DZ * 0.5) + DY * 0.25 ) * (1.2 + CUSTOM * 0.5)"
+        },
+        "random_sprite": true,
+        "liquid_affinity": "non_liquids",
+        "render_type": "opaque",
+        "rotation_mode": "look_at_xyz",
+        "has_physics": true,
+        "kill_on_contact": true,
+        "kill_when_still": false,
+        "offset": [0, 0, 0],
+        "colormap": "davidparticles:colormap_foliage_acacia"
+}

@@ -1,0 +1,30 @@
+{
+  "render_type": "additive_translucent",
+  "rotation_mode": "movement_aligned",
+  "random_sprite": true,
+  "lit": true,
+  "light_level": 8,
+  "initializer": {
+    "custom": "(DAY_TIME / 12000 * pi)",
+    "lifetime": "(100 + rand() * 60)*1.5",
+    "size": "(2.25 + rand() * 2.25)*4.5",
+    "alpha": "0.0"
+  },
+  "ticker": {
+   "alpha": "min(max((sqrt(DISTANCE_SQUARED) - 5) / 10, 0), 1) * max(0, min(1, (32 - sqrt(DISTANCE_SQUARED)) / 8)) * (0.225 + 0.05 * sin(0.25 * AGE)) * sin((pi / LIFETIME) * AGE)",
+    "dx": "cos(CUSTOM)*0.00075",
+    "dy": "sin(CUSTOM)*0.0035",
+    "remove_condition": "(sqrt(DISTANCE_SQUARED) > 32) + ( ( PLAYER_Y - 1 ) > POS_Y)"
+  },
+  "offset": [
+    0,
+    0,
+    0
+  ],
+  "has_physics": false,
+  "kill_on_contact": false,
+  "kill_when_still": false,
+  "exclusion_radius": 1,
+"liquid_affinity": "liquids",
+"colormap": "davidparticles:water/colormap_water"
+}

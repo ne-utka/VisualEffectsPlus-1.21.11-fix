@@ -1,0 +1,36 @@
+{
+        "initializer":{
+          "lifetime": "10"
+        },
+        "ticker": {
+        },
+        "liquid_affinity": "liquids",
+        "has_physics": true,
+        "render_type": "invisible",
+        "particle_emitters": [
+          {
+       "particle": "davidparticles:underwater_lightrays",
+       "chance": "(AGE == 1)*0.004*(SKY_LIGHT > 10) * ( (DAY_TIME % 24000) < 12000 ) * ( (DAY_TIME % 24000) > 500 )*(sqrt(DISTANCE_SQUARED) > 5)",
+       "x": "rand()*2 - 1", 
+       "z": "rand()*2 - 1",
+       "y": "0.05"
+     },
+     {
+       "particle": "davidparticles:water_caustics",
+       "chance": "0*(AGE == 1)*0.5*(SKY_LIGHT > 10) * ( (DAY_TIME % 24000) < 12000 ) * ( (DAY_TIME % 24000) > 500 )",
+       "x": "rand()*2 - 1", 
+       "z": "rand()*2 - 1",
+       "y": "0.85",
+       "biomes": ["minecraft:ocean",
+                "minecraft:deep_ocean",
+                "minecraft:cold_ocean",
+                "minecraft:deep_cold_ocean",
+                "minecraft:warm_ocean",
+                "minecraft:lukewarm_ocean",
+                "minecraft:deep_lukewarm_ocean",
+                "minecraft:beach",
+                "minecraft:river"
+  ]
+     }
+     ]
+}

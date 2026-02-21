@@ -1,0 +1,14 @@
+{
+   "targets": ["minecraft:weeping_vines_plant", "minecraft:crimson_fungus", "shroomlight", "warped_fungus"],
+   "particle_emitters": [
+     {
+       "particle": "davidparticles:nether_tree_spores",
+       "chance": "0.15",
+       "x": "gaussian()*0.1", 
+       "z": "gaussian()*0.1",
+       "y": "0.5",
+       "biomes": ["minecraft:crimson_forest", "minecraft:warped_forest"],
+       "spawn_location": "lower_corner"
+     }
+     ]
+}

@@ -1,0 +1,35 @@
+{
+        "initializer":{
+          "lifetime": "12",
+          "alpha": "0",
+          "size": "rand()*0.5",
+          "dx": "0",
+          "dy": "0",
+          "dz": "0",
+          "red": "1",
+          "green": "1",
+          "blue": "1"
+        },
+        "ticker": {
+          "size": "max(0, SIZE+0.005)",
+          "dx": "0",
+          "dy": "0",
+          "dz": "0",
+          "remove_condition": "sqrt(DISTANCE_SQUARED) > 15"
+        },
+        "has_physics": false,
+        "render_type": "translucent",
+        "offset": [0, 0.01, 0],
+        "exclusion_radius": 1,
+        "rotation_mode": "look_up",
+        "colormap": "minecraft:water_color",
+        "particle_emitters": [
+     {
+       "particle": "davidparticles:rain",
+       "x": "0", 
+       "z": "0",
+       "y": "0",
+       "chance": "(AGE == 1)*1"
+     }
+     ]
+}

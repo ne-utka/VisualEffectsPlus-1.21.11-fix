@@ -1,0 +1,37 @@
+{
+  "initializer": {
+    "lifetime": "20",
+    "alpha": "0",
+    "size": "0"
+  },
+  "ticker": {
+  },
+  "particle_emitters": [
+    {
+      "particle": "davidparticles:end_frame_circle",
+      "chance": "(AGE == 1)", 
+      "x": "0",
+      "y": "0.315",
+      "z": "0"
+    },
+    {
+      "particle": "davidparticles:end_frame_glow",
+      "chance": "(AGE == 1) + (AGE == LIFETIME)", 
+      "x": "0",
+      "y": "0",
+      "z": "0"
+    },
+    {
+      "particle": "davidparticles:end_eye",
+      "chance": "((AGE == 1) + (AGE == LIFETIME))*0.25", 
+      "x": "gaussian()*0.05",
+      "y": "0.25",
+      "z": "gaussian()*0.05"
+    }
+  ],
+  "tick_rate": 1,
+  "has_physics": false,
+  "offset": [0, 0, 0],
+  "liquid_affinity": "non_liquids",
+  "exclusion_radius": 1
+}

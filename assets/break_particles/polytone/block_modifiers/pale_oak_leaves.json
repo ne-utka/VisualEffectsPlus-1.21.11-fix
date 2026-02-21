@@ -1,0 +1,15 @@
+{
+   "targets": ["minecraft:pale_oak_leaves"],
+  "particle_emitters": [
+    {
+      "tick_source": "block_broken",
+      "particle": "break_particles:break_emitter_pale_oak_leaves",
+      "chance": "1",
+      "spawn_location": "lower_corner",
+      "x": "0.35",
+      "y": "0.25",
+      "z": "0.35"
+    }
+  ],
+     "spawn_particles_on_break": false
+}

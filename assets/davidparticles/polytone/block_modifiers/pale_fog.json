@@ -1,0 +1,15 @@
+{
+   "targets": ["minecraft:grass_block", "minecraft:pale_moss_block"],
+   "particle_emitters": [
+    {
+       "particle": "davidparticles:pale_fog",
+       "chance": "0.45",
+       "x": "0", 
+       "z": "0",
+       "y": "4",
+       "dy": "0.001 + rand()*0.001",
+       "biomes": ["minecraft:pale_garden"],
+       "spawn_location": "lower_corner"
+     }
+     ]
+}

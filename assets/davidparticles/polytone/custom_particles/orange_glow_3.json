@@ -1,0 +1,19 @@
+{
+        "initializer":{
+          "lifetime": "40",
+          "alpha": "0",
+          "size": "0.75",
+          "red": "1",
+          "green": "0.6235",
+          "blue": "0.0078"
+        },
+        "ticker": {
+          "alpha": "((0.075 - RAIN*0.025) * sin((0.075 * AGE)))"
+        },
+        "liquid_affinity": "non_liquids",
+        "has_physics": false,
+        "render_type": "additive_translucent",
+        "exclusion_radius": 0,
+        "lit": true,
+        "light_level": 15
+}

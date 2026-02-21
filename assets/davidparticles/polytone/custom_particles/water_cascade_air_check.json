@@ -1,0 +1,19 @@
+{
+        "initializer":{
+          "lifetime": "1"
+        },
+        "ticker": {
+        },
+        "liquid_affinity": "liquids",
+        "has_physics": false,
+        "render_type": "invisible",
+        "particle_emitters": [
+          {
+       "particle": "davidparticles:waterfall_cascade_emitter",
+       "chance": "1",
+       "x": "0", 
+       "z": "0",
+       "y": "1"
+     }
+     ]
+}

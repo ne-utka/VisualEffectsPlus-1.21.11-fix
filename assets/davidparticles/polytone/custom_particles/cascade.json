@@ -1,0 +1,26 @@
+{
+  "render_type": "translucent",
+  "rotation_mode": "look_at_xyz",
+  "random_sprite": false,
+  "offset": [0, 0.25, 0],
+  "has_physics": false,
+  "kill_on_contact": false,
+  "kill_when_still": true,
+
+  "initializer": {
+    "lifetime": "10 + floor(rand() * 8)",
+    "size": "0.45 + rand() * 0.32",
+    "alpha": "0.85",
+    "custom": "rand()",
+    "red": "0.95",
+    "green": "0.95",
+    "blue": "0.95"
+  },
+
+  "ticker": {
+    "dx": "DX*0.88",
+    "dz": "DZ*0.88",
+
+   "dy": "(0.05 + CUSTOM * 0.05) * ( sin(pi * (AGE + 1) / LIFETIME) - sin(pi * AGE / LIFETIME) ) - 0.01"
+  }
+}

@@ -1,0 +1,13 @@
+{
+   "targets": ["#minecraft:leaves"],
+   "particle_emitters": [
+     {
+       "particle": "davidparticles:lightray_emitter_emitter",
+       "chance": "1",
+       "x": "0", 
+       "z": "0",
+       "y": "-3",
+       "spawn_location": "lower_corner"
+     }
+     ]
+}

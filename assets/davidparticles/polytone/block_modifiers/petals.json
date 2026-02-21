@@ -1,0 +1,42 @@
+{
+   "targets": ["minecraft:pink_petals",
+               "minecraft:wildflowers"
+              ],
+   "particle_emitters": [
+     {
+       "particle": "davidparticles:butterfly_blue",
+       "chance": "0.00025 - RAIN*2 - ((DAY_TIME > 13500) * (DAY_TIME < 23500))",
+       "x": "gaussian()*0.05 + 0.1", 
+       "z": "gaussian()*0.05 + 0.1",
+       "y": "gaussian()*0.1 + 0.5"
+     },
+     {
+       "particle": "davidparticles:butterfly_red",
+       "chance": "0.00025 - RAIN*2 - ((DAY_TIME > 13500) * (DAY_TIME < 23500))",
+       "x": "gaussian()*0.05 + 0.1", 
+       "z": "gaussian()*0.05 + 0.1",
+       "y": "gaussian()*0.1 + 0.5"
+     },
+     {
+       "particle": "davidparticles:butterfly_purple",
+       "chance": "0.00025 - RAIN*2 - ((DAY_TIME > 13500) * (DAY_TIME < 23500))",
+       "x": "gaussian()*0.05 + 0.1", 
+       "z": "gaussian()*0.05 + 0.1",
+       "y": "gaussian()*0.1 + 0.5"
+     },
+     {
+       "particle": "davidparticles:butterfly_yellow",
+       "chance": "0.00025 - RAIN*2 - ((DAY_TIME > 13500) * (DAY_TIME < 23500))",
+       "x": "gaussian()*0.05 + 0.1", 
+       "z": "gaussian()*0.05 + 0.1",
+       "y": "gaussian()*0.1 + 0.5"
+     },
+     {
+       "particle": "davidparticles:pollen",
+       "chance": "0.025 - RAIN*2 - ((DAY_TIME > 13500) * (DAY_TIME < 23500))",
+       "x": "0.5", 
+       "z": "0.5",
+       "y": "0.1"
+     }
+     ]
+}

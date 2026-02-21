@@ -1,0 +1,40 @@
+{
+        "initializer":{
+          "lifetime": "10 + rand()*4",
+          "alpha": "0.35",
+          "size": "rand()*0.15 + 0.2",
+          "dx": "0",
+          "dy": "0",
+          "dz": "0",
+          "red": "0.2980",
+          "green": "0.3372",
+          "blue": "0.3960"
+        },
+        "ticker": {
+          "alpha": "0.375 * min(max(1 - AGE / LIFETIME, 0), 1)",
+          "dx": "0",
+          "dy": "0",
+          "dz": "0",
+          "remove_condition": "sqrt(DISTANCE_SQUARED) > 15"
+        },
+        "has_physics": false,
+        "render_type": "additive_translucent",
+        "offset": [0, 0.001, 0],
+        "rotation_mode": "look_up",
+        "particle_emitters": [
+     {
+       "particle": "davidparticles:rain_splash",
+       "x": "gaussian()*0.01", 
+       "z": "gaussian()*0.01",
+       "y": "0",
+       "chance": "(AGE == 1)"
+     },
+     {
+       "particle": "davidparticles:rain_splash_1",
+       "x": "gaussian()*0.01", 
+       "z": "gaussian()*0.01",
+       "y": "0",
+       "chance": "(AGE == 1)"
+     }
+  ]
+}

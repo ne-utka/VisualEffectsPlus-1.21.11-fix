@@ -1,0 +1,35 @@
+{
+        "initializer":{
+          "lifetime": "40 + rand()*20",
+          "alpha": "1",
+          "size": "0",
+          "custom": "rand()"
+        },
+        "ticker": {
+            "dx": "DX*0.92",
+            "dy": "0.001 + DY*0.92",
+            "dz": "DZ*0.92 ",
+            "size": "(0.09 + CUSTOM*0.06) * min(max(AGE / 2, 0), 1)",
+            "roll": "(CUSTOM*0.05) * cos((0.005 * AGE))",
+            "remove_condition": "sqrt(DISTANCE_SQUARED) > 15"
+        },
+        "random_sprite": false,
+        "rotation_mode": "look_at_xyz",
+        "liquid_affinity": "liquids",
+        "render_type": "opaque",
+        "has_physics": true,
+        "lit": true,
+        "light_level": 2,
+        "exclusion_radius": 0,
+        "kill_on_contact": false,
+        "kill_when_still": false,
+        "offset": [0, 0, 0],
+        "sound_emitters": [
+    {
+      "sound": "minecraft:block.bubble_column.upwards_ambient",
+      "chance": "AGE == 1",
+      "pitch": "0.1+gaussian()*0.3",
+      "volume": "0.25"
+    }
+  ]
+}

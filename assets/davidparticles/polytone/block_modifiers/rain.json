@@ -1,0 +1,47 @@
+{
+   "targets": ["minecraft:air"],
+   "particle_emitters": [
+  {
+    "particle": "davidparticles:rain_emitter",
+    "chance": "1 * (SKY_LIGHT == 15) * (RAIN > 0)",
+    "x": "0", 
+    "z": "0",
+    "y": "0",
+    "biomes": [
+      "minecraft:plains",
+      "minecraft:windswept_hills",
+      "minecraft:windswept_forest",
+      "minecraft:windswept_gravelly_hills",
+      "minecraft:stony_shore",
+      "minecraft:river",
+      "minecraft:beach",
+      "minecraft:birch_forest",
+      "minecraft:sunflower_plains",
+      "minecraft:flower_forest",
+      "minecraft:old_growth_birch_forest",
+      "minecraft:meadow",
+      "minecraft:forest",
+      "minecraft:cherry_grove",
+      "minecraft:cold_ocean",
+      "minecraft:deep_cold_ocean",
+      "minecraft:dark_forest",
+      "minecraft:jungle",
+      "minecraft:sparse_jungle",
+      "minecraft:bamboo_jungle",
+      "minecraft:mangrove_swamp",
+      "minecraft:mushroom_fields",
+      "minecraft:ocean",
+      "minecraft:deep_ocean",
+      "minecraft:pale_garden",
+      "minecraft:swamp",
+      "minecraft:taiga",
+      "minecraft:old_growth_pine_taiga",
+      "minecraft:old_growth_spruce_taiga",
+      "minecraft:warm_ocean",
+      "minecraft:lukewarm_ocean",
+      "minecraft:deep_lukewarm_ocean",
+      "minecraft:stony_peaks"
+    ]
+  }
+     ]
+}

@@ -1,0 +1,33 @@
+{
+        "initializer":{
+          "lifetime": "40 + rand()*20",
+          "alpha": "0",
+          "size": "3.5",
+          "red": "0.9",
+          "green": "0.9",
+          "blue": "0.9",
+          "hitbox_size": 0.1,
+          "custom": "rand()",
+          "roll": "rand() * 2 * pi"
+        },
+        "ticker": {
+          "alpha": "0.75 * sin( (pi/LIFETIME) * AGE) * max(0, min(1, (20 - sqrt(DISTANCE_SQUARED)) / 5))",
+            "dx": "(0.25 + RAIN * 0.5) + CUSTOM * 0.1 * sin(TIME * 0.2 + CUSTOM * 10)",
+            "dy": "(0.25 * cos(0.05 * TIME) - RAIN * 0.1)*0.5",
+            "dz": "0.05 * sin(0.01 * TIME + CUSTOM * 8)",
+            "size": "max(0, SIZE-0.005)",
+            "roll": "ROLL + CUSTOM * 0.06",
+            "remove_condition": "sqrt(DISTANCE_SQUARED) > 20"
+        },
+        "random_sprite": true,
+        "liquid_affinity": "non_liquids",
+        "render_type": "translucent",
+        "lit": true,
+        "light_level": 1,
+        "has_physics": true,
+        "kill_on_contact": true,
+        "kill_when_still": true,
+        "offset": [0, -0.5, 0],
+        "exclusion_radius": 3,
+        "colormap": "davidparticles:colormap_sandstorm"
+}

@@ -1,0 +1,21 @@
+{
+        "initializer":{
+          "lifetime": "40",
+          "alpha": "0",
+          "size": "0.5",
+          "red": "1",
+          "green": "0.976",
+          "blue": "0.850"
+        },
+        "ticker": {
+          "alpha": "min(max((20 - sqrt(DISTANCE_SQUARED)) / 20, 0), 1) * (0.75 + 0.05 * sin(0.2 * AGE)) * sin((pi / LIFETIME) * AGE) * min(max(SKY_LIGHT / 10, 0), 1)"
+        },
+        "liquid_affinity": "liquids",
+        "has_physics": false,
+        "rotation_mode": "look_up",
+        "exclusion_radius": 1,
+        "lit": true,
+        "light_level": 15,
+        "render_type": "additive_translucent",
+        "offset": [0, 0.50, 0]
+}

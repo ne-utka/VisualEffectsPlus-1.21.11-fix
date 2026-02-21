@@ -1,0 +1,110 @@
+{
+   "targets": ["minecraft:fire", "minecraft:soul_fire"],
+   "particle_emitters": [
+     {
+       "particle": "davidparticles:fire_particle_emitter",
+       "chance": "1",
+       "x": "0", 
+       "z": "0.5",
+       "y": "0.5",
+       "state_predicate": {
+       "predicate_type": "blockstate_match",
+       "block_state": 
+         {
+           "Name": "minecraft:fire",
+           "Properties": {
+           "west": "true"
+           }
+         }
+     },
+     "spawn_location": "lower_corner"
+     },
+     {
+       "particle": "davidparticles:fire_particle_emitter",
+       "chance": "1",
+       "x": "0.5", 
+       "z": "1",
+       "y": "0.5",
+       "state_predicate": {
+       "predicate_type": "blockstate_match",
+       "block_state": 
+         {
+           "Name": "minecraft:fire",
+           "Properties": {
+           "south": "true"
+           }
+         }
+     },
+     "spawn_location": "lower_corner"
+     },
+     {
+       "particle": "davidparticles:fire_particle_emitter",
+       "chance": "1",
+       "x": "0.5", 
+       "z": "0",
+       "y": "0.5",
+       "state_predicate": {
+       "predicate_type": "blockstate_match",
+       "block_state": 
+         {
+           "Name": "minecraft:fire",
+           "Properties": {
+           "north": "true"
+           }
+         }
+     },
+     "spawn_location": "lower_corner"
+     },
+     {
+       "particle": "davidparticles:fire_particle_emitter",
+       "chance": "1",
+       "x": "1", 
+       "z": "0.5",
+       "y": "0.5",
+       "state_predicate": {
+       "predicate_type": "blockstate_match",
+       "block_state": 
+         {
+           "Name": "minecraft:fire",
+           "Properties": {
+           "east": "true"
+           }
+         }
+     },
+     "spawn_location": "lower_corner"
+     },
+     {
+       "particle": "davidparticles:fire_particle_emitter",
+       "chance": "1",
+       "x": "0.5", 
+       "z": "0.5",
+       "y": "0.5",
+       "state_predicate": {
+       "predicate_type": "blockstate_match",
+       "block_state": 
+         {
+           "Name": "minecraft:fire",
+           "Properties": {
+           "east": "false",
+           "south": "false",
+           "west": "false",
+           "north": "false"
+           }
+         }
+     },
+     "spawn_location": "lower_corner"
+    },
+    {
+       "particle": "davidparticles:soul_fire_particle_emitter",
+       "chance": "1",
+       "x": "0.5", 
+       "z": "0.5",
+       "y": "0.5",
+       "state_predicate": {
+       "predicate_type": "block_match",
+       "block": "minecraft:soul_fire"
+     },
+     "spawn_location": "lower_corner"
+    }
+     ]
+}

@@ -1,0 +1,10 @@
+{
+	"default_color": 16777215,
+    "x_axis": "biome_id",
+    "y_axis": "0.5+(noise(POS_X/45,15+POS_Z/45)*0.5)",
+	
+	"biome_id_mapper": {
+		"minecraft:soul_sand_valley": 1,
+		"texture_size": 256
+	}
+}

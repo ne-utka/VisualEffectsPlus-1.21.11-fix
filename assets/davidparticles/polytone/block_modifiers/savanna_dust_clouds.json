@@ -1,0 +1,15 @@
+{
+   "targets": ["minecraft:air"],
+   "particle_emitters": [
+    {
+       "particle": "davidparticles:sand_cloud",
+       "chance": "RAIN * 0.001*0",
+       "x": "-10", 
+       "z": "rand()",
+       "y": "4",
+       "biomes": ["minecraft:savanna",
+	            	  "minecraft:savanna_plateau",
+		              "minecraft:windswept_savanna"]
+     }
+    ] 
+}

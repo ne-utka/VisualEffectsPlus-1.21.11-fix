@@ -1,0 +1,279 @@
+{
+   "targets": ["minecraft:redstone_wall_torch", "minecraft:redstone_torch", "minecraft:torch", "minecraft:wall_torch", "minecraft:soul_torch", "minecraft:soul_wall_torch", "minecraft:open_eyeblossom"],
+   "particle_emitters": [
+     {
+       "particle": "davidparticles:torch_particle_emitter",
+       "chance": "1",
+       "x": "0.75", 
+       "z": "0.5",
+       "y": "0.75",
+       "state_predicate": {
+       "predicate_type": "blockstate_match",
+       "block_state": 
+         {
+           "Name": "minecraft:wall_torch",
+           "Properties": {
+           "facing": "west"
+           }
+         }
+     },
+     "spawn_location": "lower_corner"
+     },
+     {
+       "particle": "davidparticles:torch_particle_emitter",
+       "chance": "1",
+       "x": "0.5", 
+       "z": "0.25",
+       "y": "0.75",
+       "state_predicate": {
+       "predicate_type": "blockstate_match",
+       "block_state": 
+         {
+           "Name": "minecraft:wall_torch",
+           "Properties": {
+           "facing": "south"
+           }
+         }
+     },
+     "spawn_location": "lower_corner"
+     },
+     {
+       "particle": "davidparticles:torch_particle_emitter",
+       "chance": "1",
+       "x": "0.5", 
+       "z": "0.75",
+       "y": "0.75",
+       "state_predicate": {
+       "predicate_type": "blockstate_match",
+       "block_state": 
+         {
+           "Name": "minecraft:wall_torch",
+           "Properties": {
+           "facing": "north"
+           }
+         }
+     },
+     "spawn_location": "lower_corner"
+     },
+     {
+       "particle": "davidparticles:torch_particle_emitter",
+       "chance": "1",
+       "x": "0.25", 
+       "z": "0.5",
+       "y": "0.75",
+       "state_predicate": {
+       "predicate_type": "blockstate_match",
+       "block_state": 
+         {
+           "Name": "minecraft:wall_torch",
+           "Properties": {
+           "facing": "east"
+           }
+         }
+     },
+     "spawn_location": "lower_corner"
+     },
+     {
+       "particle": "davidparticles:torch_particle_emitter",
+       "chance": "1",
+       "x": "0.5", 
+       "z": "0.5",
+       "y": "0.6",
+       "state_predicate": {
+       "predicate_type": "block_match",
+       "block": "minecraft:torch"
+     },
+     "spawn_location": "lower_corner"
+     },
+      {
+       "particle": "davidparticles:torch_particle_emitter",
+       "chance": "1",
+       "x": "0.75", 
+       "z": "0.5",
+       "y": "0.75",
+       "state_predicate": {
+       "predicate_type": "blockstate_match",
+       "block_state": 
+         {
+           "Name": "minecraft:redstone_wall_torch",
+           "Properties": {
+           "facing": "west",
+           "lit": "true"
+           }
+         }
+     },
+     "spawn_location": "lower_corner"
+     },
+     {
+       "particle": "davidparticles:torch_particle_emitter",
+       "chance": "1",
+       "x": "0.5", 
+       "z": "0.25",
+       "y": "0.75",
+       "state_predicate": {
+       "predicate_type": "blockstate_match",
+       "block_state": 
+         {
+           "Name": "minecraft:redstone_wall_torch",
+           "Properties": {
+           "facing": "south",
+           "lit": "true"
+           }
+         }
+     },
+     "spawn_location": "lower_corner"
+     },
+     {
+       "particle": "davidparticles:torch_particle_emitter",
+       "chance": "1",
+       "x": "0.5", 
+       "z": "0.75",
+       "y": "0.75",
+       "state_predicate": {
+       "predicate_type": "blockstate_match",
+       "block_state": 
+         {
+           "Name": "minecraft:redstone_wall_torch",
+           "Properties": {
+           "facing": "north",
+           "lit": "true"
+           }
+         }
+     },
+     "spawn_location": "lower_corner"
+     },
+     {
+       "particle": "davidparticles:torch_particle_emitter",
+       "chance": "1",
+       "x": "0.25", 
+       "z": "0.5",
+       "y": "0.75",
+       "state_predicate": {
+       "predicate_type": "blockstate_match",
+       "block_state": 
+         {
+           "Name": "minecraft:redstone_wall_torch",
+           "Properties": {
+           "facing": "east",
+           "lit": "true"
+           }
+         }
+     },
+     "spawn_location": "lower_corner"
+     },
+     {
+       "particle": "davidparticles:torch_particle_emitter",
+       "chance": "1",
+       "x": "0.5", 
+       "z": "0.5",
+       "y": "0.6",
+       "state_predicate": {
+       "predicate_type": "blockstate_match",
+       "block_state": 
+         {
+           "Name": "minecraft:redstone_torch",
+           "Properties": {
+           "lit": "true"
+           }
+         }
+     },
+     "spawn_location": "lower_corner"
+     },
+     {
+       "particle": "davidparticles:torch_particle_emitter",
+       "chance": "1",
+       "x": "0.75", 
+       "z": "0.5",
+       "y": "0.75",
+       "state_predicate": {
+       "predicate_type": "blockstate_match",
+       "block_state": 
+         {
+           "Name": "minecraft:soul_wall_torch",
+           "Properties": {
+           "facing": "west"
+           }
+         }
+     },
+     "spawn_location": "lower_corner"
+     },
+     {
+       "particle": "davidparticles:torch_particle_emitter",
+       "chance": "1",
+       "x": "0.5", 
+       "z": "0.25",
+       "y": "0.75",
+       "state_predicate": {
+       "predicate_type": "blockstate_match",
+       "block_state": 
+         {
+           "Name": "minecraft:soul_wall_torch",
+           "Properties": {
+           "facing": "south"
+           }
+         }
+     },
+     "spawn_location": "lower_corner"
+     },
+     {
+       "particle": "davidparticles:torch_particle_emitter",
+       "chance": "1",
+       "x": "0.5", 
+       "z": "0.75",
+       "y": "0.75",
+       "state_predicate": {
+       "predicate_type": "blockstate_match",
+       "block_state": 
+         {
+           "Name": "minecraft:soul_wall_torch",
+           "Properties": {
+           "facing": "north"
+           }
+         }
+     },
+     "spawn_location": "lower_corner"
+     },
+     {
+       "particle": "davidparticles:torch_particle_emitter",
+       "chance": "1",
+       "x": "0.25", 
+       "z": "0.5",
+       "y": "0.75",
+       "state_predicate": {
+       "predicate_type": "blockstate_match",
+       "block_state": 
+         {
+           "Name": "minecraft:soul_wall_torch",
+           "Properties": {
+           "facing": "east"
+           }
+         }
+     },
+     "spawn_location": "lower_corner"
+     },
+     {
+       "particle": "davidparticles:torch_particle_emitter",
+       "chance": "1",
+       "x": "0.5", 
+       "z": "0.5",
+       "y": "0.6",
+       "state_predicate": {
+       "predicate_type": "block_match",
+       "block": "minecraft:soul_torch"
+     },
+     "spawn_location": "lower_corner"
+     },
+     {
+       "particle": "davidparticles:torch_particle_emitter",
+       "chance": "1",
+       "x": "0.5", 
+       "z": "0.5",
+       "y": "0.75",
+       "state_predicate": {
+       "predicate_type": "block_match",
+       "block": "minecraft:open_eyeblossom"
+     },
+     "spawn_location": "lower_corner"
+     }
+     ]
+}

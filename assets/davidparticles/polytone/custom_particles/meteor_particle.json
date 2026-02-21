@@ -1,0 +1,37 @@
+{
+  "initializer": {
+    "lifetime": "18 + rand() * 3",
+    "size": "(7.5 + rand() * 1.8)*1.5",
+    "alpha": "0",
+    "dx": "-10 + rand() * 2.4",
+    "dy": "rand() * 0.08 - 0.04",
+    "dz": "3.2 + rand() * 0.8"
+  },
+  "ticker": {
+    "alpha": "0.0025 * sin(( (pi/LIFETIME) * AGE))",
+    "dx": "DX",
+    "dy": "DY",
+    "dz": "DZ"
+  },
+  "render_type": "additive_translucent",
+  "random_sprite": true,
+  "has_physics": false,
+  "kill_on_contact": false,
+  "offset": [0, 0, 0],
+  "force_spawn": true,
+  "lit": true,
+  "light_level": 15,
+  "rotation_mode": "movement_aligned",
+  "particle_emitters": [
+    {
+      "particle": "davidparticles:meteor_trail",
+      "chance": "1.0",
+      "x": "0",
+      "y": "0",
+      "z": "0",
+      "dx": "DX*0.25",
+      "dy": "DY*0.25",
+      "dz": "DZ*0.25"
+    }
+  ]
+}
